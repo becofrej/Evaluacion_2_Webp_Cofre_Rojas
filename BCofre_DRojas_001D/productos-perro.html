@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+      <!-- Fuente -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <!--  -->
+    <title>Productos para Perros</title>
+  </head>
+  <body style="font-family: 'Roboto', sans-serif;">
+    <!-- NavBar -->
+    <header class="header">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light flex-grow-1">
+        <div
+          class="container d-flex justify-content-between align-items-center benja-custom-container"
+        >
+          <!-- Items IZQUIERDA -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <div class="benja-container">
+              <input
+                type="text"
+                name="text"
+                class="benja-input"
+                required=""
+                placeholder="Type to search..."
+              />
+              <div class="benja-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon"
+                  viewBox="0 0 512 512"
+                >
+                  <title>Search</title>
+                  <path
+                    d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  ></path>
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                    d="M338.29 338.29L448 448"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </ul>
+
+          <!-- Logo -->
+          <div class="logo-container">
+            <a class="navbar-brand" href="index.html">
+              <img class="logo" src="Media/logos/logo-nav.png" alt="Logo" />
+            </a>
+          </div>
+
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <img
+              src="Media/perfil.png"
+              alt="Icono"
+              height="30"
+              class="dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            />
+
+            <!-- Menú del dropdown -->
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li>
+                <a class="dropdown-item" href="ingresar.html"> Ingresar </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="registrarse.html"> Registrar </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Icono del carrito -->
+          <a
+            class="nav-link"
+            href="#"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <img
+              class="carrito"
+              src="Media/carrito.png"
+              alt="Carrito"
+              height="24"
+            />
+          </a>
+        </div>
+      </nav>
+
+      <!-- Offcanvas -->
+      <div
+        class="offcanvas offcanvas-end general-custom-canvas"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body benja-custom-canvas">
+          <div class="d-flex">
+            <!-- Producto -->
+            <div class="card flex-grow-1 carta-benja">
+              <div class="card-body">
+                <img src="Media/card/card-bandanaPato.jpg" alt="" />
+              </div>
+              <div class="card-footer">
+                <h5 class="card-title">$8.990</h5>
+              </div>
+            </div>
+            <div class="card flex-grow-1 carta-benja">
+              <div class="card-body">
+                <img src="Media/card/card-correaRosa50Liq.png" alt="" />
+              </div>
+              <div class="card-footer">
+                <h5 class="card-title">$5.995</h5>
+              </div>
+            </div>
+          </div>
+          <br />
+          <!-- Detalle -->
+          <h6>Productos en tu carrito:</h6>
+          <ul>
+            <li>Max & Molly – Bandana Ducklings - $8.990</li>
+            <li>Zeedog Correa Midnight Unisex - $5.995</li>
+          </ul>
+          <p>Total: $14.985</p>
+          <a href="carrito.html" class="btn btn-primary">Ir al carrito</a>
+        </div>
+      </div>
+    </header>
+    <!-- Imagen de encabezado -->
+    <div class="imagen-productos">
+      <img src="media/productos/productos-perro.jpg" alt="" />
+    </div>
+
+    <br /><br /><br />
+    <!-- Productos -->
+    <h2 class="texto-producto">Alimentos Secos Para Perro</h2>
+    <!-- Producto 1 -->
+    <div class="lista-productos">
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="media/card/card-proplanDogBomba.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Proplan Adulto Razas Medianas</h5>
+              <p class="card-text">
+                PRO PLAN® Adult Razas Medianas con OptiHealth y Spirulina, ayuda
+                a fortalecer el sistema inmune y digestivo para tu mascota,
+                principalmente a través de la incorporación de spirulina en su
+                fórmula para garantizar su eficiencia.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">$32.990</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="media/card/card-royalcaninMiniDog25.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                Royal Canin adulto Mini Adult alimento para perro
+              </h5>
+              <p class="card-text">
+                Royal Canin Mini Adult es un alimento para perros adultos de
+                tamaño pequeño (de 1 a 10 Kg) desde los 10 meses hasta los 8
+                años. Ayuda a mantener el peso ideal de los perros de raza
+                pequeña al satisfacer sus elevadas necesidades energéticas.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">Oferta Web $45.990</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="media/card/card-ovenSmallDog.png"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                Oven Baked Tradition Grain Free Duck Small Breeds
+              </h5>
+              <p class="card-text">
+                El alimento especial para Adultos de razas pequeñas de Oven
+                Baked Tradition® Es una comida pensada para razas pequeñas
+                preparada con pato fresco, frutas, verduras y libre de granos,
+                está última es una caracteristica única.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">$31.990</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="media/card/card-nydMediumDog25.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                N&D Low Canine Adulto Frango Medium alimento para perro
+              </h5>
+              <p class="card-text">
+                Farmina® Natural&Delicious® Pollo, granada y Cereles Ancestrales
+                Adulto-Medium es un alimento completo y balanceado para perros
+                adultos de razas medianas. Elaborada solo con granos ancestrales
+                de alta calidad.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">Oferta Web $20.993</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 5 -->
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="media/card/card-proplanAdulDogSmallBomba.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                Proplan Adulto Small Breed alimento para perro
+              </h5>
+              <p class="card-text">
+                PRO PLAN® Adult Razas Pequeñas con OptiHealth y Spirulina, ayuda
+                a fortalecer el sistema inmune y digestivo, principalmente a
+                través de la incorporación de spirulina en su fórmula, cuya
+                efectividad ha sido científicamente probada.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">Oferta Web $33.990</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 6 -->
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="media/card/card-royalcaninChihuahuaDog.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                Royal Canin adulto Chihuahua alimento para perro
+              </h5>
+              <p class="card-text">
+                ROYAL CANIN® Chihuahua® está ideado para perros chihuahuas a
+                partir de los 8 meses de edad, tiene encuenta sus proporciones
+                físicas para brindarle un alimento completo que se adapte a
+                dichas características especificas.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">$14.990</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 7 -->
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="media/card/card-nutrienceDog.png"img-fluid rounded-start"
+            alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                Original Adult Medium Breed Dog alimento para perro
+              </h5>
+              <p class="card-text">
+                El pollo como ingrediente principal en nuestra receta de
+                Nutrience Original Adulto de raza mediana le ofrece a su perro
+                un sabor que le va a encantar, al mismo tiempo que favorece la
+                salud de su cuerpo para mantenerlo fuerte y activo.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">$55.990</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 8 -->
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="media/card/card-tasteofDog25.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                Taste Of The Wild Wetlands Dry alimento para perro
+              </h5>
+              <p class="card-text">
+                Wetlands Dry es una fórmula sin cereales con patatas y guisantes
+                dulces que proporciona energía altamente digerible para su perro
+                activo. Hecho con aves a la brasa y ahumadas ofrece una
+                sensación de sabor sin igual para su mascota.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">$35.243</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 9 -->
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="media/card/card-nathDogMedium25.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                Nath Medium sabor pollo y arroz integral alimento para perros
+              </h5>
+              <p class="card-text">
+                Esta receta de comida para cachorros medianos y grandes, con un
+                peso superior a los 11 kg, se ha elaborado para cubrir y
+                satisfacer todas las necesidades nutricionales de la mascota
+                durante sus 12 primeros meses de vida.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">$38.993</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 10 -->
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="media/card/card-nathDogAdult25.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                Nath adulto Medium sabor pollo y arroz integral alimento para
+                perros
+              </h5>
+              <p class="card-text">
+                Nath ha elaborado una comida para perros adultos de razas
+                medianas que pesan entre 11 y 25 kg. Su objetivo es cubrir y
+                satisfacer todas las necesidades nutricionales de estas mascotas
+                a partir de los 12 meses de edad. Los ingredientes principales
+                que se han utilizado son el pollo y el arroz integral.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">Oferta Web $21.990</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 11 -->
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="media/card/card-royalcaninMaxiDogBomba.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                Royal Canin adulto maxi adult 15 KG alimento para perro
+              </h5>
+              <p class="card-text">
+                Royal Canin Maxi Adult es un alimento para perros de raza grande
+                (26 a 44 Kg ) desde los 15 meses hasta los 5 años. Mejora la
+                calidad de las heces (textura y volumen) gracias a los ácidos
+                grasos EPA-DHA con propiedades antiinflamatorias. Royal Canin es
+                líder en el mercado mundial de alimento balanceado para tus
+                fieles amigos gatos y perros.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">Oferta Web $70.000</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 12 -->
+      <div class="card mb-3 david-custom-products" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="media/card/card-wellnesAdultDog25.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                Wellness Core Dog Healthy Weight alimento para perro
+              </h5>
+              <p class="card-text">
+                Mantén a tu mascota sana y activa con el delicioso alimento para
+                perros Wellness Core Healthy. Preparado con carne de pavo fresca
+                de calidad, contribuye a regular el peso de tu mascota porque es
+                bajo en grasas y en calorías mientras que sus proteínas le
+                permiten ganar esa masa muscular esencial para tu mascota.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary">$53.243</small>
+              </p>
+              <a href="#" class="btn btn-primary mt-auto"
+                >Agregar al carritos</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <br /><br /><br />
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #333333"
+    >
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div
+              class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+              style="width: 150px; height: 150px"
+            >
+              <img
+                src="media/logos/logo-footer.png"
+                height="105"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <p class="text-center"></p>
+
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">¿Quiénes Somos?</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3">Nuestra Organización</i></a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Miembros</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>¿Tu mascota está perdida?</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>¿Quieres adoptar?</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Animales en adopción</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Donaciones</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Créditos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Redes Sociales</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>¡Chatea con nosotros!</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Facebook</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Instagram</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"
+                  ><i class="fas fa-paw pe-3"></i>Telegram</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">contacto</h5>
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <i class="fas fa-map-marker-alt pe-2"></i>Av. Vicuña Mackenna
+                  4917, San Joaquín.
+                </p>
+              </li>
+              <li>
+                <p><i class="fas fa-phone pe-2"></i>+56 9 3142 6758</p>
+              </li>
+              <li>
+                <p>
+                  <i class="fas fa-envelope pe-2 mb-0"></i>disennoweb@duocuc.cl
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+          >MDBootstrap.com</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- End of .container -->
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
