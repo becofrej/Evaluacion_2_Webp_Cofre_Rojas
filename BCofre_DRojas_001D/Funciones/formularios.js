@@ -14,16 +14,15 @@ $(document).ready(function () {
         var contraseña2 = $("#inputContraseña2").val();
 
         // Nombres, Apellidos: largo entre 3 y 20 caracteres
-        if (nombre.length < 3 || nombre.length > 20 ||
-            apellidoPaterno.length < 3 || apellidoPaterno.length > 20 ||
-            apellidoMaterno.length < 3 || apellidoMaterno.length > 20) {
+        if (nombres.length < 3 || nombres.length > 20 ||
+            apellidos.length < 3 || apellidos.length > 20) {
             alert("El Nombre y los Apellidos deben tener entre 3 y 20 caracteres.");
             return;
         }
 
-        // Rut: largo entre 9 y 10 caracteres
-        if (rut.length < 9 || rut.length > 10) {
-            alert("El Rut debe tener entre 9 y 10 caracteres.");
+        // Rut:
+        if (!validarRUT(rut)) {
+            alert("El RUT ingresado no es válido.");
             return;
         }
 
@@ -55,18 +54,55 @@ $(document).ready(function () {
             return;
         }
 
-        // Celular: 
-        if (celular.length < 9 || celular.length > 12) {
-            alert("El Celular debe tener entre 9 y 12 caracteres.");
+        // Validar formato de correo:
+        if (!validarEmail(correo)) {
+            alert("Por favor, ingrese un correo válido");
             return;
         }
 
-        if (celular[0, 1, 2] !== "+569") {
-            alert("El formato debe ser +56 9 seguido de 8 dígitos.")
+        // Celular: 
+        if (!/^(\+56)?9\d{8}$/.test(celular)) {
+            alert("El formato del celular debe ser +56 9 seguido de 8 dígitos.");
+            return;
         }
 
         // Si todas las validaciones pasan, se puede enviar el formulario
         alert("¡Registro exitoso!");
 
     });
+
+    function validarRUT(rut) {
+        // Eliminar puntos y guión
+        rut = rut.replace(/\./g, '').replace(/-/g, '');
+
+        // Validar formato básico
+        if (!/^\d{7,8}[0-9Kk]$/.test(rut)) {
+            return false;
+        }
+
+        // Separar cuerpo y dígito verificador
+        let cuerpo = rut.slice(0, -1);
+        let dv = rut.slice(-1).toUpperCase();
+
+        // Calcular dígito verificador
+        let suma = 0;
+        let multiplo = 2;
+
+        for (let i = cuerpo.length - 1; i >= 0; i--) {
+            suma += multiplo * parseInt(cuerpo.charAt(i));
+            multiplo = (multiplo < 7) ? (multiplo + 1) : 2;
+        }
+
+        let dvEsperado = 11 - (suma % 11);
+        dvEsperado = (dvEsperado === 11) ? '0' : (dvEsperado === 10) ? 'K' : dvEsperado.toString();
+
+        // Comparar dígito verificador
+        return dv === dvEsperado;
+    }
+
+    function validarEmail(email) {
+        var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return re.test(email);
+    }
+
 });
