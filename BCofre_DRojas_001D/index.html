@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- este commit es de prueba -->
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,27 +47,41 @@
           </a>
         </div>
 
-        <!-- Dropdown -->
-        <div class="dropdown">
-          <img src="Media/perfil.png" alt="Icono" height="41" class="dropdown-toggle" id="dropdownMenuButton"
-            data-bs-toggle="dropdown" aria-expanded="false" />
+        <!-- Items Derecha - Inicia -->
+        <div class="d-flex align-items-center">
+          <!-- Dropdown productos -->
+          <div class="dropdown me-2">
+            <a class="btn btn-secondary dropdown-toggle drop-productos" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Productos
+            </a>
+            <!-- Menú del dropdown -->
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="productos-perro.html">Alimentos Secos Perros</a></li>
+              <li><a class="dropdown-item" href="productos-gato.html">Alimentos Secos Gatos</a></li>
+              <li><a class="dropdown-item" href="productos-accesorios.html">Accesorios Mascotas</a></li>
+              <li><a class="dropdown-item" href="#">Snacks</a></li>
+            </ul>
+          </div>
 
-          <!-- Menú del dropdown -->
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li>
-              <a class="dropdown-item" href="ingresar.html"> Ingresar </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="registrarse.html"> Registrar </a>
-            </li>
-          </ul>
+          <!-- Dropdown perfil -->
+          <div class="dropdown me-2">
+            <img src="Media/perfil.png" alt="Icono" height="41" class="dropdown-toggle" id="dropdownMenuButton"
+              data-bs-toggle="dropdown" aria-expanded="false" />
+            <!-- Menú del dropdown -->
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="ingresar.html">Ingresar</a></li>
+              <li><a class="dropdown-item" href="registrarse.html">Registrar</a></li>
+            </ul>
+          </div>
+
+          <!-- Icono del carrito -->
+          <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <img class="carrito" src="Media/carrito.png" alt="Carrito" height="24" />
+          </a>
         </div>
-
-        <!-- Icono del carrito -->
-        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight">
-          <img class="carrito" src="Media/carrito.png" alt="Carrito" height="24" />
-        </a>
+        <!-- Items Derecha - Termina -->
       </div>
     </nav>
 
