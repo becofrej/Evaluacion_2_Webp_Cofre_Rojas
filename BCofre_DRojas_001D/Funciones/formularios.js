@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    $("#Formulario").submit(function (event) {
+    $("#formulario").submit(function (event) {
         // Evitar que el formulario se envíe automáticamente
         event.preventDefault();
 
@@ -8,7 +8,7 @@ $(document).ready(function () {
         var nombres = $("#inputNombres").val();
         var apellidos = $("#inputApellidos").val();
         var rut = $("#inputRut").val();
-        var celular = $("#inputCelular").val();
+        var celular = $("#inputCelular").val().replace(/\s/g, '');
         var correo = $("#inputEmail").val();
         var contraseña = $("#inputContraseña").val();
         var contraseña2 = $("#inputContraseña2").val();
@@ -62,12 +62,15 @@ $(document).ready(function () {
 
         // Celular: 
         if (!/^(\+56)?9\d{8}$/.test(celular)) {
-            alert("El formato del celular debe ser +56 9 seguido de 8 dígitos.");
+            alert("El formato del celular debe ser +569 seguido de 8 dígitos.");
             return;
         }
 
         // Si todas las validaciones pasan, se puede enviar el formulario
         alert("¡Registro exitoso!");
+
+        // Reiniciar campos del formulario
+        this.reset();
 
     });
 
