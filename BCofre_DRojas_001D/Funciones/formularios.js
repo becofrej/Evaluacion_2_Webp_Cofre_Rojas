@@ -74,6 +74,42 @@ $(document).ready(function () {
 
     });
 
+
+    $("#formularioIngreso").submit(function (event) {
+
+        // Evitar que el formulario se envíe automáticamente
+        event.preventDefault();
+
+        // Realizar las validaciones
+        var correo = $("#inputEmail").val();
+        var contraseña = $("#inputPassword").val();
+
+        // Correo:
+        if (correo === "") {
+            alert("Por favor, ingrese un correo");
+            return;
+        }
+
+        // Validar formato de correo:
+        if (!validarEmail(correo)) {
+            alert("Por favor, ingrese un correo válido");
+            return;
+        }
+
+        // Contraseña: 
+        if (contraseña === "") {
+            alert("Ingrese la contraseña")
+            return
+        }
+
+        // Si todas las validaciones pasan:
+        alert("¡Inicio de sesión exitoso!");
+
+        // Reiniciar campos del formulario de ingreso
+        this.reset();
+    });
+
+
     function validarRUT(rut) {
         // Eliminar puntos y guión
         rut = rut.replace(/\./g, '').replace(/-/g, '');
