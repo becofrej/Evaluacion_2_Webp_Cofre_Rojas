@@ -1,680 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>PawPalace</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <!-- Fuente -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!--  -->
-  </head>
 
-  <body style="font-family: 'Roboto', sans-serif;">
-    <header class="benja-header">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light flex-grow-1">
-        <div
-          class="container d-flex justify-content-between align-items-center benja-custom-container"
-        >
-          <!-- Items Izquierda -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <div class="benja-container">
-              <input
-                type="text"
-                name="text"
-                class="benja-input"
-                required=""
-                placeholder="Producto, Marca, etc."
-              />
-              <div class="benja-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="ionicon"
-                  viewBox="0 0 512 512"
-                >
-                  <title>Search</title>
-                  <path
-                    d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="32"
-                  ></path>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
-                    stroke-width="32"
-                    d="M338.29 338.29L448 448"
-                  ></path>
-                </svg>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>PawPalace</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!--  -->
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+  <header class="benja-header">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light flex-grow-1">
+      <div class="container d-flex justify-content-between align-items-center benja-custom-container">
+        <!-- Items Izquierda -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <div class="benja-container">
+            <input type="text" name="text" class="benja-input" required="" placeholder="Producto, Marca, etc." />
+            <div class="benja-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Search</title>
+                <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none"
+                  stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+                  d="M338.29 338.29L448 448"></path>
+              </svg>
             </div>
-          </ul>
-
-          <!-- Logo -->
-          <div class="logo-container">
-            <a class="navbar-brand" href="index.html">
-              <img class="logo" src="Media/logos/logo-nav.png" alt="Logo" />
-            </a>
           </div>
+        </ul>
 
-          <!-- Dropdown -->
-          <div class="dropdown">
-            <img
-              src="Media/perfil.png"
-              alt="Icono"
-              height="30"
-              class="dropdown-toggle"
-              id="dropdownMenuButton"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            />
-
-            <!-- Menú del dropdown -->
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li>
-                <a class="dropdown-item" href="ingresar.html"> Ingresar </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="registrarse.html"> Registrar </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Icono del carrito -->
-          <a
-            class="nav-link"
-            href="#"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <img
-              class="carrito"
-              src="Media/carrito.png"
-              alt="Carrito"
-              height="24"
-            />
+        <!-- Logo -->
+        <div class="logo-container">
+          <a class="navbar-brand" href="index.html">
+            <img class="logo" src="Media/logos/logo-nav.png" alt="Logo" />
           </a>
         </div>
-      </nav>
 
-      <!-- Offcanvas -->
-      <div
-        class="offcanvas offcanvas-end general-custom-canvas"
-        tabindex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body benja-custom-canvas">
-          <div class="d-flex">
-            <!-- Producto -->
-            <div class="card flex-grow-1 carta-benja">
-              <div class="card-body">
-                <img src="Media/card/card-bandanaPato.jpg" alt="" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title">$8.990</h5>
-              </div>
-            </div>
-            <div class="card flex-grow-1 carta-benja">
-              <div class="card-body">
-                <img src="Media/card/card-correaRosa50Liq.png" alt="" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title">$5.995</h5>
-              </div>
-            </div>
-          </div>
-          <br />
-          <!-- Detalle -->
-          <h6>Productos en tu carrito:</h6>
-          <ul>
-            <li>Max & Molly – Bandana Ducklings - $8.990</li>
-            <li>Zeedog Correa Midnight Unisex - $5.995</li>
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <img src="Media/perfil.png" alt="Icono" height="41" class="dropdown-toggle" id="dropdownMenuButton"
+            data-bs-toggle="dropdown" aria-expanded="false" />
+
+          <!-- Menú del dropdown -->
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>
+              <a class="dropdown-item" href="ingresar.html"> Ingresar </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="registrarse.html"> Registrar </a>
+            </li>
           </ul>
-          <p>Total: $14.985</p>
-          <a href="carrito.html" class="btn btn-primary">Ir al carrito</a>
         </div>
-      </div>
-    </header>
-    <!-- ----------------------------------------------------------------------------------------------------- -->
 
-    <!-- CARRUSEL -->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item  active" data-bs-interval="2000">
-          <img
-            src="media/carrousel/carrousel-almtoSeco.jpg"
-            class="d-block w-100 david-custom-carrousel" 
-            alt="..."
-          />
-          <div class="gradient"></div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="media/carrousel/carrousel-correas-accesorios.jpg"
-            class="d-block w-100 david-custom-carrousel"
-            alt="..."
-          />
-          <div class="gradient"></div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="media/carrousel/carrouse-snack.jpg"
-            class="d-block w-100 david-custom-carrousel"
-            alt="..."
-          />
-          <div class="gradient"></div>
-        </div>
+        <!-- Icono del carrito -->
+        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <img class="carrito" src="Media/carrito.png" alt="Carrito" height="24" />
+        </a>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!-- ------------------------------------------------------------------------------------------------------ -->
-    <!-- CARDS -->
-    <br />
+    </nav>
 
-    <div class="container caja 1 ">
-      <h2 class="text-center">Alimentos Secos Más Vendidos</h2>
-      <!-- Salto de linea -->
-      <br />
-      <!-- Salto de linea -->
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card custom-card david-custom-card">
-            <img
-              src="media/card/card-proplanDogBomba.jpg"
-              class="card-img-top custom-card-img"
-              alt="Apple_iPhone11"
-            />
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end general-custom-canvas" tabindex="-1" id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body benja-custom-canvas">
+        <div class="d-flex">
+          <!-- Producto -->
+          <div class="card flex-grow-1 carta-benja">
             <div class="card-body">
-              <h5 class="card-title">
-                Proplan Adulto Razas Med. alimento para perro
-              </h5>
-              <p class="card-text">$64.990</p>
-              <a href="productos-perro.html" class="btn btn-primary mt-auto"
-                >Ver más</a
-              >
+              <img src="Media/card/card-bandanaPato.jpg" alt="" />
+            </div>
+            <div class="card-footer">
+              <h5 class="card-title">$8.990</h5>
+            </div>
+          </div>
+          <div class="card flex-grow-1 carta-benja">
+            <div class="card-body">
+              <img src="Media/card/card-correaRosa50Liq.png" alt="" />
+            </div>
+            <div class="card-footer">
+              <h5 class="card-title">$5.995</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card custom-card david-custom-card">
-            <img
-              src="media/card/card-royalcaninMiniDog25.jpg"
-              class="card-img-top custom-card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Royal Canin adulto Mini Adult alimento para perro
-              </h5>
-              <p class="card-text">$45.990</p>
-              <a href="productos-perro.html" class="btn btn-primary mt-auto"
-                >Ver más</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card david-custom-card">
-            <img
-              src="media/card/card-proplanCatBomba.jpg"
-              class="card-img-top custom-card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Proplan Adulto Cat alimento para gato</h5>
-              <p class="card-text">$37.990</p>
-              <a href="productos-gato.html" class="btn btn-primary mt-auto"
-                >Ver más</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card david-custom-card">
-            <img
-              src="media/card/card-nathCat25.jpg"
-              class="card-img-top custom-card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Nath Kitten sabor pollo y arroz alimento para gatos
-              </h5>
-              <p class="card-text">$23.993</p>
-              <a href="productos-gato.html" class="btn btn-primary mt-auto"
-                >Ver más</a
-              >
-            </div>
-          </div>
-        </div>
+        <br />
+        <!-- Detalle -->
+        <h6>Productos en tu carrito:</h6>
+        <ul>
+          <li>Max & Molly – Bandana Ducklings - $8.990</li>
+          <li>Zeedog Correa Midnight Unisex - $5.995</li>
+        </ul>
+        <p>Total: $14.985</p>
+        <a href="carrito.html" class="btn btn-primary">Ir al carrito</a>
       </div>
     </div>
+  </header>
+  <!-- ----------------------------------------------------------------------------------------------------- -->
 
-    <br />
-
-    <div class="container caja 2">
-      <h2 class="text-center">Accesorios Más Vendidos</h2>
-      <!-- Salto de linea -->
-      <br />
-      <!-- Salto de linea -->
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card david-custom-card">
-            <img
-              src="Media/card/card-bandanaPato.jpg"
-              class="card-img-top custom-card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Max & Molly – Bandana Ducklings</h5>
-              <p class="card-text">$8.990</p>
-              <a
-                href="productos-accesorios.html"
-                class="btn btn-primary mt-auto"
-                >Ver más</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card david-custom-card">
-            <img
-              src="Media/card/card-correaRosa50Liq.png"
-              class="card-img-top custom-card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Zeedog Correa Midnight Unisex</h5>
-              <p class="card-text">$5.995</p>
-              <a
-                href="productos-accesorios.html"
-                class="btn btn-primary mt-auto"
-                >Ver más</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card david-custom-card">
-            <img
-              src="Media/card/card-accesorioBand30.jpg"
-              class="card-img-top custom-card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Fuzz Yard Bandana - Yeezy Para Perro</h5>
-              <p class="card-text">Oferta Web $6.293</p>
-              <a
-                href="productos-accesorios.html"
-                class="btn btn-primary mt-auto"
-                >Ver más</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card david-custom-card">
-            <img
-              src="Media/card/card-identificadorHueso.jpg"
-              class="card-img-top custom-card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Chapita My Family – Big Bone Bronx Platform XL
-              </h5>
-              <p class="card-text">Oferta Web $10.900</p>
-              <a
-                href="productos-accesorios.html"
-                class="btn btn-primary mt-auto"
-                >Ver más</a
-              >
-            </div>
-          </div>
-        </div>
+  <!-- CARRUSEL -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item  active" data-bs-interval="2000">
+        <img src="media/carrousel/carrousel-almtoSeco.jpg" class="d-block w-100 david-custom-carrousel" alt="..." />
+        <div class="gradient"></div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="media/carrousel/carrousel-correas-accesorios.jpg" class="d-block w-100 david-custom-carrousel"
+          alt="..." />
+        <div class="gradient"></div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="media/carrousel/carrouse-snack.jpg" class="d-block w-100 david-custom-carrousel" alt="..." />
+        <div class="gradient"></div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <!-- CARDS -->
+  <br />
+
+  <div class="container caja 1 ">
+    <h2 class="text-center">Alimentos Secos Más Vendidos</h2>
     <!-- Salto de linea -->
     <br />
     <!-- Salto de linea -->
-    <div class="container caja 3">
-      <h2 class="text-center">Snacks Más Vendidos</h2>
-      <!-- Salto de linea -->
-      <br />
-      <!-- Salto de linea -->
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card david-custom-card">
-            <img
-              src="media/card/card-dingoSnackDog4x3.jpg"
-              class="card-img-top custom-card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Dingo dental stick huesitos 48 pk</h5>
-              <p class="card-text">$8.243</p>
-              <a href="#" class="btn btn-primary mt-auto">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card david-custom-card">
-            <img
-              src="media/card/card-rahueSnackDog4x3.jpg"
-              class="card-img-top custom-card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Rahue de vacuno snack para perros</h5>
-              <p class="card-text">$3.990</p>
-              <a href="#" class="btn btn-primary mt-auto">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card david-custom-card">
-            <img
-              src="media/card/card-fitSnackCat4x3.jpg"
-              class="card-img-top custom-card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Fit Snack Formula Filete De Pollo</h5>
-              <p class="card-text">$1.290</p>
-              <a href="#" class="btn btn-primary mt-auto">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card david-custom-card">
-            <img
-              src="media/card/card-churuSnackCat4x3.jpg"
-              class="card-img-top custom-card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Churu de atún con salmón 56 GR</h5>
-              <p class="card-text">$2.990</p>
-              <a href="#" class="btn btn-primary mt-auto">Ver más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- -------------------------------------------------------------------------------------------------------- -->
-    <!-- Tarjeta que activa el modal -->
-    <br />
-    <div class="card custom-card-sub">
-      <div class="card-body">
-        <h5 class="card-title">¡Conoce más sobre nuestra fundación!</h5>
-        <p class="card-text">
-          Descubre cómo tu compra ayuda a nuestra fundación sin fines de lucro.
-        </p>
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#foundationModal"
-        >
-          Más información
-        </button>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="foundationModal"
-      tabindex="-1"
-      aria-labelledby="foundationModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-sombra">
-          <div class="modal-header bg-primary text-white">
-            <h5 class="modal-title" id="foundationModalLabel">
-              ¡Ayúdanos a cambiar vidas con tu compra!
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card custom-card david-custom-card">
+          <img src="media/card/card-proplanDogBomba.jpg" class="card-img-top custom-card-img" alt="Apple_iPhone11" />
+          <div class="card-body">
+            <h5 class="card-title">
+              Proplan Adulto Razas Med. alimento para perro
             </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <p class="card-text">$64.990</p>
+            <a href="productos-perro.html" class="btn btn-primary mt-auto">Ver más</a>
           </div>
-          <div class="modal-body custom-modal benja-custom-modal">
-            <div class="text-center">
-              <img
-                src="Media/fundacion.jpeg"
-                alt="Logo Fundación"
-                width="100"
-              />
-            </div>
-            <p>
-              Con cada compra que realizas, estás apoyando a nuestra fundación
-              sin fines de lucro.
-            </p>
-            <p>
-              Somos Ayuda Callejeros, una fundación sin fines de lucro, que
-              pretende proteger y mejorar la calidad de vida de perros y gatos
-              que han sido abandonados o maltratados.
-            </p>
-            <p>
-              Para obtener más información sobre esta fundación o para hacer una
-              donación directa, visita su sitio web.
-            </p>
-            <!-- Sitio web de la fundación -->
-            <a
-              href="https://www.fundacionayudacallejeros.cl/"
-              class="btn btn-primary"
-              target="_blank"
-              >Visita su sitio web</a
-            >
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card custom-card david-custom-card">
+          <img src="media/card/card-royalcaninMiniDog25.jpg" class="card-img-top custom-card-img" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              Royal Canin adulto Mini Adult alimento para perro
+            </h5>
+            <p class="card-text">$45.990</p>
+            <a href="productos-perro.html" class="btn btn-primary mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card david-custom-card">
+          <img src="media/card/card-proplanCatBomba.jpg" class="card-img-top custom-card-img" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Proplan Adulto Cat alimento para gato</h5>
+            <p class="card-text">$37.990</p>
+            <a href="productos-gato.html" class="btn btn-primary mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card david-custom-card">
+          <img src="media/card/card-nathCat25.jpg" class="card-img-top custom-card-img" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              Nath Kitten sabor pollo y arroz alimento para gatos
+            </h5>
+            <p class="card-text">$23.993</p>
+            <a href="productos-gato.html" class="btn btn-primary mt-auto">Ver más</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- ----------------------------------------------------------------------------------------------------- -->
-    <!-- FOOTER Nosotros, creadores, direccion, redes, contacto, soporte -->
+  </div>
+
+  <br />
+
+  <div class="container caja 2">
+    <h2 class="text-center">Accesorios Más Vendidos</h2>
+    <!-- Salto de linea -->
     <br />
-    <footer
-      class="text-center text-lg-start text-white"
-      style="background-color: #333333"
-    >
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row my-4">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px">
-              <img src="media/logos/logo-footer.png" height="105" alt="" loading="lazy" />
-            </div>
-            <p class="text-center"></p>
-
-            <ul class="list-unstyled d-flex flex-row justify-content-center">
-              <li>
-                <a class="text-white px-2" href="#!">
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-              </li>
-              <li>
-                <a class="text-white px-2" href="#!">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a class="text-white ps-2" href="#!">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-            </ul>
+    <!-- Salto de linea -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card david-custom-card">
+          <img src="Media/card/card-bandanaPato.jpg" class="card-img-top custom-card-img" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Max & Molly – Bandana Ducklings</h5>
+            <p class="card-text">$8.990</p>
+            <a href="productos-accesorios.html" class="btn btn-primary mt-auto">Ver más</a>
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">¿Quiénes Somos?</h5>
-
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3">Nuestra Organización</i></a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Miembros</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>¿Tu mascota está perdida?</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>¿Quieres adoptar?</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Animales en adopción</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Donaciones</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Créditos</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">Redes Sociales</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>¡Chatea con nosotros!</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Facebook</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Instagram</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Telegram</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">contacto</h5>
-            <ul class="list-unstyled">
-              <li>
-                <p>
-                  <i class="fas fa-map-marker-alt pe-2"></i>Av. Vicuña Mackenna
-                  4917, San Joaquín.
-                </p>
-              </li>
-              <li>
-                <p><i class="fas fa-phone pe-2"></i>+56 9 3142 6758</p>
-              </li>
-              <li>
-                <p>
-                  <i class="fas fa-envelope pe-2 mb-0"></i>disennoweb@duocuc.cl
-                </p>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
         </div>
-        <!--Grid row-->
       </div>
-      <!-- Grid container -->
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" >
-        © 2024 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
-        >
+      <div class="col-md-3">
+        <div class="card david-custom-card">
+          <img src="Media/card/card-correaRosa50Liq.png" class="card-img-top custom-card-img" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Zeedog Correa Midnight Unisex</h5>
+            <p class="card-text">$5.995</p>
+            <a href="productos-accesorios.html" class="btn btn-primary mt-auto">Ver más</a>
+          </div>
+        </div>
       </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- ----------------------------------------------------------------------------------------------------- -->
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="col-md-3">
+        <div class="card david-custom-card">
+          <img src="Media/card/card-accesorioBand30.jpg" class="card-img-top custom-card-img" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Fuzz Yard Bandana - Yeezy Para Perro</h5>
+            <p class="card-text">Oferta Web $6.293</p>
+            <a href="productos-accesorios.html" class="btn btn-primary mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card david-custom-card">
+          <img src="Media/card/card-identificadorHueso.jpg" class="card-img-top custom-card-img" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              Chapita My Family – Big Bone Bronx Platform XL
+            </h5>
+            <p class="card-text">Oferta Web $10.900</p>
+            <a href="productos-accesorios.html" class="btn btn-primary mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Salto de linea -->
+  <br />
+  <!-- Salto de linea -->
+  <div class="container caja 3">
+    <h2 class="text-center">Snacks Más Vendidos</h2>
+    <!-- Salto de linea -->
+    <br />
+    <!-- Salto de linea -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card david-custom-card">
+          <img src="media/card/card-dingoSnackDog4x3.jpg" class="card-img-top custom-card-img" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Dingo dental stick huesitos 48 pk</h5>
+            <p class="card-text">$8.243</p>
+            <a href="#" class="btn btn-primary mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card david-custom-card">
+          <img src="media/card/card-rahueSnackDog4x3.jpg" class="card-img-top custom-card-img" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Rahue de vacuno snack para perros</h5>
+            <p class="card-text">$3.990</p>
+            <a href="#" class="btn btn-primary mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card david-custom-card">
+          <img src="media/card/card-fitSnackCat4x3.jpg" class="card-img-top custom-card-img" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Fit Snack Formula Filete De Pollo</h5>
+            <p class="card-text">$1.290</p>
+            <a href="#" class="btn btn-primary mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card david-custom-card">
+          <img src="media/card/card-churuSnackCat4x3.jpg" class="card-img-top custom-card-img" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Churu de atún con salmón 56 GR</h5>
+            <p class="card-text">$2.990</p>
+            <a href="#" class="btn btn-primary mt-auto">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!-- Tarjeta que activa el modal -->
+  <br />
+  <div class="card custom-card-sub">
+    <div class="card-body">
+      <h5 class="card-title">¡Conoce más sobre nuestra fundación!</h5>
+      <p class="card-text">
+        Descubre cómo tu compra ayuda a nuestra fundación sin fines de lucro.
+      </p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#foundationModal">
+        Más información
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="foundationModal" tabindex="-1" aria-labelledby="foundationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-sombra">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="foundationModalLabel">
+            ¡Ayúdanos a cambiar vidas con tu compra!
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body custom-modal benja-custom-modal">
+          <div class="text-center">
+            <img src="Media/fundacion.jpeg" alt="Logo Fundación" width="100" />
+          </div>
+          <p>
+            Con cada compra que realizas, estás apoyando a nuestra fundación
+            sin fines de lucro.
+          </p>
+          <p>
+            Somos Ayuda Callejeros, una fundación sin fines de lucro, que
+            pretende proteger y mejorar la calidad de vida de perros y gatos
+            que han sido abandonados o maltratados.
+          </p>
+          <p>
+            Para obtener más información sobre esta fundación o para hacer una
+            donación directa, visita su sitio web.
+          </p>
+          <!-- Sitio web de la fundación -->
+          <a href="https://www.fundacionayudacallejeros.cl/" class="btn btn-primary" target="_blank">Visita su sitio
+            web</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----------------------------------------------------------------------------------------------------- -->
+  <!-- FOOTER Nosotros, creadores, direccion, redes, contacto, soporte -->
+  <br />
+  <footer class="text-center text-lg-start text-white" style="background-color: #333333">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div
+            class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+            style="width: 150px; height: 150px">
+            <img src="media/logos/logo-footer.png" height="105" alt="" loading="lazy" />
+          </div>
+          <p class="text-center"></p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">¿Quiénes Somos?</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3">Nuestra Organización</i></a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Miembros</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>¿Tu mascota está perdida?</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>¿Quieres adoptar?</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Animales en adopción</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Donaciones</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Créditos</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Redes Sociales</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>¡Chatea con nosotros!</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Facebook</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Instagram</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Telegram</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">contacto</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fas fa-map-marker-alt pe-2"></i>Av. Vicuña Mackenna
+                4917, San Joaquín.
+              </p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2"></i>+56 9 3142 6758</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-envelope pe-2 mb-0"></i>disennoweb@duocuc.cl
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2024 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- ----------------------------------------------------------------------------------------------------- -->
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

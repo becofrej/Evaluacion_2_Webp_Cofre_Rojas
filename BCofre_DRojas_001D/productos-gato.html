@@ -1,699 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-      <!-- Fuente -->
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-      <!--  -->
-    <title>Productos para Gatos</title>
-  </head>
-  <body style="font-family: 'Roboto', sans-serif;">
-    <!-- NavBar -->
-    <header class="header">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light flex-grow-1">
-        <div
-          class="container d-flex justify-content-between align-items-center benja-custom-container"
-        >
-          <!-- Items IZQUIERDA -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <div class="benja-container">
-              <input
-                type="text"
-                name="text"
-                class="benja-input"
-                required=""
-                placeholder="Type to search..."
-              />
-              <div class="benja-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="ionicon"
-                  viewBox="0 0 512 512"
-                >
-                  <title>Search</title>
-                  <path
-                    d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-width="32"
-                  ></path>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
-                    stroke-width="32"
-                    d="M338.29 338.29L448 448"
-                  ></path>
-                </svg>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!--  -->
+  <title>Productos para Gatos</title>
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+  <!-- NavBar -->
+  <header class="header">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light flex-grow-1">
+      <div class="container d-flex justify-content-between align-items-center benja-custom-container">
+        <!-- Items IZQUIERDA -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <div class="benja-container">
+            <input type="text" name="text" class="benja-input" required="" placeholder="Type to search..." />
+            <div class="benja-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Search</title>
+                <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none"
+                  stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+                  d="M338.29 338.29L448 448"></path>
+              </svg>
             </div>
-          </ul>
-
-          <!-- Logo -->
-          <div class="logo-container">
-            <a class="navbar-brand" href="index.html">
-              <img class="logo" src="Media/logos/logo-nav.png" alt="Logo" />
-            </a>
           </div>
+        </ul>
 
-          <!-- Dropdown -->
-          <div class="dropdown">
-            <img
-              src="Media/perfil.png"
-              alt="Icono"
-              height="30"
-              class="dropdown-toggle"
-              id="dropdownMenuButton"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            />
-
-            <!-- Menú del dropdown -->
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li>
-                <a class="dropdown-item" href="ingresar.html"> Ingresar </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="registrarse.html"> Registrar </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Icono del carrito -->
-          <a
-            class="nav-link"
-            href="#"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <img
-              class="carrito"
-              src="Media/carrito.png"
-              alt="Carrito"
-              height="24"
-            />
+        <!-- Logo -->
+        <div class="logo-container">
+          <a class="navbar-brand" href="index.html">
+            <img class="logo" src="Media/logos/logo-nav.png" alt="Logo" />
           </a>
         </div>
-      </nav>
 
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <img src="Media/perfil.png" alt="Icono" height="41" class="dropdown-toggle" id="dropdownMenuButton"
+            data-bs-toggle="dropdown" aria-expanded="false" />
 
-      <!-- Offcanvas -->
-      <div
-        class="offcanvas offcanvas-end general-custom-canvas"
-        tabindex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body benja-custom-canvas">
-          <div class="d-flex">
-            <!-- Producto -->
-            <div class="card flex-grow-1 carta-benja">
-              <div class="card-body">
-                <img src="Media/card/card-bandanaPato.jpg" alt="" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title">$8.990</h5>
-              </div>
-            </div>
-            <div class="card flex-grow-1 carta-benja">
-              <div class="card-body">
-                <img src="Media/card/card-correaRosa50Liq.png" alt="" />
-              </div>
-              <div class="card-footer">
-                <h5 class="card-title">$5.995</h5>
-              </div>
-            </div>
-          </div>
-          <br />
-          <!-- Detalle -->
-          <h6>Productos en tu carrito:</h6>
-          <ul>
-            <li>Max & Molly – Bandana Ducklings - $8.990</li>
-            <li>Zeedog Correa Midnight Unisex - $5.995</li>
+          <!-- Menú del dropdown -->
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>
+              <a class="dropdown-item" href="ingresar.html"> Ingresar </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="registrarse.html"> Registrar </a>
+            </li>
           </ul>
-          <p>Total: $14.985</p>
-          <a href="carrito.html" class="btn btn-primary">Ir al carrito</a>
         </div>
-      </div>
-    </header>
 
-    <!-- Imagen de encabezado -->
-    <div class="imagen-productos">
-      <img src="media/productos/productos-gato.jpg" alt="" />
+        <!-- Icono del carrito -->
+        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <img class="carrito" src="Media/carrito.png" alt="Carrito" height="24" />
+        </a>
+      </div>
+    </nav>
+
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end general-custom-canvas" tabindex="-1" id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body benja-custom-canvas">
+        <div class="d-flex">
+          <!-- Producto -->
+          <div class="card flex-grow-1 carta-benja">
+            <div class="card-body">
+              <img src="Media/card/card-bandanaPato.jpg" alt="" />
+            </div>
+            <div class="card-footer">
+              <h5 class="card-title">$8.990</h5>
+            </div>
+          </div>
+          <div class="card flex-grow-1 carta-benja">
+            <div class="card-body">
+              <img src="Media/card/card-correaRosa50Liq.png" alt="" />
+            </div>
+            <div class="card-footer">
+              <h5 class="card-title">$5.995</h5>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!-- Detalle -->
+        <h6>Productos en tu carrito:</h6>
+        <ul>
+          <li>Max & Molly – Bandana Ducklings - $8.990</li>
+          <li>Zeedog Correa Midnight Unisex - $5.995</li>
+        </ul>
+        <p>Total: $14.985</p>
+        <a href="carrito.html" class="btn btn-primary">Ir al carrito</a>
+      </div>
     </div>
+  </header>
 
-    <br /><br /><br />
-    <!-- Productos -->
-    <h2 class="texto-producto">Alimentos Secos Para Gatos</h2>
-    <!-- Producto 1 -->
-    <div class="lista-productos">
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-proplanCatBomba.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Proplan Adulto Cat alimento para gato</h5>
-              <p class="card-text">
-                PURINA® PRO PLAN® Adult Optiprebio ofrece una nutrición
-                específica para gatos adultos promoviendo salud óptima y
-                bienestar general. Los gatos adultos necesitan una cantidad de
-                energía apropiada dependiendo del nivel de actividad.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">Oferta Web $37.990</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Imagen de encabezado -->
+  <div class="imagen-productos">
+    <img src="media/productos/productos-gato.jpg" alt="" />
+  </div>
 
-      <!-- Producto 2 -->
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-nathCat25.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Nath Cat adulto esterilizado sabor pollo y arroz alimento para
-                gatos
-              </h5>
-              <p class="card-text">
-                Comida para gatos esterilizados en edad adulta. Se ha elaborado
-                para satisfacer las necesidades nutricionales de estos felinos y
-                ayudarles a que se mantengan en su peso ideal. Elaborado a base
-                de pollo y arroz.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">Oferta Web $26.243</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
-          </div>
+  <br /><br /><br />
+  <!-- Productos -->
+  <h2 class="texto-producto">Alimentos Secos Para Gatos</h2>
+  <!-- Producto 1 -->
+  <div class="lista-productos">
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-proplanCatBomba.jpg" class="img-fluid rounded-start" alt="..." />
         </div>
-      </div>
-
-      <!-- Producto 3 -->
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-braveryCatAdult.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Bravery Salmon Adult Cat alimento para gato
-              </h5>
-              <p class="card-text">
-                Salmon Adult Cat de BRAVERY® Es un alimento con salmón para
-                gatos adultos con más de un año de edad. Libre de grano y
-                cereales, además, con pollo siempre como primer ingrediente y
-                enriquecido con antioxidantes hipoalergénicos 100% naturales.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">$22.990</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Producto 4 -->
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-leonardoCatAdult.png"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Leonardo Adult Duck alimento para gato</h5>
-              <p class="card-text">
-                Leonardo Adult Duck de LEONARDO® Es un alimento para gatos
-                adultos a partir de un año, apto también para gatos de pelo
-                largo. Es una variante de delicioso sabor para los gatos amantes
-                de la carne de ave. Además, la receta se ha mejorado con
-                semillas de chía y con sabroso krill.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">$27.990</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Producto 5 -->
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-leonardoCatLight.png"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Leonardo Adult Light alimento para gato
-              </h5>
-              <p class="card-text">
-                Leonardo Adult Light de LEONARDO® Es un alimento para gatos
-                adultos con sobrepeso o con tendencia a subir de peso. El exceso
-                de peso puede ser debido a una alimentación incorrecta por
-                demasiadas golosinas o a la presencia de hormonas tras una
-                castración.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">$27.990</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Producto 6 -->
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-tasteofCat.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Taste Of The Wild Low Land Creek</h5>
-              <p class="card-text">
-                La codorniz sin jaula y el pato sin jaula son proteínas
-                altamente digeribles, lo que hace que esta receta sea una dieta
-                ideal para el felino que anhela las aves. Un alimento para gatos
-                sin granos para todas las etapas de la vida, también presenta
-                probióticos para el soporte digestivo e inmune.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">Oferta Web $40.493</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Producto 7 -->
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-royalcaninCatIndoor.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Royal Canin adulto Indoor alimento para gato
-              </h5>
-              <p class="card-text">
-                Royal Canin Indoor favorece unas heces pequeñas, firmes y
-                considerablemente menos olorosas, mediante el uso de
-                ingredientes que actúan sobre la capacidad de retención acuosa
-                (zeolita y fibras insolubles) y sobre los olores fecales (FOS y
-                zeolita).
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">Oferta Web $52.990</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Producto 8 -->
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-hillCatAdult.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Hills Feline Adult Optimal Care Original alimento para gato
-              </h5>
-              <p class="card-text">
-                THILL'S® SCIENCE DIET® Optimal Care Original es un alimento
-                formulado para gatos adultos de 1-6 años de edad con un estilo
-                de vida activo. Este alimento contiene todos los nutrientes
-                necesarios, entre ellos ácidos grasos omega 6.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">$47.990</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Producto 9 -->
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-fitCatAdulto.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Fit Formula Gato Adulto alimento para gato
-              </h5>
-              <p class="card-text">
-                FIT FORMULA® Gato Adulto, es un alimento completo y balanceado
-                desarrollado con ingredientes de alta digestibilidad,
-                garantizandole satisfacción a todos los requerimientos
-                nutricionales de su gato desde su primer año de vida.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">$24.792</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Producto 10 -->
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-royalcaninSavourCat.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Royal Canin adulto Exigent alimento para gato
-              </h5>
-              <p class="card-text">
-                Royal Canin Exigent es un alimento completo para el gato con
-                apetito muy exigente con una preferencia natural por el sabor.
-                Con dos croquetas diferentes que actúan en sinergia para
-                satisfacer el apetito del gato más caprichoso. Además, su aporte
-                de energía es moderado.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">$19.990</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Producto 11 -->
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-royalcaninPersianAdult.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Royal Canin adulto persian 1.5 KG alimento para gato
-              </h5>
-              <p class="card-text">
-                Royal Canin Persian revela la belleza del pelaje largo y denso
-                del Persa gracias al complejo “Beauty Shine Complex” que limita
-                la irritación de la piel, refuerza la función “barrera” de la
-                piel e intensifica el color, el brillo y la suavidad del pelaje
-                de tu compañero felino.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">$21.990</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Producto 12 -->
-      <div class="card mb-3 david-custom-products" style="max-width: 540px">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="media/card/card-royalcaninCatSensible.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Royal Canin adulto Sensible alimento para gato 7,5KG
-              </h5>
-              <p class="card-text">
-                Royal Canin Sensible está especialmente formulado con proteínas
-                altamente digestibles. El uso de proteínas de alta
-                digestibilidad ayuda a disminuir el nivel de proteína
-                indigestible en la dieta, favoreciendo a una mejor digestión.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary">Oferta Web $50.993</small>
-              </p>
-              <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
-            </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Proplan Adulto Cat alimento para gato</h5>
+            <p class="card-text">
+              PURINA® PRO PLAN® Adult Optiprebio ofrece una nutrición
+              específica para gatos adultos promoviendo salud óptima y
+              bienestar general. Los gatos adultos necesitan una cantidad de
+              energía apropiada dependiendo del nivel de actividad.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Oferta Web $37.990</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Salto de línea -->
-    <br /><br /><br />
-    <!-- Salto de línea -->
-
-    <!-- FOOTER -->
-    <footer
-      class="text-center text-lg-start text-white"
-      style="background-color: #333333"
-    >
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row my-4">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <div
-              class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
-              style="width: 150px; height: 150px"
-            >
-              <img
-                src="media/logos/logo-footer.png"
-                height="105"
-                alt=""
-                loading="lazy"
-              />
-            </div>
-            <p class="text-center"></p>
-
-            <ul class="list-unstyled d-flex flex-row justify-content-center">
-              <li>
-                <a class="text-white px-2" href="#!">
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-              </li>
-              <li>
-                <a class="text-white px-2" href="#!">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a class="text-white ps-2" href="#!">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">¿Quiénes Somos?</h5>
-
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3">Nuestra Organización</i></a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Miembros</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>¿Tu mascota está perdida?</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>¿Quieres adoptar?</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Animales en adopción</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Donaciones</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Créditos</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">Redes Sociales</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>¡Chatea con nosotros!</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Facebook</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Instagram</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="#!" class="text-white"
-                  ><i class="fas fa-paw pe-3"></i>Telegram</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">contacto</h5>
-            <ul class="list-unstyled">
-              <li>
-                <p>
-                  <i class="fas fa-map-marker-alt pe-2"></i>Av. Vicuña Mackenna
-                  4917, San Joaquín.
-                </p>
-              </li>
-              <li>
-                <p><i class="fas fa-phone pe-2"></i>+56 9 3142 6758</p>
-              </li>
-              <li>
-                <p>
-                  <i class="fas fa-envelope pe-2 mb-0"></i>disennoweb@duocuc.cl
-                </p>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
+    <!-- Producto 2 -->
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-nathCat25.jpg" class="img-fluid rounded-start" alt="..." />
         </div>
-        <!--Grid row-->
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              Nath Cat adulto esterilizado sabor pollo y arroz alimento para
+              gatos
+            </h5>
+            <p class="card-text">
+              Comida para gatos esterilizados en edad adulta. Se ha elaborado
+              para satisfacer las necesidades nutricionales de estos felinos y
+              ayudarles a que se mantengan en su peso ideal. Elaborado a base
+              de pollo y arroz.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Oferta Web $26.243</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+          </div>
+        </div>
       </div>
-      <!-- Grid container -->
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2024 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
-        >
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-braveryCatAdult.jpg" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              Bravery Salmon Adult Cat alimento para gato
+            </h5>
+            <p class="card-text">
+              Salmon Adult Cat de BRAVERY® Es un alimento con salmón para
+              gatos adultos con más de un año de edad. Libre de grano y
+              cereales, además, con pollo siempre como primer ingrediente y
+              enriquecido con antioxidantes hipoalergénicos 100% naturales.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$22.990</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+          </div>
+        </div>
       </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- End of .container -->
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-leonardoCatAdult.png" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Leonardo Adult Duck alimento para gato</h5>
+            <p class="card-text">
+              Leonardo Adult Duck de LEONARDO® Es un alimento para gatos
+              adultos a partir de un año, apto también para gatos de pelo
+              largo. Es una variante de delicioso sabor para los gatos amantes
+              de la carne de ave. Además, la receta se ha mejorado con
+              semillas de chía y con sabroso krill.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$27.990</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Producto 5 -->
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-leonardoCatLight.png" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              Leonardo Adult Light alimento para gato
+            </h5>
+            <p class="card-text">
+              Leonardo Adult Light de LEONARDO® Es un alimento para gatos
+              adultos con sobrepeso o con tendencia a subir de peso. El exceso
+              de peso puede ser debido a una alimentación incorrecta por
+              demasiadas golosinas o a la presencia de hormonas tras una
+              castración.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$27.990</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Producto 6 -->
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-tasteofCat.jpg" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Taste Of The Wild Low Land Creek</h5>
+            <p class="card-text">
+              La codorniz sin jaula y el pato sin jaula son proteínas
+              altamente digeribles, lo que hace que esta receta sea una dieta
+              ideal para el felino que anhela las aves. Un alimento para gatos
+              sin granos para todas las etapas de la vida, también presenta
+              probióticos para el soporte digestivo e inmune.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Oferta Web $40.493</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Producto 7 -->
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-royalcaninCatIndoor.jpg" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              Royal Canin adulto Indoor alimento para gato
+            </h5>
+            <p class="card-text">
+              Royal Canin Indoor favorece unas heces pequeñas, firmes y
+              considerablemente menos olorosas, mediante el uso de
+              ingredientes que actúan sobre la capacidad de retención acuosa
+              (zeolita y fibras insolubles) y sobre los olores fecales (FOS y
+              zeolita).
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Oferta Web $52.990</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Producto 8 -->
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-hillCatAdult.jpg" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              Hills Feline Adult Optimal Care Original alimento para gato
+            </h5>
+            <p class="card-text">
+              THILL'S® SCIENCE DIET® Optimal Care Original es un alimento
+              formulado para gatos adultos de 1-6 años de edad con un estilo
+              de vida activo. Este alimento contiene todos los nutrientes
+              necesarios, entre ellos ácidos grasos omega 6.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$47.990</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Producto 9 -->
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-fitCatAdulto.jpg" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              Fit Formula Gato Adulto alimento para gato
+            </h5>
+            <p class="card-text">
+              FIT FORMULA® Gato Adulto, es un alimento completo y balanceado
+              desarrollado con ingredientes de alta digestibilidad,
+              garantizandole satisfacción a todos los requerimientos
+              nutricionales de su gato desde su primer año de vida.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$24.792</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Producto 10 -->
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-royalcaninSavourCat.jpg" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              Royal Canin adulto Exigent alimento para gato
+            </h5>
+            <p class="card-text">
+              Royal Canin Exigent es un alimento completo para el gato con
+              apetito muy exigente con una preferencia natural por el sabor.
+              Con dos croquetas diferentes que actúan en sinergia para
+              satisfacer el apetito del gato más caprichoso. Además, su aporte
+              de energía es moderado.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$19.990</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Producto 11 -->
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-royalcaninPersianAdult.jpg" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              Royal Canin adulto persian 1.5 KG alimento para gato
+            </h5>
+            <p class="card-text">
+              Royal Canin Persian revela la belleza del pelaje largo y denso
+              del Persa gracias al complejo “Beauty Shine Complex” que limita
+              la irritación de la piel, refuerza la función “barrera” de la
+              piel e intensifica el color, el brillo y la suavidad del pelaje
+              de tu compañero felino.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$21.990</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Producto 12 -->
+    <div class="card mb-3 david-custom-products" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="media/card/card-royalcaninCatSensible.jpg" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              Royal Canin adulto Sensible alimento para gato 7,5KG
+            </h5>
+            <p class="card-text">
+              Royal Canin Sensible está especialmente formulado con proteínas
+              altamente digestibles. El uso de proteínas de alta
+              digestibilidad ayuda a disminuir el nivel de proteína
+              indigestible en la dieta, favoreciendo a una mejor digestión.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Oferta Web $50.993</small>
+            </p>
+            <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Salto de línea -->
+  <br /><br /><br />
+  <!-- Salto de línea -->
+
+  <!-- FOOTER -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #333333">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div
+            class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+            style="width: 150px; height: 150px">
+            <img src="media/logos/logo-footer.png" height="105" alt="" loading="lazy" />
+          </div>
+          <p class="text-center"></p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">¿Quiénes Somos?</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3">Nuestra Organización</i></a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Miembros</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>¿Tu mascota está perdida?</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>¿Quieres adoptar?</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Animales en adopción</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Donaciones</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Créditos</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Redes Sociales</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>¡Chatea con nosotros!</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Facebook</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Instagram</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Telegram</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">contacto</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fas fa-map-marker-alt pe-2"></i>Av. Vicuña Mackenna
+                4917, San Joaquín.
+              </p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2"></i>+56 9 3142 6758</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-envelope pe-2 mb-0"></i>disennoweb@duocuc.cl
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2024 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- End of .container -->
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

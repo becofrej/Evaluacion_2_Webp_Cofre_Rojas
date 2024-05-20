@@ -1,8 +1,8 @@
-body{
+body {
   background-image: url("Media/background/body-background.png");
 }
 
-.general-custom-canvas{
+.general-custom-canvas {
   background-image: url("Media/background/background-canvas.png");
 }
 
@@ -19,12 +19,14 @@ body{
 }
 
 .modal-content {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombreado con color gris claro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  /* Sombreado con color gris claro */
 }
 
 .benja-custom-card-form,
 .benja-custom-card-sub {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombreado con color gris claro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  /* Sombreado con color gris claro */
 }
 
 .benja-custom-container a {
@@ -62,8 +64,8 @@ nav {
 }
 
 .carrito {
-  height: 40px;
-  width: 40px;
+  height: 52px;
+  width: 52px;
   margin-left: 13px;
 }
 
@@ -126,8 +128,8 @@ nav {
     inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
 }
 
-.benja-input:focus + .benja-icon,
-.benja-input:not(:invalid) + .benja-icon {
+.benja-input:focus+.benja-icon,
+.benja-input:not(:invalid)+.benja-icon {
   pointer-events: all;
   cursor: pointer;
 }
@@ -150,7 +152,8 @@ nav {
 .custom-card-sub {
   text-align: center;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombreado con color gris claro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  /* Sombreado con color gris claro */
 }
 
 .carta-carrito {
@@ -192,13 +195,15 @@ nav {
   left: 0;
   width: 100%;
   height: 80px;
-  background: linear-gradient(to bottom, rgba(194, 98, 9, 0), #b7b8b8); /* Gradiente lineal de transparente a blanco */
+  background: linear-gradient(to bottom, rgba(194, 98, 9, 0), #b7b8b8);
+  /* Gradiente lineal de transparente a blanco */
 }
 
 /* ------------------------------------------------------ */
 /* (Index) Estilizado Cards Group */
 .david-custom-card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /*sombreado*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  /*sombreado*/
 }
 
 /* Imagenes de las Tarjetas */
@@ -216,19 +221,23 @@ nav {
 .texto-producto {
   margin-left: 200px;
 }
+
 .lista-productos {
   margin-left: 150px;
   margin-right: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  
+
 }
 
 .david-custom-products {
-  flex: 1 1 300px; /* ancho minimo y maximo*/
-  margin: 50px; /* espacio entre productos */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /*sombreado*/
+  flex: 1 1 300px;
+  /* ancho minimo y maximo*/
+  margin: 50px;
+  /* espacio entre productos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  /*sombreado*/
 }
 
 .david-custom-products img {
@@ -237,11 +246,11 @@ nav {
 }
 
 /* Formulario */
-.benja-custom-form-group{
+.benja-custom-form-group {
   margin: 20px;
 }
 
-.benja-custom-form-group label{
+.benja-custom-form-group label {
   padding: 5px;
 }
 
@@ -252,11 +261,11 @@ nav {
   margin-top: 50px;
 }
 
-.benja-custom-card-sub button{
+.benja-custom-card-sub button {
   width: auto;
 }
 
-.benja-custom-carrito img{
+.benja-custom-carrito img {
   height: 200px;
   width: 200px;
 }
