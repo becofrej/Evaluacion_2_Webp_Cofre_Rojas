@@ -287,7 +287,7 @@ nav {
   width: 200px;
 }
 
-/* Estilos para el breadcrumb */
+/* estilos breadcrum */
 .breadcrumb {
   display: flex;
   justify-content: left; /*ajustar posición a la izquierda*/
@@ -296,3 +296,19 @@ nav {
   background-color: #f8f9fa; /* fondo */
   
 }
+
+/*estilos productos dentro del acrrito*/
+#cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+/*estilos para los elementos dentro del carrito*/
+#cart-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
