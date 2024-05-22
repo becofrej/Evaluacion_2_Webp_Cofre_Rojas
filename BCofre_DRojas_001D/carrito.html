@@ -85,6 +85,14 @@
       </div>
     </nav>
 
+    <!-- Breadcrumb -->
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Carrito</li>
+      </ol>
+    </nav>
+
     <!-- Offcanvas -->
     <div class="offcanvas offcanvas-end general-custom-canvas" tabindex="-1" id="offcanvasRight"
       aria-labelledby="offcanvasRightLabel">
@@ -93,33 +101,12 @@
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body benja-custom-canvas">
-        <div class="d-flex">
-          <!-- Producto -->
-          <div class="card flex-grow-1 carta-benja">
-            <div class="card-body">
-              <img src="Media/card/card-bandanaPato.jpg" alt="" />
-            </div>
-            <div class="card-footer">
-              <h5 class="card-title">$8.990</h5>
-            </div>
-          </div>
-          <div class="card flex-grow-1 carta-benja">
-            <div class="card-body">
-              <img src="Media/card/card-correaRosa50Liq.png" alt="" />
-            </div>
-            <div class="card-footer">
-              <h5 class="card-title">$5.995</h5>
-            </div>
-          </div>
-        </div>
+        <div id="cart-items"></div>
         <br />
         <!-- Detalle -->
-        <h6>Productos en tu carrito:</h6>
-        <ul>
-          <li>Max & Molly Bandana Ducklings - $8.990</li>
-          <li>Zeedog Correa Midnight - $5.995</li>
-        </ul>
-        <p>Total: $14.985</p>
+        <h4>Productos en tu carrito:</h4>
+        <ul id="cart-list"></ul>
+        <p id="cart-total">Total: $0</p>
         <a href="carrito.html" class="btn btn-primary">Ir al carrito</a>
       </div>
     </div>
