@@ -286,3 +286,13 @@ nav {
   height: 200px;
   width: 200px;
 }
+
+/* Estilos para el breadcrumb */
+.breadcrumb {
+  display: flex;
+  justify-content: left; /*ajustar posición a la izquierda*/
+  margin: 20px 0; /*margen superior e inferior */
+  margin-left: 11%; /* margen izquierdo */
+  background-color: #f8f9fa; /* fondo */
+  
+}
