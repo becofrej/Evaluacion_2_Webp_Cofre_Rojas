@@ -23,8 +23,8 @@ function renderCart() {
         cartList.appendChild(listItem);//añadir nombre y precio del producto al carrito
         total += item.price;//suma de los precios de los productos
     });
-
-
+        //total del carrito
+        cartTotal.textContent = `Total: $${total}`;
 }
 
 //función agregar producto al carrito
