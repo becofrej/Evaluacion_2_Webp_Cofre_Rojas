@@ -9,7 +9,7 @@ def pagPerros(request):
     return render(request, 'productos/productos-perro.html')
 
 def pagGatos(request):
-    return render(request, 'productos/productos-gatos.html')
+    return render(request, 'productos/productos-gato.html')
 
 def pagAccesorios(request):
     return render(request, 'productos/productos-accesorios.html')

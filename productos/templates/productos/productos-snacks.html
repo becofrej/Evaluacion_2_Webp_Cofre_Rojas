@@ -1,424 +1,461 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'productos/plantilla.html' %} {% block contenido %} {% load static %}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="Media/logos/Logo_Principal_sin_fondo.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <!-- Fuente -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!--  -->
-  <title>Productos para Gatos</title>
-</head>
+<!-- Imagen de encabezado -->
+<div class="imagen-productos">
+  <img src="Media/productos/banner-productos-snack.jpg" alt="" />
+</div>
 
-<body style="font-family: 'Roboto', sans-serif;">
-  <!-- NavBar -->
-  <header class="header">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light flex-grow-1">
-      <div class="container d-flex justify-content-between align-items-center benja-custom-container">
-        <!-- Items IZQUIERDA -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <div class="benja-container">
-            <input type="text" name="text" class="benja-input" required="" placeholder="Type to search..." />
-            <div class="benja-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                <title>Search</title>
-                <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none"
-                  stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
-                  d="M338.29 338.29L448 448"></path>
-              </svg>
-            </div>
-          </div>
-        </ul>
+<!-- Breadcrumb -->
+<nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Snacks</li>
+  </ol>
+</nav>
 
-        <!-- Logo -->
-        <div class="logo-container">
-          <a class="navbar-brand" href="index.html">
-            <img class="logo" src="Media/logos/Logo_Principal_sin_fondo.png" alt="Logo" />
-          </a>
-        </div>
-
-        <!-- Items Derecha - Inicia -->
-        <div class="d-flex align-items-center">
-          <!-- Dropdown productos -->
-          <div class="dropdown me-2">
-            <a class="btn btn-secondary dropdown-toggle drop-productos" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Productos
-            </a>
-            <!-- Menú del dropdown -->
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="productos-perro.html">Alimentos Secos Perros</a></li>
-              <li><a class="dropdown-item" href="productos-gato.html">Alimentos Secos Gatos</a></li>
-              <li><a class="dropdown-item" href="productos-accesorios.html">Accesorios Mascotas</a></li>
-              <li><a class="dropdown-item" href="productos-snacks.html">Snacks</a></li>
-            </ul>
-          </div>
-
-        <!-- Dropdown perfil -->
-        <div class="dropdown">
-          <img src="Media/perfil.png" alt="Icono" height="41" class="dropdown-toggle" id="dropdownMenuButton"
-            data-bs-toggle="dropdown" aria-expanded="false" />
-
-          <!-- Menú del dropdown -->
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li>
-              <a class="dropdown-item" href="ingresar.html"> Ingresar </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="registrarse.html"> Registrar </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Icono del carrito -->
-        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight">
-          <img class="carrito" src="Media/carrito.png" alt="Carrito" height="24" />
-        </a>
-      </div>
-    </nav>
-
-
-    <!-- Offcanvas -->
-    <div class="offcanvas offcanvas-end general-custom-canvas" tabindex="-1" id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body benja-custom-canvas">
-        <div id="cart-items"></div>
-        <br />
-        <!-- Detalle -->
-        <h4>Productos en tu carrito:</h4>
-        <ul id="cart-list"></ul>
-        <p id="cart-total">Total: $0</p>
-        <a href="carrito.html" class="btn btn-primary">Ir al carrito</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Imagen de encabezado -->
-  <div class="imagen-productos">
-    <img src="Media/productos/banner-productos-snack.jpg" alt="" />
-  </div>
-
-  <!-- Breadcrumb -->
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Snacks</li>
-    </ol>
-  </nav>
-
-  <!-- Productos -->
-  <h2 class="texto-producto">Snacks Para Tu Mascota</h2>
+<!-- Productos -->
+<h2 class="texto-producto">Snacks Para Tu Mascota</h2>
 <div id="Productos Snack">
   <!-- Producto 43 -->
   <div class="lista-productos">
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="43" data-name="Dingo Dental Stick Huesitos" data-price="10990">
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="43"
+      data-name="Dingo Dental Stick Huesitos"
+      data-price="10990"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="Media/card/card-dingoSnackDog4x3.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="Media/card/card-dingoSnackDog4x3.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">Dingo Dental Stick Huesitos 48 pk</h5>
             <p class="card-text">
-                Dingo® combina potentes sabores y beneficios para crear huesos masticables y golosinas que mantendrán a tu perro queriendo más. 
-                Está hecho en base a carne real y cuero crudo altamente digerible, conservando como siempre, 
-                el mismo gran sabor que tu perro conoce y aman.
-                
+              Dingo® combina potentes sabores y beneficios para crear huesos
+              masticables y golosinas que mantendrán a tu perro queriendo más.
+              Está hecho en base a carne real y cuero crudo altamente digerible,
+              conservando como siempre, el mismo gran sabor que tu perro conoce
+              y aman.
             </p>
             <p class="card-text">
               <small class="text-body-secondary">Oferta Web $10.990</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
     </div>
 
     <!-- Producto 44 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="44" data-name="Catit Creamy Atun Snack para gatos" data-price="2890">
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="44"
+      data-name="Catit Creamy Atun Snack para gatos"
+      data-price="2890"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="Media/card/card-catitCreamy.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="Media/card/card-catitCreamy.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">
-                Catit Creamy Atun Snack para gatos 40 GR
-            </h5>
+            <h5 class="card-title">Catit Creamy Atun Snack para gatos 40 GR</h5>
             <p class="card-text">
-                Catit Creamy Atún es un snack para gatos nutritivo, 
-                hecho con ingredientes de calidad y con nutrientes esenciales, 
-                rico en aminoácidos y con un alto contenido de proteina.
-                Podrás servirlo en un plato o dárselo a tu gato directamente del tubo.
+              Catit Creamy Atún es un snack para gatos nutritivo, hecho con
+              ingredientes de calidad y con nutrientes esenciales, rico en
+              aminoácidos y con un alto contenido de proteina. Podrás servirlo
+              en un plato o dárselo a tu gato directamente del tubo.
             </p>
-            <br><br>
+            <br /><br />
             <p class="card-text">
               <small class="text-body-secondary">Oferta Web $2.890</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
     </div>
 
     <!-- Producto 45 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="45" data-name="Churu Perro 8p Pollo con Atún" data-price="5990">
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="45"
+      data-name="Churu Perro 8p Pollo con Atún"
+      data-price="5990"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="media/card/card-churruPerro19.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="media/card/card-churruPerro19.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">
-                Churu Perro 8p Pollo con Atún 20GR x 8 160CGR
+              Churu Perro 8p Pollo con Atún 20GR x 8 160CGR
             </h5>
             <p class="card-text">
-                Inaba Churu para perros están hechas con pollo de granja 100% puro y natural!
-                Disponible en cinco deliciosas variedades, Churu® Purées tiene un alto 
-                contenido de humedad que los caninos necesitan para la salud.
-                <br><br><br>
+              Inaba Churu para perros están hechas con pollo de granja 100% puro
+              y natural! Disponible en cinco deliciosas variedades, Churu®
+              Purées tiene un alto contenido de humedad que los caninos
+              necesitan para la salud.
+              <br /><br /><br />
             </p>
-            <br>
+            <br />
             <p class="card-text">
               <small class="text-body-secondary">Oferta Web $5.990</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
     </div>
 
     <!-- Producto 46 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="46" data-name="Vitakraft Snack Cat Yums Queso" data-price="2790">
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="46"
+      data-name="Vitakraft Snack Cat Yums Queso"
+      data-price="2790"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="media/card/card-cikakraftYums.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="media/card/card-cikakraftYums.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">Vitakraft Snack Cat Yums Queso 40 GR</h5>
             <p class="card-text">
-                Los Cat Yums® extra carnosos con queso tentador están elaborados en un proceso único - 
-                con los mejores ingredientes y según una receta sin azúcar. Lo que tiene de especial: 
-                cada bocadillo se rellena deliciosamente y se cocina suavemente en el horno. 
+              Los Cat Yums® extra carnosos con queso tentador están elaborados
+              en un proceso único - con los mejores ingredientes y según una
+              receta sin azúcar. Lo que tiene de especial: cada bocadillo se
+              rellena deliciosamente y se cocina suavemente en el horno.
             </p>
-            <br>
+            <br />
             <p class="card-text">
               <small class="text-body-secondary">Oferta Web $2.790</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
     </div>
     <!-- Producto 47 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="47" data-name="Qchefs Dental Granulado Gato" data-price="10990">
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="47"
+      data-name="Qchefs Dental Granulado Gato"
+      data-price="10990"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="media/card/card-dentalFitness.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="media/card/card-dentalFitness.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">
-              Qchefs Dental Granulado Gato (80 GR)
-            </h5>
+            <h5 class="card-title">Qchefs Dental Granulado Gato (80 GR)</h5>
             <p class="card-text">
-                QCHEFS DENTAL GRANULADO GATO es un aderezo granulado para gatos en base a proteína de queso, 
-                formulado para mantener la salud dental de tu gato impecable. 
-                Áctua directamente en la placa bacteriana en forma natural gracias 
-                a los procesos químicos producidos por la saliva y la proteína de queso.
+              QCHEFS DENTAL GRANULADO GATO es un aderezo granulado para gatos en
+              base a proteína de queso, formulado para mantener la salud dental
+              de tu gato impecable. Áctua directamente en la placa bacteriana en
+              forma natural gracias a los procesos químicos producidos por la
+              saliva y la proteína de queso.
             </p>
             <p class="card-text">
               <small class="text-body-secondary">Oferta Web $10.990</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
     </div>
     <!-- Producto 48 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="48" data-name="Naturalistic Protein Rich Meatballs" data-price="3290">
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="48"
+      data-name="Naturalistic Protein Rich Meatballs"
+      data-price="3290"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="media/card/card-naturalisticMeatBalls19.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="media/card/card-naturalisticMeatBalls19.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Naturalistic Protein Rich Meatballs sabor pato y manzana snack para perros 100 GR</h5>
+            <h5 class="card-title">
+              Naturalistic Protein Rich Meatballs sabor pato y manzana snack
+              para perros 100 GR
+            </h5>
             <p class="card-text">
-                mMatballs Pato&Manzana son snack para perros con forma de albóndiga
-                y sabroso sabor a pato y manzana. Este delicioso snack para perros 
-                ha sido elaborado a base de proteína de carne de pato de alta calidad.
+              mMatballs Pato&Manzana son snack para perros con forma de
+              albóndiga y sabroso sabor a pato y manzana. Este delicioso snack
+              para perros ha sido elaborado a base de proteína de carne de pato
+              de alta calidad.
             </p>
-            <br>
+            <br />
             <p class="card-text">
               <small class="text-body-secondary">Oferta Web $3.290</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
     </div>
     <!-- Producto 49 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="49" data-name="Snack en Forma de Hamburguesa" data-price="3290">
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="49"
+      data-name="Snack en Forma de Hamburguesa"
+      data-price="3290"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="media/card/card-naturalisticGrill19.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="media/card/card-naturalisticGrill19.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">
-                Snack en Forma de Hamburguesa con carne de Vacuno y bbq 120 GR
+              Snack en Forma de Hamburguesa con carne de Vacuno y bbq 120 GR
             </h5>
             <p class="card-text">
-                TASTY BEEF BURGER WITH BBQ son snack para perros con forma de hamburguesa
-                 y sabroso sabor a vacuno y barbacoa (salsa BBQ). Este delicioso snack
-                  para perros ha sido elaborado a base de proteína de carne de vacuno de alta calidad.
+              TASTY BEEF BURGER WITH BBQ son snack para perros con forma de
+              hamburguesa y sabroso sabor a vacuno y barbacoa (salsa BBQ). Este
+              delicioso snack para perros ha sido elaborado a base de proteína
+              de carne de vacuno de alta calidad.
             </p>
             <p class="card-text">
               <small class="text-body-secondary">Oferta Web $3.290</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
     </div>
     <!-- Producto 50 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="50" data-name="Rahue Jerky Proteina de Vacuno" data-price="47990">
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="50"
+      data-name="Rahue Jerky Proteina de Vacuno"
+      data-price="47990"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="media/card/card-rahuePerro19.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="media/card/card-rahuePerro19.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">
-                Rahue Jerky Proteina de Vacuno 250 GR
-            </h5>
+            <h5 class="card-title">Rahue Jerky Proteina de Vacuno 250 GR</h5>
             <p class="card-text">
-                Deliciosos trozos naturales de vacuno, libre de preservantes y colorantes;
-                ingredientes limitados para perro de todas las edades y tamaños, secado 
-                lentamente con aire tibio para conservar su sabor y propiedades nutritivas.
+              Deliciosos trozos naturales de vacuno, libre de preservantes y
+              colorantes; ingredientes limitados para perro de todas las edades
+              y tamaños, secado lentamente con aire tibio para conservar su
+              sabor y propiedades nutritivas.
+            </p>
+
             <p class="card-text">
-                <br><br>
+              <br /><br />
               <small class="text-body-secondary">Oferta Web $47.990</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
     </div>
     <!-- Producto 51 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="51" data-name="Orijen Six Fish Cat Treats" data-price="7990">
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="51"
+      data-name="Orijen Six Fish Cat Treats"
+      data-price="7990"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="media/card/card-sixFish.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="media/card/card-sixFish.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">
-              Orijen Six Fish Cat Treats snack 35g
-            </h5>
+            <h5 class="card-title">Orijen Six Fish Cat Treats snack 35g</h5>
             <p class="card-text">
-                Orijen® Six Fish Treats Son snacks de calidad ultra premium. 
-                Hechos para regalonear a tu gato con una elaboración cuidadosa 
-                al tener ingredientes frescos directos de Canadá, libre de aditivos, conservantes, colorantes y hecho con carne fresca 100% natura.
+              Orijen® Six Fish Treats Son snacks de calidad ultra premium.
+              Hechos para regalonear a tu gato con una elaboración cuidadosa al
+              tener ingredientes frescos directos de Canadá, libre de aditivos,
+              conservantes, colorantes y hecho con carne fresca 100% natura.
             </p>
             <p class="card-text">
               <small class="text-body-secondary">$7.990</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
     </div>
     <!-- Producto 52 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="52" data-name="SuniChups Skin & Coat" data-price="2190">
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="52"
+      data-name="SuniChups Skin & Coat"
+      data-price="2190"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="media/card/card-sunipetSuniChups19.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="media/card/card-sunipetSuniChups19.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">
-                SuniChups Skin & Coat - Snack funcional para gatos 56 GR
+              SuniChups Skin & Coat - Snack funcional para gatos 56 GR
             </h5>
             <p class="card-text">
-                SuniChups Skin & Coat sabor pollo y salmón. Es un suplemento 
-                en forma de snack super cremoso y saludable, 
-                con alto contenido de agua para gatos, que provee los aceites grasos esenciales OMEGA 3.
+              SuniChups Skin & Coat sabor pollo y salmón. Es un suplemento en
+              forma de snack super cremoso y saludable, con alto contenido de
+              agua para gatos, que provee los aceites grasos esenciales OMEGA 3.
             </p>
-            <br>
+            <br />
             <p class="card-text">
               <small class="text-body-secondary">$2.190</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
     </div>
     <!-- Producto 53 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="53" data-name="Cat Treats Roasted Turkey" data-price="2990">
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="53"
+      data-name="Cat Treats Roasted Turkey"
+      data-price="2990"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="media/card/card-snackToastedTurkey.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="media/card/card-snackToastedTurkey.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">
-                Cat Treats Roasted Turkey
-            </h5>
-            <br><br><br>
+            <h5 class="card-title">Cat Treats Roasted Turkey</h5>
+            <br /><br /><br />
             <p class="card-text">
-                El cuerpo de los gatos está acostumbrado a comer carne de verdad. 
-                Mejora la salud y el bienestar general de tu gato con nuestros deliciosos y 
-                nutritivos Cat Treats Roasted Turkey.
+              El cuerpo de los gatos está acostumbrado a comer carne de verdad.
+              Mejora la salud y el bienestar general de tu gato con nuestros
+              deliciosos y nutritivos Cat Treats Roasted Turkey.
             </p>
-            <br>
+            <br />
             <p class="card-text">
               <small class="text-body-secondary">Oferta Web $2.990</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
     </div>
     <!-- Producto 54 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="54" data-name="Churu para Gato Sabor Pollo" data-price="5662"> 
+    <div
+      class="card mb-3 david-custom-products"
+      style="max-width: 540px"
+      data-id="54"
+      data-name="Churu para Gato Sabor Pollo"
+      data-price="5662"
+    >
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="media/card/card-snackChuruQueso.jpg" class="img-fluid rounded-start" alt="..." />
+          <img
+            src="media/card/card-snackChuruQueso.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">
-              Churu para Gato Sabor Pollo 190 GR
-            </h5>
-            <br>
+            <h5 class="card-title">Churu para Gato Sabor Pollo 190 GR</h5>
+            <br />
             <p class="card-text">
-                ¡Estos sabrosos snacks para gatos se hacen con atún silvestre 
-                o pollo criado en granjas puro y natural! Disponibles en nueve variedades deliciosas, l
-                os Churu® Purés tienen el alto contenido de humedad necesario para la salud de los felinos. 
+              ¡Estos sabrosos snacks para gatos se hacen con atún silvestre o
+              pollo criado en granjas puro y natural! Disponibles en nueve
+              variedades deliciosas, l os Churu® Purés tienen el alto contenido
+              de humedad necesario para la salud de los felinos.
             </p>
             <p class="card-text">
               <small class="text-body-secondary">$5.662</small>
             </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
+            <a href="#" class="btn btn-primary mt-auto add-to-cart"
+              >Agregar al carrito</a
+            >
           </div>
         </div>
       </div>
@@ -426,136 +463,4 @@
   </div>
 </div>
 
-  <!-- Salto de línea -->
-  <br /><br /><br />
-  <!-- Salto de línea -->
-
-  <!-- FOOTER -->
-  <footer class="text-center text-lg-start text-white" style="background-color: #333333">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row my-4">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <div
-            class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
-            style="width: 150px; height: 150px">
-            <img src="media/logos/Logo_Principal_sin_fondo.png" height="105" alt="" loading="lazy" />
-          </div>
-          <p class="text-center"></p>
-
-          <ul class="list-unstyled d-flex flex-row justify-content-center">
-            <li>
-              <a class="text-white px-2" href="#!">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-            <li>
-              <a class="text-white px-2" href="#!">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a class="text-white ps-2" href="#!">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">¿Quiénes Somos?</h5>
-
-          <ul class="list-unstyled">
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3">Nuestra Organización</i></a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Miembros</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>¿Tu mascota está perdida?</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>¿Quieres adoptar?</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Animales en adopción</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Donaciones</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Créditos</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Redes Sociales</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>¡Chatea con nosotros!</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Facebook</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Instagram</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Telegram</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">contacto</h5>
-          <ul class="list-unstyled">
-            <li>
-              <p>
-                <i class="fas fa-map-marker-alt pe-2"></i>Av. Vicuña Mackenna
-                4917, San Joaquín.
-              </p>
-            </li>
-            <li>
-              <p><i class="fas fa-phone pe-2"></i>+56 9 3142 6758</p>
-            </li>
-            <li>
-              <p>
-                <i class="fas fa-envelope pe-2 mb-0"></i>disennoweb@duocuc.cl
-              </p>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </div>
-    <!-- Grid container -->
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2024 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- End of .container -->
-  <!-- SCRIPTS -->
-  <script src="carrito.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
+{% endblock %}
