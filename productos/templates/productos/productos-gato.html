@@ -1,325 +1,46 @@
 {% extends 'productos/plantilla.html' %} {% block contenido %} {% load static %}
 
-
-
-  <!-- Imagen de encabezado -->
-  <div class="imagen-productos">
-    <img src="media/productos/productos-gato.jpg" alt="" />
-  </div>
+<!-- Imagen de encabezado -->
+<div class="imagen-productos">
+  <img src="media/productos/productos-gato.jpg" alt="" />
+</div>
 <!-- Breadcrumb -->
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Gatos</li>
-    </ol>
-  </nav>
+<nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Gatos</li>
+  </ol>
+</nav>
 
-  <!-- Productos -->
-  <h2 class="texto-producto">Alimentos Secos Para Gatos</h2>
-  <!-- Producto 1 -->
-  <div class="lista-productos">
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="1" data-name="Proplan Adulto Cat" data-price="37990">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-proplanCatBomba.jpg" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Proplan Adulto Cat alimento para gato</h5>
-            <p class="card-text">
-              PURINA® PRO PLAN® Adult Optiprebio ofrece una nutrición
-              específica para gatos adultos promoviendo salud óptima y
-              bienestar general. Los gatos adultos necesitan una cantidad de
-              energía apropiada dependiendo del nivel de actividad.
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">Oferta Web $37.990</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Producto 2 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="2" data-name="Nath Cat Adulto" data-price="26243">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-nathCat25.jpg" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">
-              Nath Cat adulto esterilizado sabor pollo y arroz alimento para
-              gatos
-            </h5>
-            <p class="card-text">
-              Comida para gatos esterilizados en edad adulta. Se ha elaborado
-              para satisfacer las necesidades nutricionales de estos felinos y
-              ayudarles a que se mantengan en su peso ideal. Elaborado a base
-              de pollo y arroz.
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">Oferta Web $26.243</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
+<!-- Título -->
+<h2 class="texto-producto">Alimentos Secos Para Gatos</h2>
+<!-- Productos -->
+<div class="container-gatos">
+  <div class="row">
+    {% for x in productos_gatos %}
+    <div class="col-md-3 mb-4">
+      <div class="card david-custom-products">
+        {% if x.imagen %}
+        <img
+          src="{{ x.imagen.url }}"
+          class="img-fluid rounded-start"
+          alt="Imagen producto"
+        />
+        {% endif %}
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ x.nombre }}</h5>
+          <p class="card-text">{{ x.descripcion }}</p>
+          <p class="card-text">
+            <small class="text-body-secondary">${{ x.precio }}</small>
+          </p>
+          <a href="#" class="btn btn-primary mt-auto add-to-cart"
+            >Agregar al carrito</a
+          >
         </div>
       </div>
     </div>
-
-    <!-- Producto 3 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="3" data-name="Bravery Salmon Adult" data-price="22990">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-braveryCatAdult.jpg" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">
-              Bravery Salmon Adult Cat alimento para gato
-            </h5>
-            <p class="card-text">
-              Salmon Adult Cat de BRAVERY® Es un alimento con salmón para
-              gatos adultos con más de un año de edad. Libre de grano y
-              cereales, además, con pollo siempre como primer ingrediente y
-              enriquecido con antioxidantes hipoalergénicos 100% naturales.
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">$22.990</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Producto 4 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="4" data-name="Leonardo Adult Duck" data-price="27990">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-leonardoCatAdult.png" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Leonardo Adult Duck alimento para gato</h5>
-            <p class="card-text">
-              Leonardo Adult Duck de LEONARDO® Es un alimento para gatos
-              adultos a partir de un año, apto también para gatos de pelo
-              largo. Es una variante de delicioso sabor para los gatos amantes
-              de la carne de ave. Además, la receta se ha mejorado con
-              semillas de chía y con sabroso krill.
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">$27.990</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 5 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="5" data-name="Leonardo Adult Light" data-price="27990">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-leonardoCatLight.png" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">
-              Leonardo Adult Light alimento para gato
-            </h5>
-            <p class="card-text">
-              Leonardo Adult Light de LEONARDO® Es un alimento para gatos
-              adultos con sobrepeso o con tendencia a subir de peso. El exceso
-              de peso puede ser debido a una alimentación incorrecta por
-              demasiadas golosinas o a la presencia de hormonas tras una
-              castración.
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">$27.990</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 6 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="6" data-name="Taste Of The Wild Cat" data-price="40493">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-tasteofCat.jpg" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Taste Of The Wild Low Land Creek</h5>
-            <p class="card-text">
-              La codorniz sin jaula y el pato sin jaula son proteínas
-              altamente digeribles, lo que hace que esta receta sea una dieta
-              ideal para el felino que anhela las aves. Un alimento para gatos
-              sin granos para todas las etapas de la vida, también presenta
-              probióticos para el soporte digestivo e inmune.
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">Oferta Web $40.493</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 7 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="7" data-name="Royal Canin Indoor" data-price="52990">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-royalcaninCatIndoor.jpg" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">
-              Royal Canin adulto Indoor alimento para gato
-            </h5>
-            <p class="card-text">
-              Royal Canin Indoor favorece unas heces pequeñas, firmes y
-              considerablemente menos olorosas, mediante el uso de
-              ingredientes que actúan sobre la capacidad de retención acuosa
-              (zeolita y fibras insolubles) y sobre los olores fecales (FOS y
-              zeolita).
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">Oferta Web $52.990</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 8 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="8" data-name="Hills Feline Adult" data-price="47990">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-hillCatAdult.jpg" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">
-              Hills Feline Adult Optimal Care Original alimento para gato
-            </h5>
-            <p class="card-text">
-              THILL'S® SCIENCE DIET® Optimal Care Original es un alimento
-              formulado para gatos adultos de 1-6 años de edad con un estilo
-              de vida activo. Este alimento contiene todos los nutrientes
-              necesarios, entre ellos ácidos grasos omega 6.
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">$47.990</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 9 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="9" data-name="Proplan Adulto Cat" data-price="24792">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-fitCatAdulto.jpg" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">
-              Fit Formula Gato Adulto alimento para gato
-            </h5>
-            <p class="card-text">
-              FIT FORMULA® Gato Adulto, es un alimento completo y balanceado
-              desarrollado con ingredientes de alta digestibilidad,
-              garantizandole satisfacción a todos los requerimientos
-              nutricionales de su gato desde su primer año de vida.
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">$24.792</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 10 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="10" data-name="Royal Canin Exigent" data-price="19990">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-royalcaninSavourCat.jpg" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">
-              Royal Canin adulto Exigent alimento para gato
-            </h5>
-            <p class="card-text">
-              Royal Canin Exigent es un alimento completo para el gato con
-              apetito muy exigente con una preferencia natural por el sabor.
-              Con dos croquetas diferentes que actúan en sinergia para
-              satisfacer el apetito del gato más caprichoso. Además, su aporte
-              de energía es moderado.
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">$19.990</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 11 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="11" data-name="Royal Canin Persian" data-price="21990">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-royalcaninPersianAdult.jpg" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">
-              Royal Canin adulto persian 1.5 KG alimento para gato
-            </h5>
-            <p class="card-text">
-              Royal Canin Persian revela la belleza del pelaje largo y denso
-              del Persa gracias al complejo “Beauty Shine Complex” que limita
-              la irritación de la piel, refuerza la función “barrera” de la
-              piel e intensifica el color, el brillo y la suavidad del pelaje
-              de tu compañero felino.
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">$21.990</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Producto 12 -->
-    <div class="card mb-3 david-custom-products" style="max-width: 540px" data-id="12" data-name="Royal Canin Sensible" data-price="50993">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="media/card/card-royalcaninCatSensible.jpg" class="img-fluid rounded-start" alt="..." />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">
-              Royal Canin adulto Sensible alimento para gato 7,5KG
-            </h5>
-            <p class="card-text">
-              Royal Canin Sensible está especialmente formulado con proteínas
-              altamente digestibles. El uso de proteínas de alta
-              digestibilidad ayuda a disminuir el nivel de proteína
-              indigestible en la dieta, favoreciendo a una mejor digestión.
-            </p>
-            <p class="card-text">
-              <small class="text-body-secondary">Oferta Web $50.993</small>
-            </p>
-            <a href="#" class="btn btn-primary mt-auto add-to-cart">Agregar al carrito</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
+</div>
+
 {% endblock %}

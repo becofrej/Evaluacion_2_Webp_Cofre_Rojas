@@ -52,84 +52,35 @@
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <!-- CARDS -->
+ {% load humanize %}
 <br />
 
 <div class="container caja 1">
   <h2 class="text-center">Alimentos Secos Más Vendidos</h2>
-  <!-- Salto de linea -->
   <br />
-  <!-- Salto de linea -->
   <div class="row">
+    {% for x in productos_perros_gatos %}
     <div class="col-md-3">
       <div class="card custom-card david-custom-card">
+        {% if x.imagen %}
         <img
-          src="media/card/card-proplanDogBomba.jpg"
+          src="{{ x.imagen.url }}"
           class="card-img-top custom-card-img"
-          alt="Apple_iPhone11"
+          alt="Imagen-producto"
         />
+        {% endif %}
         <div class="card-body">
           <h5 class="card-title">
-            Proplan Adulto Razas Med. alimento para perro
+            {{x.nombre}}
           </h5>
-          <p class="card-text">$64.990</p>
-          <a href="productos-perro.html" class="btn btn-primary mt-auto"
+          <p class="card-text">${{x.precio | intcomma}}</p>
+          <a href="" class="btn btn-primary mt-auto"
             >Ver más</a
           >
         </div>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="card custom-card david-custom-card">
-        <img
-          src="media/card/card-royalcaninMiniDog25.jpg"
-          class="card-img-top custom-card-img"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">
-            Royal Canin adulto Mini Adult alimento para perro
-          </h5>
-          <p class="card-text">$45.990</p>
-          <a href="productos-perro.html" class="btn btn-primary mt-auto"
-            >Ver más</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card david-custom-card">
-        <img
-          src="media/card/card-proplanCatBomba.jpg"
-          class="card-img-top custom-card-img"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Proplan Adulto Cat alimento para gato</h5>
-          <p class="card-text">$37.990</p>
-          <a href="productos-gato.html" class="btn btn-primary mt-auto"
-            >Ver más</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card david-custom-card">
-        <img
-          src="media/card/card-nathCat25.jpg"
-          class="card-img-top custom-card-img"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">
-            Nath Kitten sabor pollo y arroz alimento para gatos
-          </h5>
-          <p class="card-text">$23.993</p>
-          <a href="productos-gato.html" class="btn btn-primary mt-auto"
-            >Ver más</a
-          >
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
 
@@ -137,151 +88,61 @@
 
 <div class="container caja 2">
   <h2 class="text-center">Accesorios Más Vendidos</h2>
-  <!-- Salto de linea -->
   <br />
-  <!-- Salto de linea -->
   <div class="row">
+    {% for x in productos_accesorios %}
     <div class="col-md-3">
-      <div class="card david-custom-card">
+      <div class="card custom-card david-custom-card">
+        {% if x.imagen %}
         <img
-          src="Media/card/card-bandanaPato.jpg"
+          src="{{ x.imagen.url }}"
           class="card-img-top custom-card-img"
-          alt="..."
+          alt="Imagen-producto"
         />
-        <div class="card-body">
-          <h5 class="card-title">Max & Molly – Bandana Ducklings</h5>
-          <p class="card-text">$8.990</p>
-          <a href="productos-accesorios.html" class="btn btn-primary mt-auto"
-            >Ver más</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card david-custom-card">
-        <img
-          src="Media/card/card-correaRosa50Liq.png"
-          class="card-img-top custom-card-img"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Zeedog Correa Midnight Unisex</h5>
-          <p class="card-text">$5.995</p>
-          <a href="productos-accesorios.html" class="btn btn-primary mt-auto"
-            >Ver más</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card david-custom-card">
-        <img
-          src="Media/card/card-accesorioBand30.jpg"
-          class="card-img-top custom-card-img"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Fuzz Yard Bandana - Yeezy Para Perro</h5>
-          <p class="card-text">Oferta Web $6.293</p>
-          <a href="productos-accesorios.html" class="btn btn-primary mt-auto"
-            >Ver más</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card david-custom-card">
-        <img
-          src="Media/card/card-identificadorHueso.jpg"
-          class="card-img-top custom-card-img"
-          alt="..."
-        />
+        {% endif %}
         <div class="card-body">
           <h5 class="card-title">
-            Chapita My Family – Big Bone Bronx Platform XL
+            {{x.nombre}}
           </h5>
-          <p class="card-text">Oferta Web $10.900</p>
-          <a href="productos-accesorios.html" class="btn btn-primary mt-auto"
+          <p class="card-text">${{x.precio | intcomma}}</p>
+          <a href="" class="btn btn-primary mt-auto"
             >Ver más</a
           >
         </div>
       </div>
     </div>
+    {% endfor %}
   </div>
 </div>
-<!-- Salto de linea -->
+
 <br />
-<!-- Salto de linea -->
+
 <div class="container caja 3">
   <h2 class="text-center">Snacks Más Vendidos</h2>
-  <!-- Salto de linea -->
   <br />
-  <!-- Salto de linea -->
   <div class="row">
+    {% for x in productos_snacks %}
     <div class="col-md-3">
-      <div class="card david-custom-card">
+      <div class="card custom-card david-custom-card">
+        {% if x.imagen %}
         <img
-          src="media/card/card-dingoSnackDog4x3.jpg"
+          src="{{ x.imagen.url }}"
           class="card-img-top custom-card-img"
-          alt="..."
+          alt="Imagen-producto"
         />
+        {% endif %}
         <div class="card-body">
-          <h5 class="card-title">Dingo dental stick huesitos 48 pk</h5>
-          <p class="card-text">$8.243</p>
-          <a href="productos-snacks.html" class="btn btn-primary mt-auto"
+          <h5 class="card-title">
+            {{x.nombre}}
+          </h5>
+          <p class="card-text">${{x.precio | intcomma}}</p>
+          <a href="" class="btn btn-primary mt-auto"
             >Ver más</a
           >
         </div>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="card david-custom-card">
-        <img
-          src="media/card/card-rahueSnackDog4x3.jpg"
-          class="card-img-top custom-card-img"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Rahue de vacuno snack para perros</h5>
-          <p class="card-text">$3.990</p>
-          <a href="productos-snacks.html" class="btn btn-primary mt-auto"
-            >Ver más</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card david-custom-card">
-        <img
-          src="media/card/card-fitSnackCat4x3.jpg"
-          class="card-img-top custom-card-img"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Fit Snack Formula Filete De Pollo</h5>
-          <p class="card-text">$1.290</p>
-          <a href="productos-snacks.html" class="btn btn-primary mt-auto"
-            >Ver más</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card david-custom-card">
-        <img
-          src="media/card/card-churuSnackCat4x3.jpg"
-          class="card-img-top custom-card-img"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Churu de atún con salmón 56 GR</h5>
-          <p class="card-text">$2.990</p>
-          <a href="productos-snacks.html" class="btn btn-primary mt-auto"
-            >Ver más</a
-          >
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
 <!-- -------------------------------------------------------------------------------------------------------- -->
