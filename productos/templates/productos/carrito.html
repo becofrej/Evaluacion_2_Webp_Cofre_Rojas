@@ -9,49 +9,21 @@
 
 <!-- Carrito -->
 <div class="container mt-5 custom-container">
-  <div class="row justify-content-center">
-    <!-- Producto 1 -->
-    <div class="col-md-6">
-      <div class="card mb-3 benja-custom-carrito">
-        <div class="card-header">
-          <h4>Max & Molly Bandana Ducklings</h4>
-        </div>
-        <div class="card-body">
-          <img src="Media/card/card-bandanaPato.jpg" alt="" />
-        </div>
-        <div class="card-footer">
-          <h5 class="card-title">$8.990</h5>
-        </div>
+  <div class="row justify-content-center" id="cart-items-container">
+    <!-- Los productos se cargarán aquí dinámicamente -->
+  </div>
+  <!-- Detalle -->
+  <div class="col-md-12">
+    <div class="card carta-detalle mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Detalle del carrito</h5>
+        <ul id="cart-details-list">
+          <!-- Los detalles del carrito se cargarán aquí dinámicamente -->
+        </ul>
+        <p id="cart-total">Total: $0</p>
       </div>
-    </div>
-    <!-- Producto 2 -->
-    <div class="col-md-6">
-      <div class="card mb-3 benja-custom-carrito">
-        <div class="card-header">
-          <h4>Zeedog Correa Midnight</h4>
-        </div>
-        <div class="card-body">
-          <img src="Media/card/card-correaRosa50Liq.png" alt="" />
-        </div>
-        <div class="card-footer">
-          <h5 class="card-title">$5.995</h5>
-        </div>
-      </div>
-    </div>
-    <!-- Detalle -->
-    <div class="col-md-12">
-      <div class="card carta-detalle mb-3">
-        <div class="card-body">
-          <h5 class="card-title">Detalle del carrito</h5>
-          <ul>
-            <li>Max & Molly Bandana Ducklings - $8.990</li>
-            <li>Zeedog Correa Midnight - $5.995</li>
-          </ul>
-          <p>Total: $14.985</p>
-        </div>
-        <div class="card-footer">
-          <a href="" class="btn btn-primary">Ir a pagar</a>
-        </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary">Ir a pagar</a>
       </div>
     </div>
   </div>

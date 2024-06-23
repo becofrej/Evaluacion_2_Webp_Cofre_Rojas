@@ -20,7 +20,7 @@
   <div class="row">
     {% for x in productos_snacks %}
     <div class="col-md-3 mb-4">
-      <div class="card david-custom-products">
+      <div class="card david-custom-products" data-id="{{ x.id }}" data-name="{{ x.nombre }}" data-price="{{ x.precio }}">
         {% if x.imagen %}
         <img
           src="{{ x.imagen.url }}"
