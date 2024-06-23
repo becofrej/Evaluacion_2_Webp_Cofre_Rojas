@@ -2,13 +2,13 @@
 
 <!-- Imagen de encabezado -->
 <div class="imagen-productos">
-  <img src="Media/productos/banner-productos-snack.jpg" alt="" />
+  <img src="{% static 'productos/img/productos/banner-productos-snack.jpg' %}" alt="" />
 </div>
 
 <!-- Breadcrumb -->
 <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
     <li class="breadcrumb-item active" aria-current="page">Snacks</li>
   </ol>
 </nav>

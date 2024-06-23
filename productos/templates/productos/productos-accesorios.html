@@ -2,14 +2,14 @@
 
 <!-- Imagen de encabezado -->
 <div class="imagen-productos">
-  <img src="Media/productos/producto-accesorios.jpg" alt="" />
+  <img src="{% static 'productos/img/productos/producto-accesorios.jpg' %}" alt="" />
   <div class="gradient"></div>
 </div>
 
 <!-- Breadcrumb -->
 <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
     <li class="breadcrumb-item active" aria-current="page">Accesorios</li>
   </ol>
 </nav>

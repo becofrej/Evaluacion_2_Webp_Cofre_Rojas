@@ -74,9 +74,11 @@
             {{x.nombre}}
           </h5>
           <p class="card-text">${{x.precio | intcomma}}</p>
-          <a href="" class="btn btn-primary mt-auto"
-            >Ver más</a
-          >
+          {% if x.categoria.nombre == 'Alimentos para Perros' %}
+          <a href="{% url 'pagPerros' %}" class="btn btn-primary mt-auto">Ver más</a>
+          {% elif x.categoria.nombre == 'Alimentos para Gatos' %}
+          <a href="{% url 'pagGatos' %}" class="btn btn-primary mt-auto">Ver más</a>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -105,7 +107,7 @@
             {{x.nombre}}
           </h5>
           <p class="card-text">${{x.precio | intcomma}}</p>
-          <a href="" class="btn btn-primary mt-auto"
+          <a href="{% url 'pagAccesorios' %}" class="btn btn-primary mt-auto"
             >Ver más</a
           >
         </div>
@@ -136,7 +138,7 @@
             {{x.nombre}}
           </h5>
           <p class="card-text">${{x.precio | intcomma}}</p>
-          <a href="" class="btn btn-primary mt-auto"
+          <a href="{% url 'pagSnacks' %}" class="btn btn-primary mt-auto"
             >Ver más</a
           >
         </div>
@@ -188,7 +190,7 @@
       </div>
       <div class="modal-body custom-modal benja-custom-modal">
         <div class="text-center">
-          <img src="Media/fundacion.jpeg" alt="Logo Fundación" width="100" />
+          <img src="{% static 'productos/img/logos/fundacion.jpeg' %}" alt="Logo Fundación" width="100" />
         </div>
         <p>
           Con cada compra que realizas, estás apoyando a nuestra fundación sin
