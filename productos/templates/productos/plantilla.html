@@ -212,14 +212,6 @@
     </header>
 
     <!-------------------------------------------------------------------------------------------------------- -->
-    {% if messages %}
-        {% for m in messages %}
-          {{m}}
-        {% endfor %}
-    {% endif %}
-    <!-------------------------------------------------------------------------------------------------------- -->
-
-    <!-------------------------------------------------------------------------------------------------------- -->
     {% block contenido %} {% endblock %}
     <!-------------------------------------------------------------------------------------------------------- -->
     <!-- FOOTER -->
@@ -380,7 +372,20 @@
     <!-- scripts personalizados -->
     <script src="{% static 'productos/js/carrito.js' %}"></script>
     <script src="{% static 'productos/js/formularios.js' %}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-----------------------------------SWEET ALERT--------------------------------------------------- -->
+    {% if messages %}
+        {% for m in messages %}
+          <script>
+            Swal.fire({
+              "title": "Felicitaciones",
+              "text": "{{m}}",
+              "icon":"success"
+            })
+          </script>
+        {% endfor %}
+    {% endif %}
+    <!-------------------------------------------------------------------------------------------------------- -->
     <!-- Otros scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
