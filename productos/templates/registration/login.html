@@ -14,16 +14,15 @@
   <div class="row justify-content-center">
     <div class="col-md-6">
       <div class="card">
-        <div class="card-body">
+        <div class="card-body benja-custom-card-form">
           <h5 class="card-title text-center">Iniciar sesión</h5>
           <form action="" method="post">
             {% csrf_token %}
-            <div class="form-group">
+            <div class="form-group benja-custom-form-group">
               <label for="id_username">Nombre de usuario:</label>
               <input type="text" id="id_username" name="username" class="form-control" required>
             </div>
-            <br>
-            <div class="form-group">
+            <div class="form-group benja-custom-form-group">
               <label for="id_password">Contraseña:</label>
               <input type="password" id="id_password" name="password" class="form-control" required>
               <br>
@@ -41,7 +40,7 @@
     <div class="card-body">
       <h5 class="card-title">¿No tienes una cuenta?</h5>
       <p class="card-text">
-        ¡Registrate para obtener beneficios y descuentos, es GRATIS!
+        ¡Regístrate para obtener beneficios y descuentos, es GRATIS!
       </p>
       <a href="{% url 'registrarse' %}">
         <button
