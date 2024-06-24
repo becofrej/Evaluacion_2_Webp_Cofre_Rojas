@@ -140,16 +140,21 @@
               />
               <!-- Menú del dropdown -->
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {% if user.is_authenticated %}
                 <li>
-                  <a class="dropdown-item" href="{% url 'pagIngresar' %}"
-                    >Ingresar</a
-                  >
+                  <form action="{% url 'logout' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="dropdown-item">Cerrar sesión</button>
+                </form>
+                </li>
+                {% else %}
+                <li>
+                  <a class="dropdown-item" href="{% url 'login' %}">Iniciar sesión</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="{% url 'pagRegistrar' %}"
-                    >Registrar</a
-                  >
+                  <a class="dropdown-item" href="{% url 'registrarse' %}">Registrarse</a>
                 </li>
+                {% endif %}
               </ul>
             </div>
 
