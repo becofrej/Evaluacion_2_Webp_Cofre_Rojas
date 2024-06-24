@@ -50,12 +50,13 @@ def pagSnacks(request):
 def pagIngresar(request):
     return render(request, 'registration/ingresar.html')
 
+def pagCarrito(request):
+    return render(request, 'productos/carrito.html')
+
 def pagRegistrar(request):
     data = {
         'form' : CustomUserCreationForm()
     }
     return render(request, 'registration/registrarse.html', data)
 
-def pagCarrito(request):
-    return render(request, 'productos/carrito.html')
 
