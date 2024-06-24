@@ -1,5 +1,7 @@
 from django.urls import path
+from . import views
 from .views import home, pagPerros, pagGatos, pagAccesorios, pagSnacks, pagIngresar, pagRegistrar, pagCarrito
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('', home, name="index"),
@@ -8,6 +10,9 @@ urlpatterns = [
     path('accesorios/', pagAccesorios, name="pagAccesorios"),
     path('snacks/', pagSnacks, name="pagSnacks"),
     path('ingresar/', pagIngresar, name="pagIngresar"),
-    path('registrarse/', pagRegistrar, name="pagRegistrar"),
+    path('registrarse/', views.pagRegistrar, name='registrarse'),
     path('carrito/', pagCarrito, name="pagCarrito"),
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+    
+    
 ]
