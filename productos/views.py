@@ -1,3 +1,4 @@
+
 from django.shortcuts import render, redirect
 from .models import Categoria,Producto
 from .forms import CustomUserCreationForm
@@ -63,8 +64,10 @@ def pagRegistrar(request):
         formulario = CustomUserCreationForm(data=request.POST)
         if formulario.is_valid():
             formulario.save()
+            user = authenticate(username=formulario.cleaned_data["username"],\
+                                password=formulario.cleaned_data["password1"])
             #redirigir al home
-            return redirect(to="home")
+            return redirect(to="index")
         data["form"] = formulario
 
     return render(request, 'registration/registrarse.html', data)
