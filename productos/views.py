@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Categoria,Producto
 from .forms import CustomUserCreationForm
+from django.contrib.auth import authenticate, login
 # Create your views here.
 
 def home(request):
