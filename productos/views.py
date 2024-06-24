@@ -49,11 +49,11 @@ def pagSnacks(request):
     context = {'productos_snacks': productos_snacks}
     return render(request, 'productos/productos-snacks.html', context)
 
-def pagIngresar(request):
-    return render(request, 'registration/ingresar.html')
-
 def pagCarrito(request):
     return render(request, 'productos/carrito.html')
+
+def pagIngresar(request):
+    return render(request, 'registration/ingresar.html')
 
 def pagRegistrar(request):
     data = {
