@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Categoria,Producto
 from .forms import CustomUserCreationForm
 # Create your views here.
@@ -57,6 +57,15 @@ def pagRegistrar(request):
     data = {
         'form' : CustomUserCreationForm()
     }
+
+    if request.method == 'POST':
+        formulario = CustomUserCreationForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            #redirigir al home
+            return redirect(to="home")
+        data["form"] = formulario
+
     return render(request, 'registration/registrarse.html', data)
 
 
