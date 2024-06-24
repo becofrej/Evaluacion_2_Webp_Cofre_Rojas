@@ -1,0 +1,48 @@
+{% extends 'productos/plantilla.html' %} {% block contenido %}
+
+<!-- Formulario de ingreso -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body benja-custom-card-form">
+          <h5 class="card-title text-center">Iniciar sesión</h5>
+            <div class="form-group benja-custom-form-group">
+                <form action="" method="post">
+
+                    {% csrf_token %}
+                    {{ form }}
+                    
+                    <br>
+                    <input type="submit" value="Ingresar" class="btn btn-primary btn-block">
+                </form>
+                
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Formulario de registro -->
+<div class="card benja-custom-card-sub">
+  <div class="card-body">
+    <h5 class="card-title">¿No tienes una cuenta?</h5>
+    <p class="card-text">
+      ¡Registrate para obtener beneficios y descuentos, es GRATIS!
+    </p>
+    <a href="{% url 'registrarse' %}">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#subscribeModal"
+      >
+        Registrate
+      </button>
+    </a>
+  </div>
+</div>
+
+{% endblock %}
