@@ -142,6 +142,9 @@
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 {% if user.is_authenticated %}
                 <li>
+                  <a class="dropdown-item" href="#">{{ user.username }}</a>
+                </li>
+                <li>
                   <form action="{% url 'logout' %}" method="post">
                     {% csrf_token %}
                     <button type="submit" class="dropdown-item">Cerrar sesión</button>
