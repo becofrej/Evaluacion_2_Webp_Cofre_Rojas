@@ -1,15 +1,16 @@
 from django.shortcuts import render
 from .models import Categoria,Producto
+from .forms import CustomUserCreationForm
 # Create your views here.
 
 def home(request):
-    # Obtén las categorías
+    #obtener categorias
     categoria_perros = Categoria.objects.get(nombre='Alimentos para Perros')
     categoria_gatos = Categoria.objects.get(nombre='Alimentos para Gatos')
     categoria_accesorios = Categoria.objects.get(nombre='Accesorios')
     categoria_snacks = Categoria.objects.get(nombre='Snacks')
     
-    # Obtén los productos por categoría
+    #obtener productos por categoria
     productos_perros = Producto.objects.filter(categoria=categoria_perros)[:2]
     productos_gatos = Producto.objects.filter(categoria=categoria_gatos)[:2]
     productos_accesorios = Producto.objects.filter(categoria=categoria_accesorios)[:4]
@@ -47,10 +48,14 @@ def pagSnacks(request):
     return render(request, 'productos/productos-snacks.html', context)
 
 def pagIngresar(request):
-    return render(request, 'productos/ingresar.html')
+    return render(request, 'registration/ingresar.html')
 
 def pagRegistrar(request):
-    return render(request, 'productos/registrarse.html')
+    data = {
+        'form' : CustomUserCreationForm()
+    }
+    return render(request, 'registration/registrarse.html', data)
 
 def pagCarrito(request):
     return render(request, 'productos/carrito.html')
+
