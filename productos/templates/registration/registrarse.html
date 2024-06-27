@@ -1,18 +1,19 @@
 
 {% extends 'productos/plantilla.html' %} {% block contenido %} 
 
+{% load crispy_forms_tags %}
 <!-- Formulario de ingreso -->
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-md-6">
       <div class="card">
         <div class="card-body benja-custom-card-form">
-          <h5 class="card-title text-center">Registro de Usuario</h5>
+          <h3 class="card-title text-center">Registro de Usuario</h3>
           <form action="" method="post">
                 
             {% csrf_token %}
             <div class="form-group benja-custom-form-group">
-              {{ form }}
+              {{ form | crispy}}
             </div>
 
             <br>
@@ -23,5 +24,5 @@
     </div>
   </div>
 </div>
-  <br>
+<br>
 {% endblock %}
