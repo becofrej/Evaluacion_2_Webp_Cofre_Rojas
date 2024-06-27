@@ -1,5 +1,4 @@
 {% extends 'productos/plantilla.html' %} 
-{% load crispy_forms_tags %}
 {% block contenido %}
 {% load humanize %}
 {% load static %}
@@ -19,6 +18,7 @@
                             <th>STOCK</th>
                             <th>Precio</th>
                             <th>¿Es nuevo?</th>
+                            <th>Opciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,6 +35,10 @@
                                 {% else %}
                                 NO
                                 {% endif %}
+                            </td>
+                            <td>
+                                <a href="{% url 'modificar_producto' p.id %}" class="btn btn-info btn-sm">Modificar</a>
+                                <a href="{% url 'eliminar_producto' p.id %}" class="btn btn-danger btn-sm">Eliminar</a>
                             </td>
                         </tr>
                         {% endfor %}
