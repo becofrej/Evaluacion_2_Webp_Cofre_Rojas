@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from .views import home, pagPerros, pagGatos, pagAccesorios, pagSnacks, pagIngresar, pagRegistrar, pagCarrito, agregar_producto, listar_producto, CustomLoginView
+from .views import home, pagPerros, pagGatos, pagAccesorios, pagSnacks, pagIngresar, pagRegistrar, pagCarrito, agregar_producto, listar_producto
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
