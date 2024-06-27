@@ -85,7 +85,7 @@ def agregar_producto(request):
         formulario = ProductoForm(data=request.POST, files=request.FILES)
         if formulario.is_valid():
             formulario.save()
-            messages.success(request,"Producto agregado correctamente")
+            messages.success(request,"Producto ingresado")
         else:
             data['form'] = formulario
 
@@ -122,5 +122,5 @@ def modificar_producto(request, id):
 def eliminar_producto(request, id):
     producto = get_object_or_404(Producto, id=id)
     producto.delete()
-    messages.warning(request, "Producto eliminado correctamente")
+    messages.success(request, "Producto eliminado correctamente")
     return redirect(to="listar_producto")
