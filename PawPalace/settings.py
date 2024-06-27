@@ -47,11 +47,13 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'django_extensions',
     'crispy_forms',
+    'crispy_bootstrap4',
+    'bootstrap4',
 ]
 
+X_FRAME_OPTIONS = "SAMEORIGIN"
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-X_FRAME_OPTIONS = "SAMEORIGIN"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
