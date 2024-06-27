@@ -144,6 +144,12 @@
                   <a class="dropdown-item" href="#">Hola, {{ user.username }}</a>
                 </li>
                 <li>
+                  <a class="dropdown-item" href="{% url 'agregar_producto' %}">Agregar productos</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'listar_producto' %}">Listado productos</a>
+                </li>
+                <li>
                   <form action="{% url 'logout' %}" method="post">
                     {% csrf_token %}
                     <button type="submit" class="dropdown-item">Cerrar sesión</button>
@@ -379,7 +385,7 @@
             Swal.fire({
               "title": "Felicitaciones",
               "text": "{{m}}",
-              "icon":"success"
+              icon: "{% if m.tags == 'success' %}success{% elif m.tags == 'info' %}info{% elif m.tags == 'warning' %}warning{% elif m.tags == 'error' %}error{% else %}info{% endif %}"
             })
           </script>
         {% endfor %}
