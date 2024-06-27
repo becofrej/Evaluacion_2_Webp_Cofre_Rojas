@@ -106,7 +106,8 @@ def listar_producto(request):
         raise Http404
 
     data = {
-        'entity': productos
+        'entity': productos,
+        'paginator': paginator
     }
 
     return render(request, 'productos/crud/listar.html', data)
