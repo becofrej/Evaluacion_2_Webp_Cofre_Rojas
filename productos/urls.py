@@ -3,9 +3,12 @@ from . import views
 from .views import home, pagPerros, pagGatos, pagAccesorios, pagSnacks, pagIngresar, pagRegistrar,\
     pagCarrito, agregar_producto, listar_producto, modificar_producto, eliminar_producto
 from django.contrib.auth import views as auth_views
+from django.contrib.admin.views.decorators import staff_member_required
+from django.contrib.admin import site
 
 urlpatterns = [
     path('', home, name="index"),
+    path('admin/', staff_member_required(site.urls)),
     path('perros/', pagPerros, name="pagPerros"),
     path('gatos/', pagGatos, name="pagGatos"),
     path('accesorios/', pagAccesorios, name="pagAccesorios"),
