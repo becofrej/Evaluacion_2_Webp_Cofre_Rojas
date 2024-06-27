@@ -143,12 +143,16 @@
                 <li>
                   <a class="dropdown-item" href="#">Hola, {{ user.username }}</a>
                 </li>
+                {% if perms.productos.add_producto %}
                 <li>
                   <a class="dropdown-item" href="{% url 'agregar_producto' %}">Agregar productos</a>
                 </li>
+                {% endif %}
+                {% if perms.productos.view_producto %}
                 <li>
                   <a class="dropdown-item" href="{% url 'listar_producto' %}">Listado productos</a>
                 </li>
+                {% endif %}
                 <li>
                   <form action="{% url 'logout' %}" method="post">
                     {% csrf_token %}
