@@ -90,7 +90,7 @@ def agregar_producto(request):
         formulario = ProductoForm(data=request.POST, files=request.FILES)
         if formulario.is_valid():
             formulario.save()
-            messages.success(request,"Producto ingresado")
+            messages.success(request,"Producto registrado correctamente")
         else:
             data['form'] = formulario
 
