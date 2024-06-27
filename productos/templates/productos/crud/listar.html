@@ -1,0 +1,46 @@
+{% extends 'productos/plantilla.html' %} 
+{% load crispy_forms_tags %}
+{% block contenido %}
+{% load humanize %}
+{% load static %}
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body benja-custom-card-form">
+            <br>
+            <h3 class="text-center">Listado de Productos</h3>
+            <hr>
+                <table class="table table-striped table-hover table-responsive-sm">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Categoría</th>
+                            <th>STOCK</th>
+                            <th>Precio</th>
+                            <th>¿Es nuevo?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for p in productos %}
+                        <tr>
+                            <td>{{ p.nombre | title }}</td>
+                            <td>{{ p.descripcion }}</td>
+                            <td>{{ p.categoria | title }}</td>
+                            <td>{{ p.stock }}</td>
+                            <td>{{ p.precio | intcomma }}</td>
+                            <td>
+                                {% if p.nuevo %}
+                                SI
+                                {% else %}
+                                NO
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
