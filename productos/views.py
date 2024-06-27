@@ -1,5 +1,5 @@
 
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Categoria,Producto
 from .forms import CustomUserCreationForm, ProductoForm
 from django.contrib import messages
@@ -75,9 +75,6 @@ def pagRegistrar(request):
 
     return render(request, 'registration/registrarse.html', data)
 
-
-
-        
 def agregar_producto(request):
 
     data = {
@@ -88,7 +85,7 @@ def agregar_producto(request):
         formulario = ProductoForm(data=request.POST, files=request.FILES)
         if formulario.is_valid():
             formulario.save()
-            data["mensaje"] = "Producto guardado correctamente"
+            messages.success(request,"Producto agregado correctamente")
         else:
             data['form'] = formulario
 
@@ -104,4 +101,26 @@ def listar_producto(request):
     }
 
     return render(request, 'productos/crud/listar.html', data)
-        
+
+def modificar_producto(request, id):
+    producto = get_object_or_404(Producto, id=id)
+
+    data = {
+        'form': ProductoForm(instance=producto)
+    }
+
+    if request.method == 'POST':
+        formulario = ProductoForm(data=request.POST, instance=producto, files=request.FILES)
+        if formulario.is_valid():
+            formulario.save()
+            messages.success(request, "Producto modificado correctamente")
+            return redirect(to="listar_producto")
+        data["form"] = formulario
+
+    return render(request, 'productos/crud/modificar.html', data)
+
+def eliminar_producto(request, id):
+    producto = get_object_or_404(Producto, id=id)
+    producto.delete()
+    messages.warning(request, "Producto eliminado correctamente")
+    return redirect(to="listar_producto")
