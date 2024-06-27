@@ -4,6 +4,8 @@ from .models import Categoria,Producto
 from .forms import CustomUserCreationForm, ProductoForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
+from django.core.paginator import Paginator
+from django.http import Http404
 # Create your views here.
 
 def home(request):
@@ -95,9 +97,16 @@ def agregar_producto(request):
 
 def listar_producto(request):
     productos = Producto.objects.all()
+    page = request.GET.get('page', 1)
+    
+    try:
+        paginator = Paginator(productos, 7)
+        productos = paginator.page(page)
+    except:
+        raise Http404
 
     data = {
-        'productos': productos
+        'entity': productos
     }
 
     return render(request, 'productos/crud/listar.html', data)
@@ -120,7 +129,9 @@ def modificar_producto(request, id):
     return render(request, 'productos/crud/modificar.html', data)
 
 def eliminar_producto(request, id):
+
     producto = get_object_or_404(Producto, id=id)
     producto.delete()
     messages.success(request, "Producto eliminado correctamente")
     return redirect(to="listar_producto")
+
