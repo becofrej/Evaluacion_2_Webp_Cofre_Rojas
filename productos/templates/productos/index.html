@@ -52,7 +52,6 @@
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <!-- CARDS -->
- {% load humanize %}
 <br />
 
 <div class="container caja 1">
@@ -73,7 +72,7 @@
           <h5 class="card-title">
             {{x.nombre}}
           </h5>
-          <p class="card-text">${{x.precio | intcomma}}</p>
+          <p class="card-text">$<span class="price">{{ x.precio }}</span></p>
           {% if x.categoria.nombre == 'Alimentos para Perros' %}
           <a href="{% url 'pagPerros' %}" class="btn btn-primary mt-auto">Ver más</a>
           {% elif x.categoria.nombre == 'Alimentos para Gatos' %}
@@ -106,7 +105,7 @@
           <h5 class="card-title">
             {{x.nombre}}
           </h5>
-          <p class="card-text">${{x.precio | intcomma}}</p>
+          <p class="card-text">$<span class="price">{{ x.precio }}</span></p>
           <a href="{% url 'pagAccesorios' %}" class="btn btn-primary mt-auto"
             >Ver más</a
           >
@@ -137,7 +136,7 @@
           <h5 class="card-title">
             {{x.nombre}}
           </h5>
-          <p class="card-text">${{x.precio | intcomma}}</p>
+          <p class="card-text">$<span class="price">{{ x.precio }}</span></p>
           <a href="{% url 'pagSnacks' %}" class="btn btn-primary mt-auto"
             >Ver más</a
           >
