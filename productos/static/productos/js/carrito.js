@@ -1,38 +1,16 @@
-// Uso del almacenamiento local
+// Inicialización del carrito desde el almacenamiento local
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 console.log("Contenido del carrito al cargar:", cart);
 
 // Función para mostrar productos en el carrito en el offcanvas
 function renderCart() {
     const cartList = document.getElementById('cart-list');
-    const cartTotal = document.getElementById('cart-total');
+    const cartTotalElements = document.querySelectorAll('.cart-total');
 
     if (cartList) {
         console.log("Renderizando carrito en offcanvas");
-        // Limpiar tabla
-        cartList.innerHTML = '';
-
-        // Variable para total del carrito
-        let total = 0;
-
-        // Iteración sobre la lista del carrito
-        cart.forEach(item => {
-            const listItem = document.createElement('li'); // Se enlistan
-            listItem.textContent = `${item.name} - $${item.price}`; // Mostrar nombre y precio
-            const removeButton = document.createElement('button'); // Botón para eliminar producto
-            removeButton.textContent = 'Eliminar';
-            removeButton.onclick = () => {
-                removeFromCart(item.id);
-                renderCart();
-                renderCartPage(); // Asegurarse de actualizar la página del carrito si es necesario
-            }; // Añadir el evento al botón eliminar para remover 
-            listItem.appendChild(removeButton); // Asignar botón eliminar a cada producto
-            cartList.appendChild(listItem); // Añadir nombre y precio del producto al carrito
-            total += item.price; // Suma de los precios de los productos
-        });
-
-        // Total del carrito
-        cartTotal.textContent = `Total: $${total}`;
+        renderCartItems(cartList);
+        updateCartTotal(cartTotalElements);
     }
 }
 
@@ -40,83 +18,100 @@ function renderCart() {
 function renderCartPage() {
     const cartItemsContainer = document.getElementById('cart-items-container');
     const cartDetailsList = document.getElementById('cart-details-list');
-    const cartTotal = document.getElementById('cart-total');
+    const cartTotalElements = document.querySelectorAll('.cart-total');
 
-    console.log("Renderizando página del carrito");
-
-    if (cartItemsContainer && cartDetailsList && cartTotal) {
-        // Limpiar contenedores
-        cartItemsContainer.innerHTML = '';
-        cartDetailsList.innerHTML = '';
-
-        // Variable para total del carrito
-        let total = 0;
-
-        // Iteración sobre la lista del carrito
-        cart.forEach(item => {
-            console.log("Renderizando producto en página del carrito:", item);
-
-            // Crear tarjeta de producto
-            const col = document.createElement('div');
-            col.className = 'col-md-6 mb-4';
-            const card = document.createElement('div');
-            card.className = 'card mb-3 benja-custom-carrito';
-            const cardHeader = document.createElement('div');
-            cardHeader.className = 'card-header';
-            const cardBody = document.createElement('div');
-            cardBody.className = 'card-body';
-            const cardFooter = document.createElement('div');
-            cardFooter.className = 'card-footer';
-            
-            // Título del producto
-            const title = document.createElement('h4');
-            title.textContent = item.name;
-            cardHeader.appendChild(title);
-
-            // Imagen del producto
-            const img = document.createElement('img');
-            img.src = item.image || '{% static "productos/img/default-product.jpg" %}'; // Cambiar esto según sea necesario
-            img.alt = `Imagen de ${item.name}`;
-            img.className = 'img-fluid rounded-start';
-            cardBody.appendChild(img);
-
-            // Precio del producto
-            const price = document.createElement('h5');
-            price.className = 'card-title';
-            price.textContent = `$${item.price}`;
-            cardFooter.appendChild(price);
-
-            // Botón para eliminar producto
-            const removeButton = document.createElement('button');
-            removeButton.className = 'btn btn-danger';
-            removeButton.textContent = 'Eliminar';
-            removeButton.onclick = () => {
-                removeFromCart(item.id);
-                renderCartPage(); // Actualizar la página del carrito
-            };
-            cardFooter.appendChild(removeButton);
-
-            // Agregar secciones a la tarjeta
-            card.appendChild(cardHeader);
-            card.appendChild(cardBody);
-            card.appendChild(cardFooter);
-
-            // Agregar tarjeta a la columna y luego a la fila
-            col.appendChild(card);
-            cartItemsContainer.appendChild(col);
-
-            // Agregar producto a los detalles del carrito
-            const detailItem = document.createElement('li');
-            detailItem.textContent = `${item.name} - $${item.price}`;
-            cartDetailsList.appendChild(detailItem);
-
-            // Suma de los precios de los productos
-            total += item.price;
-        });
-
-        // Total del carrito
-        cartTotal.textContent = `Total: $${total}`;
+    if (cartItemsContainer && cartDetailsList) {
+        console.log("Renderizando página del carrito");
+        renderCartPageItems(cartItemsContainer, cartDetailsList);
+        updateCartTotal(cartTotalElements);
     }
+}
+
+// Función para renderizar los productos en el carrito
+function renderCartItems(container) {
+    container.innerHTML = '';
+    cart.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - $${formatPrice(item.price)}`;
+        const removeButton = createRemoveButton(item.id);
+        listItem.appendChild(removeButton);
+        container.appendChild(listItem);
+    });
+}
+
+// Función para renderizar los productos en la página del carrito
+function renderCartPageItems(cartItemsContainer, cartDetailsList) {
+    cartItemsContainer.innerHTML = '';
+    cartDetailsList.innerHTML = '';
+    cart.forEach(item => {
+        console.log("Renderizando producto en página del carrito:", item);
+        const card = createProductCard(item);
+        cartItemsContainer.appendChild(card);
+        const detailItem = document.createElement('li');
+        detailItem.textContent = `${item.name} - $${formatPrice(item.price)}`;
+        cartDetailsList.appendChild(detailItem);
+    });
+}
+
+// Función para crear un botón de eliminar
+function createRemoveButton(productId) {
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'Eliminar';
+    removeButton.onclick = () => {
+        removeFromCart(productId);
+        renderCart();
+        renderCartPage();
+    };
+    return removeButton;
+}
+
+// Función para crear la tarjeta del producto
+function createProductCard(item) {
+    const col = document.createElement('div');
+    col.className = 'col-md-6 mb-4';
+    const card = document.createElement('div');
+    card.className = 'card mb-3 benja-custom-carrito';
+    const cardHeader = document.createElement('div');
+    cardHeader.className = 'card-header';
+    const cardBody = document.createElement('div');
+    cardBody.className = 'card-body';
+    const cardFooter = document.createElement('div');
+    cardFooter.className = 'card-footer';
+
+    const title = document.createElement('h4');
+    title.textContent = item.name;
+    cardHeader.appendChild(title);
+
+    const img = document.createElement('img');
+    img.src = item.image || '{% static "productos/img/default-product.jpg" %}';
+    img.alt = `Imagen de ${item.name}`;
+    img.className = 'img-fluid rounded-start';
+    cardBody.appendChild(img);
+
+    const price = document.createElement('h5');
+    price.className = 'card-title';
+    price.textContent = `$${formatPrice(item.price)}`;
+    cardFooter.appendChild(price);
+
+    const removeButton = createRemoveButton(item.id);
+    removeButton.className = 'btn btn-danger';
+    cardFooter.appendChild(removeButton);
+
+    card.appendChild(cardHeader);
+    card.appendChild(cardBody);
+    card.appendChild(cardFooter);
+
+    col.appendChild(card);
+    return col;
+}
+
+// Función para actualizar el total del carrito
+function updateCartTotal(cartTotalElements) {
+    let total = cart.reduce((sum, item) => sum + item.price, 0);
+    console.log("Actualizando total del carrito:", total); // Verificación adicional
+    cartTotalElements.forEach(element => {
+        element.textContent = `Total: $${formatPrice(total)}`;
+    });
 }
 
 // Función agregar producto al carrito
@@ -135,6 +130,19 @@ function removeFromCart(productId) {
     localStorage.setItem('cart', JSON.stringify(cart));
     renderCart();
     renderCartPage();
+}
+
+// Función para formatear los precios con puntos como separadores de miles
+function formatPrice(price) {
+    return price.toLocaleString('es-ES', { minimumFractionDigits: 0 });
+}
+
+// Función para formatear todos los precios en la página
+function formatAllPrices() {
+    document.querySelectorAll('.price').forEach(priceElement => {
+        const priceValue = parseFloat(priceElement.textContent.replace(/[^0-9.-]+/g, ""));
+        priceElement.textContent = formatPrice(priceValue);
+    });
 }
 
 // Eventos a los btn-primary "Agregar al Carrito"
@@ -159,4 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('cart-items-container')) {
         renderCartPage();
     }
+
+    // Formatear todos los precios al cargar la página
+    formatAllPrices();
 });

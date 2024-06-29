@@ -23,7 +23,12 @@
   <div class="row">
     {% for x in productos_perros %}
     <div class="col-md-3 mb-4">
-      <div class="card david-custom-products" data-id="{{ x.id }}" data-name="{{ x.nombre }}" data-price="{{ x.precio }}">
+      <div
+        class="card david-custom-products"
+        data-id="{{ x.id }}"
+        data-name="{{ x.nombre }}"
+        data-price="{{ x.precio }}"
+      >
         {% if x.imagen %}
         <img
           src="{{ x.imagen.url }}"
@@ -35,7 +40,9 @@
           <h5 class="card-title">{{ x.nombre }}</h5>
           <p class="card-text">{{ x.descripcion }}</p>
           <p class="card-text">
-            <small class="text-body-secondary">${{ x.precio }}</small>
+            $<span class="price">
+              <small class="text-body-secondary">{{ x.precio }}</small>
+            </span>
           </p>
           <a href="#" class="btn btn-primary mt-auto add-to-cart"
             >Agregar al carrito</a
