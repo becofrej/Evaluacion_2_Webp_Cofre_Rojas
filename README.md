@@ -1,6 +1,6 @@
 Profesor, aquí le dejo unos pasos para poder instalar correctamente todo lo que necesita para correr nuestro proyecto :)
 
-Primero que todo, cree y active el entorno como normalmente lo hacemos (desde el cmd) pero esta vez deberá activarlo dentro de la carpeta del repositorio. Es probable que no necesite crear el entorno virtual si ya lo ha hecho anteriormente, así que sólo tendrá que activarlo mediante <virtualenv venv>.
+Primero que todo, cree y active el entorno como normalmente lo hacemos (desde el cmd) pero esta vez deberá activarlo dentro de la carpeta del repositorio. Es probable que no necesite crear el entorno virtual si ya lo ha hecho anteriormente, así que sólo tendrá que activarlo mediante "virtualenv venv"
 
 Después de activar el entorno, dentro de la consola de VS, ejecute los siguientes comandos:
 
