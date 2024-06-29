@@ -79,7 +79,7 @@ def pagRegistrar(request):
         if formulario.is_valid():
             formulario.save()
             user = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password1"])
-            if user.is_valid():
+            if user is not None:
                 login(request, user)
                 messages.success(request, "Te has registrado correctamente")
                 return redirect(to="index")
