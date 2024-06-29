@@ -1,7 +1,7 @@
 
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Categoria,Producto
-from .forms import CustomUserCreationForm, ProductoForm
+from .forms import CustomAuthenticationForm, CustomUserCreationForm, ProductoForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.core.paginator import Paginator
@@ -57,24 +57,32 @@ def pagCarrito(request):
     return render(request, 'productos/carrito.html')
 
 def pagIngresar(request):
-    return render(request, 'registration/ingresar.html')
+    if request.method == 'POST':
+        form = CustomAuthenticationForm(data=request.POST)
+        if form.is_valid():
+            user = authenticate(username=form.cleaned_data['username'], password=form.cleaned_data['password'])
+            if user is not None:
+                login(request, user)
+                return redirect('index')
+    else:
+        form = CustomAuthenticationForm()
+    return render(request, 'registration/ingresar.html', {'form': form})
 
 def pagRegistrar(request):
 
     data = {
-        'form' : CustomUserCreationForm()
+        'form': CustomUserCreationForm()
     }
 
     if request.method == 'POST':
         formulario = CustomUserCreationForm(data=request.POST)
         if formulario.is_valid():
             formulario.save()
-            user = authenticate(username=formulario.cleaned_data["username"],\
-                                password=formulario.cleaned_data["password1"])
-            login(request, user)
-            messages.success(request, "Te has registrado correctamente")
-            #redirigir al home
-            return redirect(to="index")
+            user = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password1"])
+            if user.is_valid():
+                login(request, user)
+                messages.success(request, "Te has registrado correctamente")
+                return redirect(to="index")
         data["form"] = formulario
 
     return render(request, 'registration/registrarse.html', data)

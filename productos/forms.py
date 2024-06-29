@@ -1,16 +1,25 @@
 from django import forms
 from .models import Producto
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from .validators import MaxSizeFileValidator
 from django.forms import ValidationError
+from captcha.fields import CaptchaField
 
 
 class CustomUserCreationForm(UserCreationForm):
-    
+    captcha = CaptchaField()
+
     class Meta:
         model = User
-        fields = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']
+        fields = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2','captcha']
+
+class CustomAuthenticationForm(AuthenticationForm):
+    captcha = CaptchaField()  # Agregar el campo de CAPTCHA
+
+    class Meta:
+        model = User
+        fields = ['username', 'password', 'captcha']
 
 class ProductoForm(forms.ModelForm):
 
