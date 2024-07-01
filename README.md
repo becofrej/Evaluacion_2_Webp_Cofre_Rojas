@@ -6,11 +6,12 @@ Después de activar el entorno, dentro de la consola de VS, ejecute los siguient
 
 1. pip install django
 2. pip install pillow
-3. pip install django-admin-interface
-4. pip install django-crispy-forms
-5. pip install crispy-bootstrap4
-6. pip install django-simple-captcha
-7. Ejecute el servidor.
+3. pip install django-extensions
+4. pip install django-admin-interface
+5. pip install django-crispy-forms
+6. pip install crispy-bootstrap4
+7. pip install django-simple-captcha
+8. Ejecute el servidor.
 
 **NOTAS IMPORTANTES**: LAS FUNCIONES DEL CRUD, ASÍ COMO PODER ACCEDER AL PANEL DE ADMINISTRACIÓN DE LA TIENDA, SE ENCUENTRAN EN EL DROPDOWN DEL PERFIL.
 
