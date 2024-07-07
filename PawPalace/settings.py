@@ -71,7 +71,14 @@ TEMPLATES = [
 WSGI_APPLICATION = 'PawPalace.wsgi.application'
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://pawpalacebd_user:PD11OhwxZtxB869o9J9tByT1OeCnM4fA@dpg-cq28h43v2p9s73eohsdg-a/pawpalacebd')
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'pawpalacebd',
+        'USER': 'pawpalacebd_user',
+        'PASSWORD': 'PD11OhwxZtxB869o9J9tByT1OeCnM4fA',
+        'HOST': 'postgresql://pawpalacebd_user:PD11OhwxZtxB869o9J9tByT1OeCnM4fA@dpg-cq28h43v2p9s73eohsdg-a.oregon-postgres.render.com/pawpalacebd',  
+        'PORT': '5432',
+    }
 }
 
 AUTH_PASSWORD_VALIDATORS = [
