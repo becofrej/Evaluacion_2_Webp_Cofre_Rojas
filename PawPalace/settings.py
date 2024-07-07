@@ -71,10 +71,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'PawPalace.wsgi.application'
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default='postgresql://pawpalacebd_user:PD11OhwxZtxB869o9J9tByT1OeCnM4fA@dpg-cq28h43v2p9s73eohsdg-a.oregon-postgres.render.com/pawpalacebd',
-        conn_max_age=600
-    )
+    'default': dj_database_url.parse('postgres://pawpalacebd_user:PD11OhwxZtxB869o9J9tByT1OeCnM4fA@dpg-cq28h43v2p9s73eohsdg-a/pawpalacebd')
 }
 
 AUTH_PASSWORD_VALIDATORS = [
