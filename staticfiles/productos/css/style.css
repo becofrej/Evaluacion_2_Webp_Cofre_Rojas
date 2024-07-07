@@ -1,10 +1,10 @@
 body {
-  background-image: url("Media/background/background_lavanda_2.png");
+  background-image: url('/static/productos/img/background/background_lavanda_2.png');
 }
 
 .general-custom-canvas {
-  background-image: url("Media/background/background-canvas.png");
-}
+  background-image: url('/static/productos/img/background/background-canvas.png');
+} 
 
 .benja-header {
   display: flex;
@@ -88,6 +88,7 @@ nav {
   font-size: 14px;
   padding: 8px 20px;
 }
+
 
 .dropdown-item:hover,
 .dropdown-item:focus {
