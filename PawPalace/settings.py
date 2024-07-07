@@ -76,7 +76,7 @@ DATABASES = {
         'NAME': 'pawpalacebd',
         'USER': 'pawpalacebd_user',
         'PASSWORD': 'PD11OhwxZtxB869o9J9tByT1OeCnM4fA',
-        'HOST': 'postgresql://pawpalacebd_user:PD11OhwxZtxB869o9J9tByT1OeCnM4fA@dpg-cq28h43v2p9s73eohsdg-a.oregon-postgres.render.com/pawpalacebd',  
+        'HOST': 'dpg-cq28h43v2p9s73eohsdg-a.oregon-postgres.render.com',  # Parte del host sin el prefijo "postgresql://"
         'PORT': '5432',
     }
 }
