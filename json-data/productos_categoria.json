@@ -1,0 +1,30 @@
+[
+    {
+        "model": "productos.categoria",
+        "pk": "1",
+        "fields": {
+            "nombre": "Alimentos para Perros"
+        }
+    },
+    {
+        "model": "productos.categoria",
+        "pk": "2",
+        "fields": {
+            "nombre": "Alimentos para Gatos"
+        }
+    },
+    {
+        "model": "productos.categoria",
+        "pk": "3",
+        "fields": {
+            "nombre": "Accesorios"
+        }
+    },
+    {
+        "model": "productos.categoria",
+        "pk": "4",
+        "fields": {
+            "nombre": "Snacks"
+        }
+    }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "model": "captcha.captchastore",
+        "pk": "17",
+        "fields": {
+            "challenge": "NRIY",
+            "response": "nriy",
+            "hashkey": "b4dcb63d364b523577cacf5b809f65518dea6f94",
+            "expiration": "2024-06-29 06:21:48.832087"
+        }
+    },
+    {
+        "model": "captcha.captchastore",
+        "pk": "18",
+        "fields": {
+            "challenge": "QXHV",
+            "response": "qxhv",
+            "hashkey": "753cbf7f4224d5d3959b6e804d6cfde697a2022a",
+            "expiration": "2024-06-29 06:23:21.730254"
+        }
+    },
+    {
+        "model": "captcha.captchastore",
+        "pk": "20",
+        "fields": {
+            "challenge": "IARN",
+            "response": "iarn",
+            "hashkey": "73b8cf3863cf0325e75ea58ad4d5c61a40e13784",
+            "expiration": "2024-06-29 06:38:29.636311"
+        }
+    },
+    {
+        "model": "captcha.captchastore",
+        "pk": "21",
+        "fields": {
+            "challenge": "VYQD",
+            "response": "vyqd",
+            "hashkey": "5898dcf1b83c27376fd81f0f54ac00e95a07ba93",
+            "expiration": "2024-06-29 06:38:33.413053"
+        }
+    },
+    {
+        "model": "captcha.captchastore",
+        "pk": "22",
+        "fields": {
+            "challenge": "TXBM",
+            "response": "txbm",
+            "hashkey": "d11a9150ebe5cbec4e94550276bd6e0a82e370bf",
+            "expiration": "2024-06-29 17:48:48.758478"
+        }
+    },
+    {
+        "model": "captcha.captchastore",
+        "pk": "23",
+        "fields": {
+            "challenge": "JFDX",
+            "response": "jfdx",
+            "hashkey": "b2fae83d8aef41e0870718eaee35f06b2e915fa7",
+            "expiration": "2024-06-29 17:53:24.405580"
+        }
+    },
+    {
+        "model": "captcha.captchastore",
+        "pk": "24",
+        "fields": {
+            "challenge": "BEHV",
+            "response": "behv",
+            "hashkey": "216c6ef02dcbd313ee7d2ec4ec6a938cb507a4c5",
+            "expiration": "2024-07-01 18:24:41.876144"
+        }
+    }
+]

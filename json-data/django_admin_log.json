@@ -1,0 +1,1913 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": "1",
+        "fields": {
+            "object_id": "1",
+            "object_repr": "Alimentos para Perros",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "7",
+            "user_id": "1",
+            "action_time": "2024-06-23 02:22:32.317021"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "2",
+        "fields": {
+            "object_id": "2",
+            "object_repr": "Alimentos para Gatos",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "7",
+            "user_id": "1",
+            "action_time": "2024-06-23 02:22:46.561617"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "3",
+        "fields": {
+            "object_id": "3",
+            "object_repr": "Accesorios",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "7",
+            "user_id": "1",
+            "action_time": "2024-06-23 02:23:13.589437"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "4",
+        "fields": {
+            "object_id": "4",
+            "object_repr": "Snacks",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "7",
+            "user_id": "1",
+            "action_time": "2024-06-23 02:23:22.704166"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "5",
+        "fields": {
+            "object_id": "1",
+            "object_repr": "Django",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"Logo\", \"Title\", \"Color\"]}}]",
+            "content_type_id": "9",
+            "user_id": "1",
+            "action_time": "2024-06-23 02:25:22.722456"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "6",
+        "fields": {
+            "object_id": "1",
+            "object_repr": "Django",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"Background color\"]}}]",
+            "content_type_id": "9",
+            "user_id": "1",
+            "action_time": "2024-06-23 02:26:24.371589"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "7",
+        "fields": {
+            "object_id": "1",
+            "object_repr": "Django",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"Background color\"]}}]",
+            "content_type_id": "9",
+            "user_id": "1",
+            "action_time": "2024-06-23 02:26:53.103280"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "8",
+        "fields": {
+            "object_id": "1",
+            "object_repr": "Django",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"Text color\"]}}]",
+            "content_type_id": "9",
+            "user_id": "1",
+            "action_time": "2024-06-23 02:27:12.238811"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "9",
+        "fields": {
+            "object_id": "1",
+            "object_repr": "MasterDog",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 02:47:15.479314"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "10",
+        "fields": {
+            "object_id": "2",
+            "object_repr": "MasterCat",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 02:48:01.719536"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "11",
+        "fields": {
+            "object_id": "3",
+            "object_repr": "Snack1",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 03:09:19.628452"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "12",
+        "fields": {
+            "object_id": "4",
+            "object_repr": "Snack2",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 03:09:44.060167"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "13",
+        "fields": {
+            "object_id": "5",
+            "object_repr": "Snack3",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 03:10:00.004217"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "14",
+        "fields": {
+            "object_id": "6",
+            "object_repr": "Accesorios1",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 03:10:24.677178"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "15",
+        "fields": {
+            "object_id": "7",
+            "object_repr": "Accesorios2",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 03:10:37.397807"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "16",
+        "fields": {
+            "object_id": "8",
+            "object_repr": "Snack4",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 03:11:26.725906"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "17",
+        "fields": {
+            "object_id": "9",
+            "object_repr": "Snack5",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 03:11:41.577368"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "18",
+        "fields": {
+            "object_id": "10",
+            "object_repr": "alimentoperro2",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 03:12:15.426324"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "19",
+        "fields": {
+            "object_id": "11",
+            "object_repr": "alimentoperro3",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 03:23:42.314688"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "20",
+        "fields": {
+            "object_id": "12",
+            "object_repr": "alimentoperro4",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 03:24:14.279190"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "21",
+        "fields": {
+            "object_id": "13",
+            "object_repr": "alimentoperro5",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 03:28:27.986046"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "22",
+        "fields": {
+            "object_id": "13",
+            "object_repr": "alimentoperro5",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:05.734690"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "23",
+        "fields": {
+            "object_id": "12",
+            "object_repr": "alimentoperro4",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:05.740203"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "24",
+        "fields": {
+            "object_id": "11",
+            "object_repr": "alimentoperro3",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:05.743868"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "25",
+        "fields": {
+            "object_id": "10",
+            "object_repr": "alimentoperro2",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:05.748892"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "26",
+        "fields": {
+            "object_id": "9",
+            "object_repr": "Snack5",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:05.752704"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "27",
+        "fields": {
+            "object_id": "8",
+            "object_repr": "Snack4",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:05.758096"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "28",
+        "fields": {
+            "object_id": "7",
+            "object_repr": "Accesorios2",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:05.762095"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "29",
+        "fields": {
+            "object_id": "6",
+            "object_repr": "Accesorios1",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:05.767611"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "30",
+        "fields": {
+            "object_id": "5",
+            "object_repr": "Snack3",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:05.770989"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "31",
+        "fields": {
+            "object_id": "4",
+            "object_repr": "Snack2",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:05.775500"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "32",
+        "fields": {
+            "object_id": "3",
+            "object_repr": "Snack1",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:12.133789"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "33",
+        "fields": {
+            "object_id": "2",
+            "object_repr": "MasterCat",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:12.139028"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "34",
+        "fields": {
+            "object_id": "1",
+            "object_repr": "MasterDog",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 04:55:12.142533"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "35",
+        "fields": {
+            "object_id": "14",
+            "object_repr": "Saco NATH Dog Adulto 25kg",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:05:24.684578"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "36",
+        "fields": {
+            "object_id": "15",
+            "object_repr": "Saco NATH Dog Medium 25kg",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:06:03.538002"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "37",
+        "fields": {
+            "object_id": "16",
+            "object_repr": "Saco Nutrience Dog Adulto 25kg",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:06:46.700031"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "38",
+        "fields": {
+            "object_id": "17",
+            "object_repr": "Saco N&D Dog Medium 25kg",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:07:14.322131"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "39",
+        "fields": {
+            "object_id": "18",
+            "object_repr": "Saco OVEN Dog Small",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:07:38.546379"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "40",
+        "fields": {
+            "object_id": "19",
+            "object_repr": "Saco Purina PRO-PLAN Dog Adulto Pequeño",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:08:19.731337"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "41",
+        "fields": {
+            "object_id": "20",
+            "object_repr": "Saco Purina PRO-PLAN Dog Adulto Grande",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:08:54.018523"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "42",
+        "fields": {
+            "object_id": "21",
+            "object_repr": "Saco Royal Canin Dog Chiguagua",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:09:34.789264"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "43",
+        "fields": {
+            "object_id": "22",
+            "object_repr": "Saco Royal Canin Dog Adulto Grande",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:10:01.727155"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "44",
+        "fields": {
+            "object_id": "23",
+            "object_repr": "Saco Royal Canin Dog Cachorro Pequeño",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:10:37.013212"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "45",
+        "fields": {
+            "object_id": "24",
+            "object_repr": "Taste Of Wild Dog 25kg",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:12:36.164748"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "46",
+        "fields": {
+            "object_id": "25",
+            "object_repr": "Wellness Core Adult Dog 25kg",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:13:05.964557"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "47",
+        "fields": {
+            "object_id": "26",
+            "object_repr": "Saco Bravery Cat Adulto",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:23:43.655451"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "48",
+        "fields": {
+            "object_id": "27",
+            "object_repr": "Saco Fit Formula Cat Adulto",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:24:14.228274"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "49",
+        "fields": {
+            "object_id": "28",
+            "object_repr": "Saco Hills Cat Adulto",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:24:45.518983"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "50",
+        "fields": {
+            "object_id": "29",
+            "object_repr": "Saco Hills Cat Adulto Control",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:25:11.636191"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "51",
+        "fields": {
+            "object_id": "30",
+            "object_repr": "Saco Leonardo Cat Adulto",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:25:41.433106"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "52",
+        "fields": {
+            "object_id": "31",
+            "object_repr": "Saco Leonardo Cat Light",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:26:06.219128"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "53",
+        "fields": {
+            "object_id": "32",
+            "object_repr": "Saco NATH Cat 25kg",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:26:30.003688"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "54",
+        "fields": {
+            "object_id": "33",
+            "object_repr": "Saco NATH Cat Kit 25kg",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:26:53.946843"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "55",
+        "fields": {
+            "object_id": "34",
+            "object_repr": "Saco Purina PRO-PLAN Cat Adulto",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:27:33.017881"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "56",
+        "fields": {
+            "object_id": "35",
+            "object_repr": "Saco Royal Canin Cat Indoor",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:28:00.055051"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "57",
+        "fields": {
+            "object_id": "36",
+            "object_repr": "Saco Royal Canin Cat Sensible",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:28:23.870747"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "58",
+        "fields": {
+            "object_id": "37",
+            "object_repr": "Saco Royal Canin Cat Persian Adult",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:28:57.561385"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "59",
+        "fields": {
+            "object_id": "38",
+            "object_repr": "Saco Royal Canin Cat Savour Exigent",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:29:26.813576"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "60",
+        "fields": {
+            "object_id": "39",
+            "object_repr": "Saco Taste of the Wild Cat",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:29:47.068541"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "61",
+        "fields": {
+            "object_id": "40",
+            "object_repr": "Bandana a cuadros azul",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:48:06.502090"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "62",
+        "fields": {
+            "object_id": "41",
+            "object_repr": "Correa multicolores",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:48:29.538929"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "63",
+        "fields": {
+            "object_id": "42",
+            "object_repr": "Correa liquid",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:48:48.656410"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "64",
+        "fields": {
+            "object_id": "43",
+            "object_repr": "Bandana azul",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:49:09.283969"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "65",
+        "fields": {
+            "object_id": "44",
+            "object_repr": "Bandana Ovejas",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:49:28.035450"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "66",
+        "fields": {
+            "object_id": "45",
+            "object_repr": "Bandana Pato",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:49:45.605187"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "67",
+        "fields": {
+            "object_id": "46",
+            "object_repr": "Bandana Sandia",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:50:05.950720"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "68",
+        "fields": {
+            "object_id": "47",
+            "object_repr": "Correa con pechera Rosa",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:50:31.592757"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "69",
+        "fields": {
+            "object_id": "48",
+            "object_repr": "Correa Rosa",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:50:51.131168"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "70",
+        "fields": {
+            "object_id": "49",
+            "object_repr": "Correa retraible verde",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:51:16.524901"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "71",
+        "fields": {
+            "object_id": "50",
+            "object_repr": "Identificador Color Rosado",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:51:39.957046"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "72",
+        "fields": {
+            "object_id": "51",
+            "object_repr": "Identificador Bola8",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:52:00.283065"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "73",
+        "fields": {
+            "object_id": "52",
+            "object_repr": "Identificador OsoPolar",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:52:26.279341"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "74",
+        "fields": {
+            "object_id": "53",
+            "object_repr": "Identificador Color Crema",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:52:56.153813"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "75",
+        "fields": {
+            "object_id": "54",
+            "object_repr": "Identificador Doberman",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:53:23.418725"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "76",
+        "fields": {
+            "object_id": "55",
+            "object_repr": "Identificador Hueso",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:53:43.349434"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "77",
+        "fields": {
+            "object_id": "56",
+            "object_repr": "Identificador Perro cafe",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:54:04.427675"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "78",
+        "fields": {
+            "object_id": "57",
+            "object_repr": "Identificador Perro negro",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:54:26.033173"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "79",
+        "fields": {
+            "object_id": "58",
+            "object_repr": "Identificador Rojo",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 05:54:48.239059"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "80",
+        "fields": {
+            "object_id": "59",
+            "object_repr": "Frasco Ama Hum Cat 200g",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:06:56.935811"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "81",
+        "fields": {
+            "object_id": "60",
+            "object_repr": "Lata Belcando Hum Dog",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:07:18.731864"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "82",
+        "fields": {
+            "object_id": "61",
+            "object_repr": "Sobre Catit Creamy Cat",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:08:16.859175"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "83",
+        "fields": {
+            "object_id": "62",
+            "object_repr": "Sobre Churu Dog",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:08:36.838508"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "84",
+        "fields": {
+            "object_id": "63",
+            "object_repr": "Sobre Churu Cat 4x3",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:09:02.521251"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "85",
+        "fields": {
+            "object_id": "64",
+            "object_repr": "Sobre CikaKraft Cat Yums",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:09:23.185377"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "86",
+        "fields": {
+            "object_id": "65",
+            "object_repr": "Sobre Dental Fitness Cat",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:09:47.434726"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "87",
+        "fields": {
+            "object_id": "66",
+            "object_repr": "Sobre Dingo Dog 4x3",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:10:08.937223"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "88",
+        "fields": {
+            "object_id": "67",
+            "object_repr": "Caja sobres Fit Formula Cat 4x3",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:10:32.064484"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "89",
+        "fields": {
+            "object_id": "68",
+            "object_repr": "Lata Leonardo Hum Cat",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:10:50.347613"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "90",
+        "fields": {
+            "object_id": "69",
+            "object_repr": "Sobre Naturalistic Grill Dog",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:11:12.454558"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "91",
+        "fields": {
+            "object_id": "70",
+            "object_repr": "Sobre Naturalistic Meat Balls Dog",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:11:34.423813"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "92",
+        "fields": {
+            "object_id": "71",
+            "object_repr": "Bote de carne seca Rahue Dog",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:12:00.696383"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "93",
+        "fields": {
+            "object_id": "72",
+            "object_repr": "Rahue Snack Dog 4x3",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:12:24.073298"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "94",
+        "fields": {
+            "object_id": "73",
+            "object_repr": "Lata Royal Canin Hum Dog 3x2",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:12:54.533912"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "95",
+        "fields": {
+            "object_id": "74",
+            "object_repr": "Sobre Six Fish Cat",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:13:17.280102"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "96",
+        "fields": {
+            "object_id": "75",
+            "object_repr": "Sobre Churu Queso Cat",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:13:38.633604"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "97",
+        "fields": {
+            "object_id": "76",
+            "object_repr": "Sobre Antos Toasted Turkey Cat",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:13:59.828468"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "98",
+        "fields": {
+            "object_id": "77",
+            "object_repr": "Sobres SuniChups Cat",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-23 06:14:16.471105"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "99",
+        "fields": {
+            "object_id": "8",
+            "object_repr": "Danielek",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 08:30:38.319276"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "100",
+        "fields": {
+            "object_id": "5",
+            "object_repr": "david",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 08:30:46.716773"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "101",
+        "fields": {
+            "object_id": "2",
+            "object_repr": "david01",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 08:30:50.353260"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "102",
+        "fields": {
+            "object_id": "6",
+            "object_repr": "david0101",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 08:30:54.034166"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "103",
+        "fields": {
+            "object_id": "4",
+            "object_repr": "david12",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 08:30:57.569123"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "104",
+        "fields": {
+            "object_id": "3",
+            "object_repr": "david123",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 08:31:01.028170"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "105",
+        "fields": {
+            "object_id": "7",
+            "object_repr": "davidoo",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 08:31:04.410868"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "106",
+        "fields": {
+            "object_id": "10",
+            "object_repr": "usuariprueba2",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:15:25.733893"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "107",
+        "fields": {
+            "object_id": "9",
+            "object_repr": "usuarioprueba",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:15:29.016740"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "108",
+        "fields": {
+            "object_id": "16",
+            "object_repr": "prueba4",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:15:32.006661"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "109",
+        "fields": {
+            "object_id": "15",
+            "object_repr": "prueba3",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:15:34.936641"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "110",
+        "fields": {
+            "object_id": "14",
+            "object_repr": "prueba2",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:15:37.879735"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "111",
+        "fields": {
+            "object_id": "12",
+            "object_repr": "juanitperez01",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:15:53.310719"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "112",
+        "fields": {
+            "object_id": "17",
+            "object_repr": "asd",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:15:56.605966"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "113",
+        "fields": {
+            "object_id": "13",
+            "object_repr": "estoesunaprueba",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:15:59.291525"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "114",
+        "fields": {
+            "object_id": "18",
+            "object_repr": "asdasdasd",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:16:02.454356"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "115",
+        "fields": {
+            "object_id": "11",
+            "object_repr": "juanitoperez",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:16:05.153201"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "116",
+        "fields": {
+            "object_id": "20",
+            "object_repr": "usuariotest1",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:51:32.814732"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "117",
+        "fields": {
+            "object_id": "19",
+            "object_repr": "sweetalert",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:51:35.678475"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "118",
+        "fields": {
+            "object_id": "21",
+            "object_repr": "davidprueba",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:51:39.089754"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "119",
+        "fields": {
+            "object_id": "1",
+            "object_repr": "Django",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"Link active color\"]}}]",
+            "content_type_id": "9",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:52:01.248262"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "120",
+        "fields": {
+            "object_id": "1",
+            "object_repr": "Django",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"Link active color\"]}}]",
+            "content_type_id": "9",
+            "user_id": "1",
+            "action_time": "2024-06-24 10:52:11.110555"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "121",
+        "fields": {
+            "object_id": "78",
+            "object_repr": "pece",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-24 13:04:25.520031"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "122",
+        "fields": {
+            "object_id": "79",
+            "object_repr": "asd",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-24 13:07:05.010318"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "123",
+        "fields": {
+            "object_id": "80",
+            "object_repr": "juguete pelota",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-24 22:16:01.187603"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "124",
+        "fields": {
+            "object_id": "25",
+            "object_repr": "adminassda",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 22:36:44.685278"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "125",
+        "fields": {
+            "object_id": "22",
+            "object_repr": "aaaaaaaa",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 22:36:51.315191"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "126",
+        "fields": {
+            "object_id": "23",
+            "object_repr": "asdasd12",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 22:36:56.328259"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "127",
+        "fields": {
+            "object_id": "24",
+            "object_repr": "prueba11",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-24 22:37:01.576069"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "128",
+        "fields": {
+            "object_id": "81",
+            "object_repr": "hskydkhdhkdgfgh",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-24 22:38:57.662685"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "129",
+        "fields": {
+            "object_id": "82",
+            "object_repr": "asd",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-27 08:10:08.076200"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "130",
+        "fields": {
+            "object_id": "26",
+            "object_repr": "daniteamo1",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 10:48:24.390716"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "131",
+        "fields": {
+            "object_id": "27",
+            "object_repr": "usuariopruebacrud",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 10:48:28.429761"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "132",
+        "fields": {
+            "object_id": "28",
+            "object_repr": "profevik",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 10:49:31.808619"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "133",
+        "fields": {
+            "object_id": "29",
+            "object_repr": "usuariopruebapermisos",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 10:49:51.227803"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "134",
+        "fields": {
+            "object_id": "29",
+            "object_repr": "usuariopruebapermisos",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 10:50:17.634181"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "135",
+        "fields": {
+            "object_id": "28",
+            "object_repr": "profevik",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 10:57:27.958879"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "136",
+        "fields": {
+            "object_id": "28",
+            "object_repr": "profevik",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 11:03:34.140222"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "137",
+        "fields": {
+            "object_id": "28",
+            "object_repr": "profevik",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"User permissions\"]}}]",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 11:19:46.083835"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "138",
+        "fields": {
+            "object_id": "30",
+            "object_repr": "useraddproduct",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 11:24:52.495462"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "139",
+        "fields": {
+            "object_id": "31",
+            "object_repr": "userdeleteproduct",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 11:25:07.044865"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "140",
+        "fields": {
+            "object_id": "32",
+            "object_repr": "useronlyview",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 11:25:16.555374"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "141",
+        "fields": {
+            "object_id": "29",
+            "object_repr": "usuariopruebapermisos",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 11:25:22.916337"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "142",
+        "fields": {
+            "object_id": "28",
+            "object_repr": "profevik",
+            "action_flag": "2",
+            "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 11:26:48.056928"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "143",
+        "fields": {
+            "object_id": "32",
+            "object_repr": "useronlyview",
+            "action_flag": "2",
+            "change_message": "[]",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-27 11:28:07.562475"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "144",
+        "fields": {
+            "object_id": "106",
+            "object_repr": "1",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-27 12:16:06.809138"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "145",
+        "fields": {
+            "object_id": "107",
+            "object_repr": "AAAAAAAAA",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-27 12:17:05.933611"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "146",
+        "fields": {
+            "object_id": "108",
+            "object_repr": "AAAAAAAAAAA",
+            "action_flag": "1",
+            "change_message": "[{\"added\": {}}]",
+            "content_type_id": "8",
+            "user_id": "1",
+            "action_time": "2024-06-27 12:17:34.449207"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": "147",
+        "fields": {
+            "object_id": "35",
+            "object_repr": "chupoamelepcioo",
+            "action_flag": "3",
+            "change_message": "",
+            "content_type_id": "4",
+            "user_id": "1",
+            "action_time": "2024-06-28 04:40:21.466976"
+        }
+    }
+]

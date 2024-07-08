@@ -1,0 +1,470 @@
+[
+    {
+        "model": "migrations.migration",
+        "pk": "1",
+        "fields": {
+            "app": "contenttypes",
+            "name": "0001_initial",
+            "applied": "2024-06-23 02:07:34.993085"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "2",
+        "fields": {
+            "app": "auth",
+            "name": "0001_initial",
+            "applied": "2024-06-23 02:07:35.010460"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "3",
+        "fields": {
+            "app": "admin",
+            "name": "0001_initial",
+            "applied": "2024-06-23 02:07:35.023979"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "4",
+        "fields": {
+            "app": "admin",
+            "name": "0002_logentry_remove_auto_add",
+            "applied": "2024-06-23 02:07:35.036975"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "5",
+        "fields": {
+            "app": "admin",
+            "name": "0003_logentry_add_action_flag_choices",
+            "applied": "2024-06-23 02:07:35.056974"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "6",
+        "fields": {
+            "app": "contenttypes",
+            "name": "0002_remove_content_type_name",
+            "applied": "2024-06-23 02:07:35.075976"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "7",
+        "fields": {
+            "app": "auth",
+            "name": "0002_alter_permission_name_max_length",
+            "applied": "2024-06-23 02:07:35.086975"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "8",
+        "fields": {
+            "app": "auth",
+            "name": "0003_alter_user_email_max_length",
+            "applied": "2024-06-23 02:07:35.097708"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "9",
+        "fields": {
+            "app": "auth",
+            "name": "0004_alter_user_username_opts",
+            "applied": "2024-06-23 02:07:35.105713"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "10",
+        "fields": {
+            "app": "auth",
+            "name": "0005_alter_user_last_login_null",
+            "applied": "2024-06-23 02:07:35.116714"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "11",
+        "fields": {
+            "app": "auth",
+            "name": "0006_require_contenttypes_0002",
+            "applied": "2024-06-23 02:07:35.120217"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "12",
+        "fields": {
+            "app": "auth",
+            "name": "0007_alter_validators_add_error_messages",
+            "applied": "2024-06-23 02:07:35.129471"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "13",
+        "fields": {
+            "app": "auth",
+            "name": "0008_alter_user_username_max_length",
+            "applied": "2024-06-23 02:07:35.141472"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "14",
+        "fields": {
+            "app": "auth",
+            "name": "0009_alter_user_last_name_max_length",
+            "applied": "2024-06-23 02:07:35.152473"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "15",
+        "fields": {
+            "app": "auth",
+            "name": "0010_alter_group_name_max_length",
+            "applied": "2024-06-23 02:07:35.162472"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "16",
+        "fields": {
+            "app": "auth",
+            "name": "0011_update_proxy_permissions",
+            "applied": "2024-06-23 02:07:35.170472"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "17",
+        "fields": {
+            "app": "auth",
+            "name": "0012_alter_user_first_name_max_length",
+            "applied": "2024-06-23 02:07:35.181492"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "18",
+        "fields": {
+            "app": "productos",
+            "name": "0001_initial",
+            "applied": "2024-06-23 02:07:35.191491"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "19",
+        "fields": {
+            "app": "sessions",
+            "name": "0001_initial",
+            "applied": "2024-06-23 02:07:35.201492"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "20",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0001_initial",
+            "applied": "2024-06-23 02:13:39.983233"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "21",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0002_add_related_modal",
+            "applied": "2024-06-23 02:13:40.007700"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "22",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0003_add_logo_color",
+            "applied": "2024-06-23 02:13:40.018699"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "23",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0004_rename_title_color",
+            "applied": "2024-06-23 02:13:40.026701"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "24",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0005_add_recent_actions_visible",
+            "applied": "2024-06-23 02:13:40.035700"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "25",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0006_bytes_to_str",
+            "applied": "2024-06-23 02:13:40.082708"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "26",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0007_add_favicon",
+            "applied": "2024-06-23 02:13:40.093214"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "27",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0008_change_related_modal_background_opacity_type",
+            "applied": "2024-06-23 02:13:40.106215"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "28",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0009_add_enviroment",
+            "applied": "2024-06-23 02:13:40.120213"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "29",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0010_add_localization",
+            "applied": "2024-06-23 02:13:40.134214"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "30",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0011_add_environment_options",
+            "applied": "2024-06-23 02:13:40.163216"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "31",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0012_update_verbose_names",
+            "applied": "2024-06-23 02:13:40.171213"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "32",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0013_add_related_modal_close_button",
+            "applied": "2024-06-23 02:13:40.183221"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "33",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0014_name_unique",
+            "applied": "2024-06-23 02:13:40.193735"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "34",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0015_add_language_chooser_active",
+            "applied": "2024-06-23 02:13:40.203735"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "35",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0016_add_language_chooser_display",
+            "applied": "2024-06-23 02:13:40.213737"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "36",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0017_change_list_filter_dropdown",
+            "applied": "2024-06-23 02:13:40.223954"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "37",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0018_theme_list_filter_sticky",
+            "applied": "2024-06-23 02:13:40.232951"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "38",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0019_add_form_sticky",
+            "applied": "2024-06-23 02:13:40.249950"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "39",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0020_module_selected_colors",
+            "applied": "2024-06-23 02:13:40.270949"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "40",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0021_file_extension_validator",
+            "applied": "2024-06-23 02:13:40.278954"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "41",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0022_add_logo_max_width_and_height",
+            "applied": "2024-06-23 02:13:40.294466"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "42",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0023_theme_foldable_apps",
+            "applied": "2024-06-23 02:13:40.305467"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "43",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0024_remove_theme_css",
+            "applied": "2024-06-23 02:13:40.312467"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "44",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0025_theme_language_chooser_control",
+            "applied": "2024-06-23 02:13:40.323466"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "45",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0026_theme_list_filter_highlight",
+            "applied": "2024-06-23 02:13:40.334465"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "46",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0027_theme_list_filter_removal_links",
+            "applied": "2024-06-23 02:13:40.344469"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "47",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0028_theme_show_fieldsets_as_tabs_and_more",
+            "applied": "2024-06-23 02:13:40.361466"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "48",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0029_theme_css_generic_link_active_color",
+            "applied": "2024-06-23 02:13:40.374465"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "49",
+        "fields": {
+            "app": "admin_interface",
+            "name": "0030_theme_collapsible_stacked_inlines_and_more",
+            "applied": "2024-06-23 02:13:40.404761"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "50",
+        "fields": {
+            "app": "productos",
+            "name": "0002_alter_producto_precio",
+            "applied": "2024-06-23 04:33:11.720174"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "51",
+        "fields": {
+            "app": "captcha",
+            "name": "0001_initial",
+            "applied": "2024-06-27 12:31:06.280040"
+        }
+    },
+    {
+        "model": "migrations.migration",
+        "pk": "52",
+        "fields": {
+            "app": "captcha",
+            "name": "0002_alter_captchastore_id",
+            "applied": "2024-06-27 12:31:06.288733"
+        }
+    }
+]

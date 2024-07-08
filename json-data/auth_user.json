@@ -1,0 +1,146 @@
+[
+    {
+        "model": "auth.user",
+        "pk": "1",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$88exIfYEHze9iTUuRjWb9K$udbZV+wBw7PKe9WH3jSSmBhXMahI1Xc+gnNgy7u6gOk=",
+            "last_login": "2024-07-01 18:19:58.782832",
+            "is_superuser": "1",
+            "username": "admin",
+            "last_name": "",
+            "email": "admin@gmail.com",
+            "is_staff": "1",
+            "is_active": "1",
+            "date_joined": "2024-06-23 02:08:30.891993",
+            "first_name": ""
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "28",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$H3yfYpemdQYh4siFIpNShZ$UvMkThmTJzbPtWeXxqzivY3F0Ci2tkXVNr2vdGUxgGs=",
+            "last_login": "2024-06-28 04:41:24.452933",
+            "is_superuser": "0",
+            "username": "profevik",
+            "last_name": "Gallardo Valdes",
+            "email": "vic.gallardov@duoc.cl",
+            "is_staff": "1",
+            "is_active": "1",
+            "date_joined": "2024-06-27 10:47:14",
+            "first_name": "Victor"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "30",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$7aa521GePL0nZaYe3OrBru$h08hYlAdAHNGd3twPhYAvfkTkq4HLtcSjXdTy6Y5ejQ=",
+            "last_login": "2024-06-28 04:38:20.723870",
+            "is_superuser": "0",
+            "username": "useraddproduct",
+            "last_name": "Agrego Productos",
+            "email": "agrego@productos.cl",
+            "is_staff": "0",
+            "is_active": "1",
+            "date_joined": "2024-06-27 11:22:40",
+            "first_name": "Solo"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "31",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$kC7tUAwgNdCBoJJolem642$w2gfB+drSFyyypDls3uP7N5UTmdWjuojwb+b3E5UMoE=",
+            "last_login": "2024-06-28 04:37:46.522179",
+            "is_superuser": "0",
+            "username": "userdeleteproduct",
+            "last_name": "Elimino Productos",
+            "email": "elimino@productos.cl",
+            "is_staff": "0",
+            "is_active": "1",
+            "date_joined": "2024-06-27 11:23:48",
+            "first_name": "Solo"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "32",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$W6RizGnMsTOK1y58NMhL4B$imgkRiwvxYJHu7TuyflELc6ne6vdeS6La+WnvABrKOI=",
+            "last_login": "2024-06-28 04:37:13.223084",
+            "is_superuser": "0",
+            "username": "useronlyview",
+            "last_name": "Veo Productos",
+            "email": "solo@veo.cl",
+            "is_staff": "0",
+            "is_active": "1",
+            "date_joined": "2024-06-27 11:24:22",
+            "first_name": "Solo"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "33",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$2Vj3DNdAIeJhcYW8SoCGTv$2R+QXF8ak3zE7PgLKICkvu2ntsfERqob6Cw4iCfM0PI=",
+            "last_login": "2024-06-27 12:37:17.288790",
+            "is_superuser": "0",
+            "username": "animalito",
+            "last_name": "Rojas",
+            "email": "animalito@duoc.cl",
+            "is_staff": "0",
+            "is_active": "1",
+            "date_joined": "2024-06-27 12:37:16.730328",
+            "first_name": "David"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "34",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$aWb9O0c61ookYvnxhzMV6W$7Lern1OZypc3egBmyh7V6W4usbejO1JVzyQJeh6aDB8=",
+            "last_login": "2024-06-27 21:24:20.380239",
+            "is_superuser": "0",
+            "username": "captchaprueba3",
+            "last_name": "pruebaprube",
+            "email": "capt@dfjkn.cl",
+            "is_staff": "0",
+            "is_active": "1",
+            "date_joined": "2024-06-27 21:24:19.834146",
+            "first_name": "prueba"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "36",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$x3kWbJ4j7AkrvdDqapzQCp$KHscYq5wmXQsdlhW9weebF2V+3byEgq3a7VMo9V++/8=",
+            "last_login": "2024-06-28 04:43:01.596730",
+            "is_superuser": "0",
+            "username": "pajmsdpjasd",
+            "last_name": "rojas",
+            "email": "alksdj@duoc.cl",
+            "is_staff": "0",
+            "is_active": "1",
+            "date_joined": "2024-06-28 04:43:01.037558",
+            "first_name": "david"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": "37",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$q478ORcHu8W09ZNv7Y6j9I$onHNCDkkYKILt2LWqGmguggps89c9laoJVC8U2+Qt0A=",
+            "last_login": "NULL",
+            "is_superuser": "0",
+            "username": "usuariopruebita",
+            "last_name": "esto e suna prubea",
+            "email": "rpueba@eva3.cl",
+            "is_staff": "0",
+            "is_active": "1",
+            "date_joined": "2024-06-29 06:19:05.021002",
+            "first_name": "Antes de enviar"
+        }
+    }
+]

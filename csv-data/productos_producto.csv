@@ -1,0 +1,77 @@
+id,nombre,descripcion,imagen,stock,fecha_creacion,categoria_id,precio
+14,Saco NATH Dog Adulto 25kg,Alimento balanceado para perros adultos. Favorece la salud y energía de tu mascota.,productos/card-nathDogAdult25.jpg,15,2024-06-23 05:05:24.683576,1,10000
+15,Saco NATH Dog Medium 25kg,Nutrición completa para perros de tamaño mediano. Mantiene su vitalidad.,productos/card-nathDogMedium25.jpg,16,2024-06-23 05:06:03.537002,1,15000
+16,Saco Nutrience Dog Adulto 25kg,Fórmula avanzada para perros adultos. Promueve una vida saludable y activa.,productos/card-nutrienceDog.png,17000,2024-06-23 05:06:46.698066,1,23000
+17,Saco N&D Dog Medium 25kg,Comida premium para perros medianos. Ingredientes naturales y nutritivos.,productos/card-nydMediumDog25.jpg,15,2024-06-23 05:07:14.320131,1,18000
+18,Saco OVEN Dog Small,Alimento horneado para perros pequeños. Rico en sabor y fácil de digerir.,productos/card-ovenSmallDog_DivCQIu.png,8,2024-06-23 05:07:38.544428,1,18000
+19,Saco Purina PRO-PLAN Dog Adulto Pequeño,Nutrición óptima para perros adultos pequeños. Refuerza su sistema inmunológico.,productos/card-proplanAdulDogSmallBomba_hwGgyFR.jpg,13,2024-06-23 05:08:19.729336,1,28990
+20,Saco Purina PRO-PLAN Dog Adulto Grande,Alimentación completa para perros adultos grandes. Apoya articulaciones fuertes.,productos/card-proplanDogBomba_ewqcvwM.jpg,12,2024-06-23 05:08:54.017524,1,28990
+21,Saco Royal Canin Dog Chiguagua,Fórmula especial para Chihuahuas. Tamaño de croquetas adaptado y gran sabor.,productos/card-royalcaninChihuahuaDog.jpg,5,2024-06-23 05:09:34.787267,1,19990
+22,Saco Royal Canin Dog Adulto Grande,Comida para perros adultos grandes. Mantiene músculos y huesos fuertes.,productos/card-royalcaninMaxiDogBomba.jpg,8,2024-06-23 05:10:01.725947,1,24990
+23,Saco Royal Canin Dog Cachorro Pequeño,Nutrición para cachorros pequeños. Apoya el crecimiento y desarrollo saludable.,productos/card-royalcaninMiniDog25.jpg,6,2024-06-23 05:10:37.011661,1,21990
+24,Taste Of Wild Dog 25kg,Alimento premium para perros. Inspirado en la dieta ancestral de tu mascota.,productos/card-tasteofDog25_xHCviTz.jpg,4,2024-06-23 05:12:36.163220,1,21990
+25,Wellness Core Adult Dog 25kg,Nutrición natural para perros adultos. Alta en proteínas y sin granos.,productos/card-wellnesAdultDog25_EAIoLO8.jpg,3,2024-06-23 05:13:05.962558,1,14990
+26,Saco Bravery Cat Adulto,Alimento premium para gatos adultos. Fórmula equilibrada y nutritiva.,productos/card-braveryCatAdult.jpg,8,2024-06-23 05:23:43.654450,2,12000
+27,Saco Fit Formula Cat Adulto,Nutrición completa para gatos adultos. Mantiene su salud y vitalidad.,productos/card-fitCatAdulto.jpg,8,2024-06-23 05:24:14.225765,2,16000
+28,Saco Hills Cat Adulto,Comida balanceada para gatos adultos. Apoya la salud general y el bienestar.,productos/card-hillCatAdult.jpg,9,2024-06-23 05:24:45.517983,2,20000
+29,Saco Hills Cat Adulto Control,Fórmula especial para control de peso en gatos adultos. Nutrición efectiva.,productos/card-hillCatAdultControl.jpg,11,2024-06-23 05:25:11.635191,2,21000
+30,Saco Leonardo Cat Adulto,Alimento de calidad para gatos adultos. Ingredientes seleccionados y naturales.,productos/card-leonardoCatAdult.png,13,2024-06-23 05:25:41.433106,2,21990
+31,Saco Leonardo Cat Light,Comida para gatos con control de peso. Baja en calorías y rica en nutrientes.,productos/card-leonardoCatLight_McvHCWL.png,4,2024-06-23 05:26:06.218127,2,24990
+32,Saco NATH Cat 25kg,Nutrición equilibrada para gatos. Favorece una vida saludable y activa.,productos/card-nathCat25.jpg,6,2024-06-23 05:26:30.001685,2,23990
+33,Saco NATH Cat Kit 25kg,Alimento específico para gatitos. Apoya su crecimiento y desarrollo óptimo.,productos/card-nathCatKit25.jpg,8,2024-06-23 05:26:53.945843,2,24990
+34,Saco Purina PRO-PLAN Cat Adulto,Fórmula avanzada para gatos adultos. Refuerza su sistema inmunológico.,productos/card-proplanCatBomba.jpg,9,2024-06-23 05:27:33.016881,2,19990
+35,Saco Royal Canin Cat Indoor,Nutrición para gatos de interior. Ayuda a reducir las bolas de pelo.,productos/card-royalcaninCatIndoor.jpg,7,2024-06-23 05:28:00.054050,2,25000
+36,Saco Royal Canin Cat Sensible,Alimento para gatos con digestión sensible. Fórmula fácil de digerir.,productos/card-royalcaninCatSensible.jpg,13,2024-06-23 05:28:23.869747,2,22990
+37,Saco Royal Canin Cat Persian Adult,Comida especial para gatos persas. Mantiene su pelaje y salud general.,productos/card-royalcaninPersianAdult.jpg,3,2024-06-23 05:28:57.560384,2,25000
+38,Saco Royal Canin Cat Savour Exigent,Fórmula para gatos exigentes. Sabor y textura irresistibles.,productos/card-royalcaninSavourCat.jpg,6,2024-06-23 05:29:26.812701,2,20990
+39,Saco Taste of the Wild Cat,Alimentación inspirada en la dieta natural. Rico en proteínas y sabor.,productos/card-tasteofCat.jpg,8,2024-06-23 05:29:47.067532,2,16990
+40,Bandana a cuadros azul,Elegante bandana de cuadros azules. Ideal para un look clásico.,productos/card-accesorioBand30.jpg,5,2024-06-23 05:48:06.502090,3,3500
+41,Correa multicolores,Correa vibrante con múltiples colores. Aporta estilo y seguridad.,productos/card-accesorioCorrea30.png,5,2024-06-23 05:48:29.537930,3,3500
+42,Correa liquid,Correa resistente y moderna. Diseño atractivo y funcional.,productos/card-accesorioCorreaLiquid.jpg,5,2024-06-23 05:48:48.655407,3,3500
+43,Bandana azul,Bandana simple en azul sólido. Perfecta para cualquier ocasión.,productos/card-bandanaAzul70Liq.jpg,5,2024-06-23 05:49:09.281967,3,3500
+44,Bandana Ovejas,Bandana con diseño de ovejas. Añade un toque adorable a tu mascota.,productos/card-bandanaOveja.jpg,8,2024-06-23 05:49:28.034446,3,3500
+45,Bandana Pato,Divertida bandana con estampado de patos. Ideal para mascotas juguetonas.,productos/card-bandanaPato.jpg,6,2024-06-23 05:49:45.603772,3,3500
+46,Bandana Sandia,Bandana fresca con diseño de sandías. Perfecta para el verano.,productos/card-bandanaSandia30.jpg,7,2024-06-23 05:50:05.949717,3,3500
+47,Correa con pechera Rosa,Set de correa y pechera en rosa. Comodidad y estilo combinados.,productos/card-correaPecheraRosa.jpg,4,2024-06-23 05:50:31.591754,3,5800
+48,Correa Rosa,Correa en tono rosa vibrante. Atractiva y segura para paseos.,productos/card-correaRosa50Liq.png,3,2024-06-23 05:50:51.130169,3,3500
+49,Correa retraible verde,Correa verde retráctil. Ofrece libertad y control durante los paseos.,productos/card-correaVerde30.jpg,6,2024-06-23 05:51:16.523890,3,9990
+50,Identificador Color Rosado,Identificador en color rosado. Personalizable y seguro para tu mascota.,productos/card-identicadorRosado.jpg,5,2024-06-23 05:51:39.956048,3,2500
+51,Identificador Bola8,Identificador con diseño de bola 8. Único y fácil de reconocer.,productos/card-Identificador8.webp,5,2024-06-23 05:52:00.282065,3,2500
+52,Identificador OsoPolar,Identificador con forma de oso polar. Adorable y distintivo.,productos/card-IdentificadorBlanco.jpg,5,2024-06-23 05:52:26.278334,3,2500
+53,Identificador Color Crema,Identificador en tono crema. Sencillo y elegante.,productos/card-identificadorCrema_oYyO63H.jpg,5,2024-06-23 05:52:56.153813,3,2500
+54,Identificador Doberman,Identificador con diseño de doberman. Ideal para perros de raza.,productos/card-IdentificadorDoberman.jpg,5,2024-06-23 05:53:23.417723,3,2500
+55,Identificador Hueso,Identificador en forma de hueso. Clásico y fácil de ver.,productos/card-identificadorHueso.jpg,5,2024-06-23 05:53:43.348430,3,2500
+56,Identificador Perro cafe,Identificador con diseño de perro café. Personaliza la información de tu mascota.,productos/card-IdentificadorPerro.webp,5,2024-06-23 05:54:04.425670,3,2500
+57,Identificador Perro negro,Identificador con diseño de perro negro. Práctico y personalizable.,productos/card-IdentificadorPerroNegro_qa6Dqy4.webp,5,2024-06-23 05:54:26.031669,3,2500
+58,Identificador Rojo,Identificador en color rojo brillante. Visibilidad y seguridad aseguradas.,productos/card-IdentificadorRojo.jpg,5,2024-06-23 05:54:48.238056,3,2500
+59,Frasco Ama Hum Cat 200g,Delicioso snack húmedo para gatos. Ingredientes naturales y nutritivos.,productos/card-amaHumCat101.jpg,6,2024-06-23 06:06:56.934810,4,4500
+60,Lata Belcando Hum Dog,Alimento húmedo premium para perros. Sabor y calidad en cada bocado.,productos/card-belcandoHumDog51_th1Yyzz.jpg,5,2024-06-23 06:07:18.730863,4,3800
+61,Sobre Catit Creamy Cat,Snack cremoso para gatos. Ideal como recompensa o complemento alimenticio.,productos/card-catitCreamy.jpg,5,2024-06-23 06:08:16.858174,4,1200
+62,Sobre Churu Dog,Snack líquido para perros. Rico en proteínas y fácil de digerir.,productos/card-churruPerro19_Fu9ubDP.jpg,5,2024-06-23 06:08:36.837503,4,1500
+63,Sobre Churu Cat 4x3,Pack de snacks líquidos para gatos. Sabor y nutrición en cada porción.,productos/card-churuSnackCat4x3_2HmNKnE.jpg,5,2024-06-23 06:09:02.520213,4,4500
+64,Sobre CikaKraft Cat Yums,Bocados suaves y deliciosos para gatos. Perfectos para entrenamientos.,productos/card-cikakraftYums_jhHxWrK.jpg,6,2024-06-23 06:09:23.183375,4,1300
+65,Sobre Dental Fitness Cat,Snack dental para gatos. Ayuda a mantener la higiene bucal.,productos/card-dentalFitness_MdkPoFE.jpg,4,2024-06-23 06:09:47.433727,4,1400
+66,Sobre Dingo Dog 4x3,Pack de snacks para perros. Sabor irresistible y beneficios nutricionales.,productos/card-dingoSnackDog4x3.jpg,8,2024-06-23 06:10:08.935250,4,4200
+67,Caja sobres Fit Formula Cat 4x3,Pack de sobres de alimento húmedo para gatos. Completo y balanceado.,productos/card-fitSnackCat4x3.jpg,9,2024-06-23 06:10:32.063485,4,4800
+68,Lata Leonardo Hum Cat,Alimento húmedo gourmet para gatos. Alta calidad y gran sabor.,productos/card-leonardoHumCat101.png,5,2024-06-23 06:10:50.346043,4,3900
+69,Sobre Naturalistic Grill Dog,Snack para perros con sabor a parrilla. Nutritivo y delicioso.,productos/card-naturalisticGrill19.jpg,4,2024-06-23 06:11:12.453557,4,1700
+70,Sobre Naturalistic Meat Balls Dog,Albóndigas de carne para perros. Rico en proteínas y fácil de digerir.,productos/card-naturalisticMeatBalls19.jpg,7,2024-06-23 06:11:34.422810,4,1800
+71,Bote de carne seca Rahue Dog,Snack de carne seca para perros. Alto contenido proteico y gran sabor.,productos/card-rahuePerro19.jpg,4,2024-06-23 06:12:00.695382,4,5200
+72,Rahue Snack Dog 4x3,Pack de snacks para perros. Nutrición y sabor en cada bocado.,productos/card-rahueSnackDog4x3.jpg,3,2024-06-23 06:12:24.072296,4,4600
+73,Lata Royal Canin Hum Dog 3x2,Pack de latas de alimento húmedo para perros. Fórmula balanceada y nutritiva.,productos/card-royalcaninHumDog3x2.jpg,3,2024-06-23 06:12:54.532912,4,5500
+74,Sobre Six Fish Cat,Snack de pescado para gatos. Rico en ácidos grasos y proteínas.,productos/card-sixFish.jpg,7,2024-06-23 06:13:17.279100,4,2200
+75,Sobre Churu Queso Cat,Snack líquido con sabor a queso para gatos. Delicioso y nutritivo.,productos/card-snackChuruQueso.jpg,4,2024-06-23 06:13:38.632601,4,1600
+76,Sobre Antos Toasted Turkey Cat,Snack de pavo tostado para gatos. Alta palatabilidad y calidad.,productos/card-snackToastedTurkey.jpg,4,2024-06-23 06:13:59.827462,4,1700
+77,Sobres SuniChups Cat,Snack crujiente para gatos. Ingredientes naturales y saludables.,productos/card-sunipetSuniChups19.jpg,7,2024-06-23 06:14:16.470106,4,1500
+96,a,a,,1,2024-06-27 11:42:27.694930,1,1
+97,producto sin imagen,as,,1,2024-06-27 11:42:40.574191,2,1
+98,111,1,,1500001,2024-06-27 11:49:06.468291,1,1
+99,prueba3,1,,11,2024-06-27 11:49:41.179379,2,1500000
+100,prueba3,1,,11,2024-06-27 12:02:24.114326,2,1500000
+101,prueba3,1,,11,2024-06-27 12:02:27.092237,2,1500000
+103,AAA,aaaaa,,1,2024-06-27 12:10:31.403853,1,1
+104,AAAA,aaa,,1,2024-06-27 12:11:18.676513,1,1
+105,AAAaA,aaa,,1,2024-06-27 12:12:27.668008,1,1
+106,1,1,productos/Códigos_EA_mCPYOX3.jpg,1,2024-06-27 12:16:06.809138,1,1
+109,aasdasdas,AAAAasd,,1,2024-06-28 04:38:48.953828,1,1
+110,asdasñdkjmalñskdjn,asdasd,,1,2024-06-28 04:39:35.074772,4,1500000

@@ -1,0 +1,990 @@
+[
+    {
+        "model": "productos.producto",
+        "pk": "14",
+        "fields": {
+            "nombre": "Saco NATH Dog Adulto 25kg",
+            "descripcion": "Alimento balanceado para perros adultos. Favorece la salud y energía de tu mascota.",
+            "imagen": "productos/card-nathDogAdult25.jpg",
+            "stock": "15",
+            "fecha_creacion": "2024-06-23 05:05:24.683576",
+            "categoria_id": "1",
+            "precio": "10000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "15",
+        "fields": {
+            "nombre": "Saco NATH Dog Medium 25kg",
+            "descripcion": "Nutrición completa para perros de tamaño mediano. Mantiene su vitalidad.",
+            "imagen": "productos/card-nathDogMedium25.jpg",
+            "stock": "16",
+            "fecha_creacion": "2024-06-23 05:06:03.537002",
+            "categoria_id": "1",
+            "precio": "15000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "16",
+        "fields": {
+            "nombre": "Saco Nutrience Dog Adulto 25kg",
+            "descripcion": "Fórmula avanzada para perros adultos. Promueve una vida saludable y activa.",
+            "imagen": "productos/card-nutrienceDog.png",
+            "stock": "17000",
+            "fecha_creacion": "2024-06-23 05:06:46.698066",
+            "categoria_id": "1",
+            "precio": "23000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "17",
+        "fields": {
+            "nombre": "Saco N&D Dog Medium 25kg",
+            "descripcion": "Comida premium para perros medianos. Ingredientes naturales y nutritivos.",
+            "imagen": "productos/card-nydMediumDog25.jpg",
+            "stock": "15",
+            "fecha_creacion": "2024-06-23 05:07:14.320131",
+            "categoria_id": "1",
+            "precio": "18000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "18",
+        "fields": {
+            "nombre": "Saco OVEN Dog Small",
+            "descripcion": "Alimento horneado para perros pequeños. Rico en sabor y fácil de digerir.",
+            "imagen": "productos/card-ovenSmallDog_DivCQIu.png",
+            "stock": "8",
+            "fecha_creacion": "2024-06-23 05:07:38.544428",
+            "categoria_id": "1",
+            "precio": "18000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "19",
+        "fields": {
+            "nombre": "Saco Purina PRO-PLAN Dog Adulto Pequeño",
+            "descripcion": "Nutrición óptima para perros adultos pequeños. Refuerza su sistema inmunológico.",
+            "imagen": "productos/card-proplanAdulDogSmallBomba_hwGgyFR.jpg",
+            "stock": "13",
+            "fecha_creacion": "2024-06-23 05:08:19.729336",
+            "categoria_id": "1",
+            "precio": "28990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "20",
+        "fields": {
+            "nombre": "Saco Purina PRO-PLAN Dog Adulto Grande",
+            "descripcion": "Alimentación completa para perros adultos grandes. Apoya articulaciones fuertes.",
+            "imagen": "productos/card-proplanDogBomba_ewqcvwM.jpg",
+            "stock": "12",
+            "fecha_creacion": "2024-06-23 05:08:54.017524",
+            "categoria_id": "1",
+            "precio": "28990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "21",
+        "fields": {
+            "nombre": "Saco Royal Canin Dog Chiguagua",
+            "descripcion": "Fórmula especial para Chihuahuas. Tamaño de croquetas adaptado y gran sabor.",
+            "imagen": "productos/card-royalcaninChihuahuaDog.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:09:34.787267",
+            "categoria_id": "1",
+            "precio": "19990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "22",
+        "fields": {
+            "nombre": "Saco Royal Canin Dog Adulto Grande",
+            "descripcion": "Comida para perros adultos grandes. Mantiene músculos y huesos fuertes.",
+            "imagen": "productos/card-royalcaninMaxiDogBomba.jpg",
+            "stock": "8",
+            "fecha_creacion": "2024-06-23 05:10:01.725947",
+            "categoria_id": "1",
+            "precio": "24990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "23",
+        "fields": {
+            "nombre": "Saco Royal Canin Dog Cachorro Pequeño",
+            "descripcion": "Nutrición para cachorros pequeños. Apoya el crecimiento y desarrollo saludable.",
+            "imagen": "productos/card-royalcaninMiniDog25.jpg",
+            "stock": "6",
+            "fecha_creacion": "2024-06-23 05:10:37.011661",
+            "categoria_id": "1",
+            "precio": "21990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "24",
+        "fields": {
+            "nombre": "Taste Of Wild Dog 25kg",
+            "descripcion": "Alimento premium para perros. Inspirado en la dieta ancestral de tu mascota.",
+            "imagen": "productos/card-tasteofDog25_xHCviTz.jpg",
+            "stock": "4",
+            "fecha_creacion": "2024-06-23 05:12:36.163220",
+            "categoria_id": "1",
+            "precio": "21990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "25",
+        "fields": {
+            "nombre": "Wellness Core Adult Dog 25kg",
+            "descripcion": "Nutrición natural para perros adultos. Alta en proteínas y sin granos.",
+            "imagen": "productos/card-wellnesAdultDog25_EAIoLO8.jpg",
+            "stock": "3",
+            "fecha_creacion": "2024-06-23 05:13:05.962558",
+            "categoria_id": "1",
+            "precio": "14990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "26",
+        "fields": {
+            "nombre": "Saco Bravery Cat Adulto",
+            "descripcion": "Alimento premium para gatos adultos. Fórmula equilibrada y nutritiva.",
+            "imagen": "productos/card-braveryCatAdult.jpg",
+            "stock": "8",
+            "fecha_creacion": "2024-06-23 05:23:43.654450",
+            "categoria_id": "2",
+            "precio": "12000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "27",
+        "fields": {
+            "nombre": "Saco Fit Formula Cat Adulto",
+            "descripcion": "Nutrición completa para gatos adultos. Mantiene su salud y vitalidad.",
+            "imagen": "productos/card-fitCatAdulto.jpg",
+            "stock": "8",
+            "fecha_creacion": "2024-06-23 05:24:14.225765",
+            "categoria_id": "2",
+            "precio": "16000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "28",
+        "fields": {
+            "nombre": "Saco Hills Cat Adulto",
+            "descripcion": "Comida balanceada para gatos adultos. Apoya la salud general y el bienestar.",
+            "imagen": "productos/card-hillCatAdult.jpg",
+            "stock": "9",
+            "fecha_creacion": "2024-06-23 05:24:45.517983",
+            "categoria_id": "2",
+            "precio": "20000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "29",
+        "fields": {
+            "nombre": "Saco Hills Cat Adulto Control",
+            "descripcion": "Fórmula especial para control de peso en gatos adultos. Nutrición efectiva.",
+            "imagen": "productos/card-hillCatAdultControl.jpg",
+            "stock": "11",
+            "fecha_creacion": "2024-06-23 05:25:11.635191",
+            "categoria_id": "2",
+            "precio": "21000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "30",
+        "fields": {
+            "nombre": "Saco Leonardo Cat Adulto",
+            "descripcion": "Alimento de calidad para gatos adultos. Ingredientes seleccionados y naturales.",
+            "imagen": "productos/card-leonardoCatAdult.png",
+            "stock": "13",
+            "fecha_creacion": "2024-06-23 05:25:41.433106",
+            "categoria_id": "2",
+            "precio": "21990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "31",
+        "fields": {
+            "nombre": "Saco Leonardo Cat Light",
+            "descripcion": "Comida para gatos con control de peso. Baja en calorías y rica en nutrientes.",
+            "imagen": "productos/card-leonardoCatLight_McvHCWL.png",
+            "stock": "4",
+            "fecha_creacion": "2024-06-23 05:26:06.218127",
+            "categoria_id": "2",
+            "precio": "24990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "32",
+        "fields": {
+            "nombre": "Saco NATH Cat 25kg",
+            "descripcion": "Nutrición equilibrada para gatos. Favorece una vida saludable y activa.",
+            "imagen": "productos/card-nathCat25.jpg",
+            "stock": "6",
+            "fecha_creacion": "2024-06-23 05:26:30.001685",
+            "categoria_id": "2",
+            "precio": "23990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "33",
+        "fields": {
+            "nombre": "Saco NATH Cat Kit 25kg",
+            "descripcion": "Alimento específico para gatitos. Apoya su crecimiento y desarrollo óptimo.",
+            "imagen": "productos/card-nathCatKit25.jpg",
+            "stock": "8",
+            "fecha_creacion": "2024-06-23 05:26:53.945843",
+            "categoria_id": "2",
+            "precio": "24990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "34",
+        "fields": {
+            "nombre": "Saco Purina PRO-PLAN Cat Adulto",
+            "descripcion": "Fórmula avanzada para gatos adultos. Refuerza su sistema inmunológico.",
+            "imagen": "productos/card-proplanCatBomba.jpg",
+            "stock": "9",
+            "fecha_creacion": "2024-06-23 05:27:33.016881",
+            "categoria_id": "2",
+            "precio": "19990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "35",
+        "fields": {
+            "nombre": "Saco Royal Canin Cat Indoor",
+            "descripcion": "Nutrición para gatos de interior. Ayuda a reducir las bolas de pelo.",
+            "imagen": "productos/card-royalcaninCatIndoor.jpg",
+            "stock": "7",
+            "fecha_creacion": "2024-06-23 05:28:00.054050",
+            "categoria_id": "2",
+            "precio": "25000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "36",
+        "fields": {
+            "nombre": "Saco Royal Canin Cat Sensible",
+            "descripcion": "Alimento para gatos con digestión sensible. Fórmula fácil de digerir.",
+            "imagen": "productos/card-royalcaninCatSensible.jpg",
+            "stock": "13",
+            "fecha_creacion": "2024-06-23 05:28:23.869747",
+            "categoria_id": "2",
+            "precio": "22990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "37",
+        "fields": {
+            "nombre": "Saco Royal Canin Cat Persian Adult",
+            "descripcion": "Comida especial para gatos persas. Mantiene su pelaje y salud general.",
+            "imagen": "productos/card-royalcaninPersianAdult.jpg",
+            "stock": "3",
+            "fecha_creacion": "2024-06-23 05:28:57.560384",
+            "categoria_id": "2",
+            "precio": "25000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "38",
+        "fields": {
+            "nombre": "Saco Royal Canin Cat Savour Exigent",
+            "descripcion": "Fórmula para gatos exigentes. Sabor y textura irresistibles.",
+            "imagen": "productos/card-royalcaninSavourCat.jpg",
+            "stock": "6",
+            "fecha_creacion": "2024-06-23 05:29:26.812701",
+            "categoria_id": "2",
+            "precio": "20990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "39",
+        "fields": {
+            "nombre": "Saco Taste of the Wild Cat",
+            "descripcion": "Alimentación inspirada en la dieta natural. Rico en proteínas y sabor.",
+            "imagen": "productos/card-tasteofCat.jpg",
+            "stock": "8",
+            "fecha_creacion": "2024-06-23 05:29:47.067532",
+            "categoria_id": "2",
+            "precio": "16990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "40",
+        "fields": {
+            "nombre": "Bandana a cuadros azul",
+            "descripcion": "Elegante bandana de cuadros azules. Ideal para un look clásico.",
+            "imagen": "productos/card-accesorioBand30.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:48:06.502090",
+            "categoria_id": "3",
+            "precio": "3500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "41",
+        "fields": {
+            "nombre": "Correa multicolores",
+            "descripcion": "Correa vibrante con múltiples colores. Aporta estilo y seguridad.",
+            "imagen": "productos/card-accesorioCorrea30.png",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:48:29.537930",
+            "categoria_id": "3",
+            "precio": "3500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "42",
+        "fields": {
+            "nombre": "Correa liquid",
+            "descripcion": "Correa resistente y moderna. Diseño atractivo y funcional.",
+            "imagen": "productos/card-accesorioCorreaLiquid.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:48:48.655407",
+            "categoria_id": "3",
+            "precio": "3500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "43",
+        "fields": {
+            "nombre": "Bandana azul",
+            "descripcion": "Bandana simple en azul sólido. Perfecta para cualquier ocasión.",
+            "imagen": "productos/card-bandanaAzul70Liq.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:49:09.281967",
+            "categoria_id": "3",
+            "precio": "3500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "44",
+        "fields": {
+            "nombre": "Bandana Ovejas",
+            "descripcion": "Bandana con diseño de ovejas. Añade un toque adorable a tu mascota.",
+            "imagen": "productos/card-bandanaOveja.jpg",
+            "stock": "8",
+            "fecha_creacion": "2024-06-23 05:49:28.034446",
+            "categoria_id": "3",
+            "precio": "3500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "45",
+        "fields": {
+            "nombre": "Bandana Pato",
+            "descripcion": "Divertida bandana con estampado de patos. Ideal para mascotas juguetonas.",
+            "imagen": "productos/card-bandanaPato.jpg",
+            "stock": "6",
+            "fecha_creacion": "2024-06-23 05:49:45.603772",
+            "categoria_id": "3",
+            "precio": "3500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "46",
+        "fields": {
+            "nombre": "Bandana Sandia",
+            "descripcion": "Bandana fresca con diseño de sandías. Perfecta para el verano.",
+            "imagen": "productos/card-bandanaSandia30.jpg",
+            "stock": "7",
+            "fecha_creacion": "2024-06-23 05:50:05.949717",
+            "categoria_id": "3",
+            "precio": "3500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "47",
+        "fields": {
+            "nombre": "Correa con pechera Rosa",
+            "descripcion": "Set de correa y pechera en rosa. Comodidad y estilo combinados.",
+            "imagen": "productos/card-correaPecheraRosa.jpg",
+            "stock": "4",
+            "fecha_creacion": "2024-06-23 05:50:31.591754",
+            "categoria_id": "3",
+            "precio": "5800"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "48",
+        "fields": {
+            "nombre": "Correa Rosa",
+            "descripcion": "Correa en tono rosa vibrante. Atractiva y segura para paseos.",
+            "imagen": "productos/card-correaRosa50Liq.png",
+            "stock": "3",
+            "fecha_creacion": "2024-06-23 05:50:51.130169",
+            "categoria_id": "3",
+            "precio": "3500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "49",
+        "fields": {
+            "nombre": "Correa retraible verde",
+            "descripcion": "Correa verde retráctil. Ofrece libertad y control durante los paseos.",
+            "imagen": "productos/card-correaVerde30.jpg",
+            "stock": "6",
+            "fecha_creacion": "2024-06-23 05:51:16.523890",
+            "categoria_id": "3",
+            "precio": "9990"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "50",
+        "fields": {
+            "nombre": "Identificador Color Rosado",
+            "descripcion": "Identificador en color rosado. Personalizable y seguro para tu mascota.",
+            "imagen": "productos/card-identicadorRosado.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:51:39.956048",
+            "categoria_id": "3",
+            "precio": "2500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "51",
+        "fields": {
+            "nombre": "Identificador Bola8",
+            "descripcion": "Identificador con diseño de bola 8. Único y fácil de reconocer.",
+            "imagen": "productos/card-Identificador8.webp",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:52:00.282065",
+            "categoria_id": "3",
+            "precio": "2500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "52",
+        "fields": {
+            "nombre": "Identificador OsoPolar",
+            "descripcion": "Identificador con forma de oso polar. Adorable y distintivo.",
+            "imagen": "productos/card-IdentificadorBlanco.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:52:26.278334",
+            "categoria_id": "3",
+            "precio": "2500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "53",
+        "fields": {
+            "nombre": "Identificador Color Crema",
+            "descripcion": "Identificador en tono crema. Sencillo y elegante.",
+            "imagen": "productos/card-identificadorCrema_oYyO63H.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:52:56.153813",
+            "categoria_id": "3",
+            "precio": "2500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "54",
+        "fields": {
+            "nombre": "Identificador Doberman",
+            "descripcion": "Identificador con diseño de doberman. Ideal para perros de raza.",
+            "imagen": "productos/card-IdentificadorDoberman.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:53:23.417723",
+            "categoria_id": "3",
+            "precio": "2500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "55",
+        "fields": {
+            "nombre": "Identificador Hueso",
+            "descripcion": "Identificador en forma de hueso. Clásico y fácil de ver.",
+            "imagen": "productos/card-identificadorHueso.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:53:43.348430",
+            "categoria_id": "3",
+            "precio": "2500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "56",
+        "fields": {
+            "nombre": "Identificador Perro cafe",
+            "descripcion": "Identificador con diseño de perro café. Personaliza la información de tu mascota.",
+            "imagen": "productos/card-IdentificadorPerro.webp",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:54:04.425670",
+            "categoria_id": "3",
+            "precio": "2500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "57",
+        "fields": {
+            "nombre": "Identificador Perro negro",
+            "descripcion": "Identificador con diseño de perro negro. Práctico y personalizable.",
+            "imagen": "productos/card-IdentificadorPerroNegro_qa6Dqy4.webp",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:54:26.031669",
+            "categoria_id": "3",
+            "precio": "2500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "58",
+        "fields": {
+            "nombre": "Identificador Rojo",
+            "descripcion": "Identificador en color rojo brillante. Visibilidad y seguridad aseguradas.",
+            "imagen": "productos/card-IdentificadorRojo.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 05:54:48.238056",
+            "categoria_id": "3",
+            "precio": "2500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "59",
+        "fields": {
+            "nombre": "Frasco Ama Hum Cat 200g",
+            "descripcion": "Delicioso snack húmedo para gatos. Ingredientes naturales y nutritivos.",
+            "imagen": "productos/card-amaHumCat101.jpg",
+            "stock": "6",
+            "fecha_creacion": "2024-06-23 06:06:56.934810",
+            "categoria_id": "4",
+            "precio": "4500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "60",
+        "fields": {
+            "nombre": "Lata Belcando Hum Dog",
+            "descripcion": "Alimento húmedo premium para perros. Sabor y calidad en cada bocado.",
+            "imagen": "productos/card-belcandoHumDog51_th1Yyzz.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 06:07:18.730863",
+            "categoria_id": "4",
+            "precio": "3800"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "61",
+        "fields": {
+            "nombre": "Sobre Catit Creamy Cat",
+            "descripcion": "Snack cremoso para gatos. Ideal como recompensa o complemento alimenticio.",
+            "imagen": "productos/card-catitCreamy.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 06:08:16.858174",
+            "categoria_id": "4",
+            "precio": "1200"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "62",
+        "fields": {
+            "nombre": "Sobre Churu Dog",
+            "descripcion": "Snack líquido para perros. Rico en proteínas y fácil de digerir.",
+            "imagen": "productos/card-churruPerro19_Fu9ubDP.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 06:08:36.837503",
+            "categoria_id": "4",
+            "precio": "1500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "63",
+        "fields": {
+            "nombre": "Sobre Churu Cat 4x3",
+            "descripcion": "Pack de snacks líquidos para gatos. Sabor y nutrición en cada porción.",
+            "imagen": "productos/card-churuSnackCat4x3_2HmNKnE.jpg",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 06:09:02.520213",
+            "categoria_id": "4",
+            "precio": "4500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "64",
+        "fields": {
+            "nombre": "Sobre CikaKraft Cat Yums",
+            "descripcion": "Bocados suaves y deliciosos para gatos. Perfectos para entrenamientos.",
+            "imagen": "productos/card-cikakraftYums_jhHxWrK.jpg",
+            "stock": "6",
+            "fecha_creacion": "2024-06-23 06:09:23.183375",
+            "categoria_id": "4",
+            "precio": "1300"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "65",
+        "fields": {
+            "nombre": "Sobre Dental Fitness Cat",
+            "descripcion": "Snack dental para gatos. Ayuda a mantener la higiene bucal.",
+            "imagen": "productos/card-dentalFitness_MdkPoFE.jpg",
+            "stock": "4",
+            "fecha_creacion": "2024-06-23 06:09:47.433727",
+            "categoria_id": "4",
+            "precio": "1400"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "66",
+        "fields": {
+            "nombre": "Sobre Dingo Dog 4x3",
+            "descripcion": "Pack de snacks para perros. Sabor irresistible y beneficios nutricionales.",
+            "imagen": "productos/card-dingoSnackDog4x3.jpg",
+            "stock": "8",
+            "fecha_creacion": "2024-06-23 06:10:08.935250",
+            "categoria_id": "4",
+            "precio": "4200"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "67",
+        "fields": {
+            "nombre": "Caja sobres Fit Formula Cat 4x3",
+            "descripcion": "Pack de sobres de alimento húmedo para gatos. Completo y balanceado.",
+            "imagen": "productos/card-fitSnackCat4x3.jpg",
+            "stock": "9",
+            "fecha_creacion": "2024-06-23 06:10:32.063485",
+            "categoria_id": "4",
+            "precio": "4800"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "68",
+        "fields": {
+            "nombre": "Lata Leonardo Hum Cat",
+            "descripcion": "Alimento húmedo gourmet para gatos. Alta calidad y gran sabor.",
+            "imagen": "productos/card-leonardoHumCat101.png",
+            "stock": "5",
+            "fecha_creacion": "2024-06-23 06:10:50.346043",
+            "categoria_id": "4",
+            "precio": "3900"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "69",
+        "fields": {
+            "nombre": "Sobre Naturalistic Grill Dog",
+            "descripcion": "Snack para perros con sabor a parrilla. Nutritivo y delicioso.",
+            "imagen": "productos/card-naturalisticGrill19.jpg",
+            "stock": "4",
+            "fecha_creacion": "2024-06-23 06:11:12.453557",
+            "categoria_id": "4",
+            "precio": "1700"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "70",
+        "fields": {
+            "nombre": "Sobre Naturalistic Meat Balls Dog",
+            "descripcion": "Albóndigas de carne para perros. Rico en proteínas y fácil de digerir.",
+            "imagen": "productos/card-naturalisticMeatBalls19.jpg",
+            "stock": "7",
+            "fecha_creacion": "2024-06-23 06:11:34.422810",
+            "categoria_id": "4",
+            "precio": "1800"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "71",
+        "fields": {
+            "nombre": "Bote de carne seca Rahue Dog",
+            "descripcion": "Snack de carne seca para perros. Alto contenido proteico y gran sabor.",
+            "imagen": "productos/card-rahuePerro19.jpg",
+            "stock": "4",
+            "fecha_creacion": "2024-06-23 06:12:00.695382",
+            "categoria_id": "4",
+            "precio": "5200"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "72",
+        "fields": {
+            "nombre": "Rahue Snack Dog 4x3",
+            "descripcion": "Pack de snacks para perros. Nutrición y sabor en cada bocado.",
+            "imagen": "productos/card-rahueSnackDog4x3.jpg",
+            "stock": "3",
+            "fecha_creacion": "2024-06-23 06:12:24.072296",
+            "categoria_id": "4",
+            "precio": "4600"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "73",
+        "fields": {
+            "nombre": "Lata Royal Canin Hum Dog 3x2",
+            "descripcion": "Pack de latas de alimento húmedo para perros. Fórmula balanceada y nutritiva.",
+            "imagen": "productos/card-royalcaninHumDog3x2.jpg",
+            "stock": "3",
+            "fecha_creacion": "2024-06-23 06:12:54.532912",
+            "categoria_id": "4",
+            "precio": "5500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "74",
+        "fields": {
+            "nombre": "Sobre Six Fish Cat",
+            "descripcion": "Snack de pescado para gatos. Rico en ácidos grasos y proteínas.",
+            "imagen": "productos/card-sixFish.jpg",
+            "stock": "7",
+            "fecha_creacion": "2024-06-23 06:13:17.279100",
+            "categoria_id": "4",
+            "precio": "2200"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "75",
+        "fields": {
+            "nombre": "Sobre Churu Queso Cat",
+            "descripcion": "Snack líquido con sabor a queso para gatos. Delicioso y nutritivo.",
+            "imagen": "productos/card-snackChuruQueso.jpg",
+            "stock": "4",
+            "fecha_creacion": "2024-06-23 06:13:38.632601",
+            "categoria_id": "4",
+            "precio": "1600"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "76",
+        "fields": {
+            "nombre": "Sobre Antos Toasted Turkey Cat",
+            "descripcion": "Snack de pavo tostado para gatos. Alta palatabilidad y calidad.",
+            "imagen": "productos/card-snackToastedTurkey.jpg",
+            "stock": "4",
+            "fecha_creacion": "2024-06-23 06:13:59.827462",
+            "categoria_id": "4",
+            "precio": "1700"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "77",
+        "fields": {
+            "nombre": "Sobres SuniChups Cat",
+            "descripcion": "Snack crujiente para gatos. Ingredientes naturales y saludables.",
+            "imagen": "productos/card-sunipetSuniChups19.jpg",
+            "stock": "7",
+            "fecha_creacion": "2024-06-23 06:14:16.470106",
+            "categoria_id": "4",
+            "precio": "1500"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "96",
+        "fields": {
+            "nombre": "a",
+            "descripcion": "a",
+            "imagen": "",
+            "stock": "1",
+            "fecha_creacion": "2024-06-27 11:42:27.694930",
+            "categoria_id": "1",
+            "precio": "1"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "97",
+        "fields": {
+            "nombre": "producto sin imagen",
+            "descripcion": "as",
+            "imagen": "",
+            "stock": "1",
+            "fecha_creacion": "2024-06-27 11:42:40.574191",
+            "categoria_id": "2",
+            "precio": "1"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "98",
+        "fields": {
+            "nombre": "111",
+            "descripcion": "1",
+            "imagen": "",
+            "stock": "1500001",
+            "fecha_creacion": "2024-06-27 11:49:06.468291",
+            "categoria_id": "1",
+            "precio": "1"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "99",
+        "fields": {
+            "nombre": "prueba3",
+            "descripcion": "1",
+            "imagen": "",
+            "stock": "11",
+            "fecha_creacion": "2024-06-27 11:49:41.179379",
+            "categoria_id": "2",
+            "precio": "1500000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "100",
+        "fields": {
+            "nombre": "prueba3",
+            "descripcion": "1",
+            "imagen": "",
+            "stock": "11",
+            "fecha_creacion": "2024-06-27 12:02:24.114326",
+            "categoria_id": "2",
+            "precio": "1500000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "101",
+        "fields": {
+            "nombre": "prueba3",
+            "descripcion": "1",
+            "imagen": "",
+            "stock": "11",
+            "fecha_creacion": "2024-06-27 12:02:27.092237",
+            "categoria_id": "2",
+            "precio": "1500000"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "103",
+        "fields": {
+            "nombre": "AAA",
+            "descripcion": "aaaaa",
+            "imagen": "",
+            "stock": "1",
+            "fecha_creacion": "2024-06-27 12:10:31.403853",
+            "categoria_id": "1",
+            "precio": "1"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "104",
+        "fields": {
+            "nombre": "AAAA",
+            "descripcion": "aaa",
+            "imagen": "",
+            "stock": "1",
+            "fecha_creacion": "2024-06-27 12:11:18.676513",
+            "categoria_id": "1",
+            "precio": "1"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "105",
+        "fields": {
+            "nombre": "AAAaA",
+            "descripcion": "aaa",
+            "imagen": "",
+            "stock": "1",
+            "fecha_creacion": "2024-06-27 12:12:27.668008",
+            "categoria_id": "1",
+            "precio": "1"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "106",
+        "fields": {
+            "nombre": "1",
+            "descripcion": "1",
+            "imagen": "productos/Códigos_EA_mCPYOX3.jpg",
+            "stock": "1",
+            "fecha_creacion": "2024-06-27 12:16:06.809138",
+            "categoria_id": "1",
+            "precio": "1"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "109",
+        "fields": {
+            "nombre": "aasdasdas",
+            "descripcion": "AAAAasd",
+            "imagen": "",
+            "stock": "1",
+            "fecha_creacion": "2024-06-28 04:38:48.953828",
+            "categoria_id": "1",
+            "precio": "1"
+        }
+    },
+    {
+        "model": "productos.producto",
+        "pk": "110",
+        "fields": {
+            "nombre": "asdasñdkjmalñskdjn",
+            "descripcion": "asdasd",
+            "imagen": "",
+            "stock": "1",
+            "fecha_creacion": "2024-06-28 04:39:35.074772",
+            "categoria_id": "4",
+            "precio": "1500000"
+        }
+    }
+]

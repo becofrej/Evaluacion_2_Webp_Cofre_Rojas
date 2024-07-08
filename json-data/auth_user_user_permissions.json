@@ -1,0 +1,66 @@
+[
+    {
+        "model": "auth.user_user_permissions",
+        "pk": "1",
+        "fields": {
+            "user_id": "28",
+            "permission_id": "32"
+        }
+    },
+    {
+        "model": "auth.user_user_permissions",
+        "pk": "5",
+        "fields": {
+            "user_id": "28",
+            "permission_id": "30"
+        }
+    },
+    {
+        "model": "auth.user_user_permissions",
+        "pk": "7",
+        "fields": {
+            "user_id": "28",
+            "permission_id": "29"
+        }
+    },
+    {
+        "model": "auth.user_user_permissions",
+        "pk": "8",
+        "fields": {
+            "user_id": "30",
+            "permission_id": "29"
+        }
+    },
+    {
+        "model": "auth.user_user_permissions",
+        "pk": "9",
+        "fields": {
+            "user_id": "31",
+            "permission_id": "32"
+        }
+    },
+    {
+        "model": "auth.user_user_permissions",
+        "pk": "10",
+        "fields": {
+            "user_id": "31",
+            "permission_id": "31"
+        }
+    },
+    {
+        "model": "auth.user_user_permissions",
+        "pk": "11",
+        "fields": {
+            "user_id": "32",
+            "permission_id": "32"
+        }
+    },
+    {
+        "model": "auth.user_user_permissions",
+        "pk": "12",
+        "fields": {
+            "user_id": "28",
+            "permission_id": "31"
+        }
+    }
+]
