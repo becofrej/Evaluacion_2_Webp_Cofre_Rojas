@@ -7,6 +7,7 @@ body {
 } 
 
 .benja-header {
+  background: linear-gradient(90deg, #19d0d0, #FE9F4E, #ddd2d2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +42,6 @@ nav {
 
 .navbar {
   width: 100%;
-  background-color: #d1d1d1;
   border-bottom: 0.5px solid black;
 }
 
@@ -60,7 +60,6 @@ nav {
   height: 80px;
   width: auto;
   max-width: 100%;
-  margin-right: auto;
 }
 
 .carrito {
@@ -312,4 +311,167 @@ nav {
   margin-bottom: 10px;
 }
 
+/*Media querys*/
 
+/* Teléfonos pequeños */
+@media (max-width: 576px) {
+
+  .benja-container {
+    display: none;
+  }
+
+  .link-inicio{
+    display: none;
+  }
+
+  .btn.btn-secondary.dropdown-toggle.drop-productos{
+    display: none;
+  }
+
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-md-3,
+  .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .footer .col-lg-3,
+  .footer .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer .row > div {
+    margin-bottom: 1rem;
+  }
+
+}
+
+/* Teléfonos medianos a grandes */
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .logo {
+    height: 70px;
+    text-align: center;
+  }
+
+  .link-inicio{
+    display: none;
+  }
+
+  .btn.btn-secondary.dropdown-toggle.drop-productos{
+    display: none;
+  }
+
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-md-3,
+  .col-lg-3 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .footer .col-lg-3,
+  .footer .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+  }
+
+  .footer .row > div {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Tabletas pequeñas */
+@media (min-width: 769px) and (max-width: 999px) {
+
+  .logo {
+    height: 70px;
+    text-align: center;
+  }
+
+  .link-inicio{
+    display: none;
+  }
+
+  .btn.btn-secondary.dropdown-toggle.drop-productos{
+    display: none;
+  }
+
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .footer .col-lg-3,
+  .footer .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: left;
+  }
+}
+
+/* Tabletas grandes a computadoras pequeñas */
+@media (max-width: 1000px){
+
+  .link-inicio{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: #212529;
+  }
+
+  .benja-container{
+    display: none;
+  }
+
+  .logo{
+    height: 70px;
+    text-align: center;
+  }
+
+  .btn.btn-secondary.dropdown-toggle.drop-productos{
+    font-size: 13px;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .imagen-perfil{
+    height: 35px;
+  }
+
+  .carrito{
+    height: 40px;
+    width: 40px;
+  }
+
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .footer .col-lg-3,
+  .footer .col-md-6 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: left;
+  }
+}
