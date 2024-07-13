@@ -3,7 +3,6 @@
 <!-- Imagen de encabezado -->
 <div class="imagen-productos">
   <img src="{% static 'productos/img/productos/producto-accesorios.jpg' %}" alt="" />
-  <div class="gradient"></div>
 </div>
 
 <!-- Breadcrumb -->
@@ -20,7 +19,7 @@
 <div class="container-accesorios">
   <div class="row">
     {% for x in productos_accesorios %}
-    <div class="col-md-3 mb-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
       <div class="card david-custom-products" data-id="{{ x.id }}" data-name="{{ x.nombre }}" data-price="{{ x.precio }}">
         {% if x.imagen %}
         <img

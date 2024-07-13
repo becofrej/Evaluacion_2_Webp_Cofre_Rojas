@@ -1,5 +1,23 @@
 body {
-  background-image: url('/static/productos/img/background/background_lavanda_2.png');
+  position: relative;
+  background: linear-gradient(90deg, #19d0d0, #FE9F4E, #ddd2d2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/static/productos/img/background/background_lavanda_2.png');
+  background-size: 50px 50px; /* Ajusta el tamaño del patrón */
+  background-repeat: repeat;
+  opacity: 0.5; /* Ajusta la opacidad según sea necesario */
+  z-index: -1; /* Asegura que esté detrás del contenido */
 }
 
 .general-custom-canvas {
@@ -171,7 +189,7 @@ nav {
   text-align: center;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-  /* Sombreado con color gris claro */
+  margin-bottom: 20px;
 }
 
 .carta-carrito {
@@ -234,10 +252,19 @@ nav {
 .imagen-productos {
   display: flex;
   justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imagen-productos-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .texto-producto {
-  margin-left: 200px;
+  text-align: center;
 }
 
 .lista-productos {
@@ -256,6 +283,8 @@ nav {
   /* espacio entre productos */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   /*sombreado*/
+  flex-direction: column;
+  height: 100%;
 }
 
 .david-custom-products img {
@@ -321,11 +350,11 @@ nav {
     display: none;
   }
 
-  .link-inicio{
+  .link-inicio {
     display: none;
   }
 
-  .btn.btn-secondary.dropdown-toggle.drop-productos{
+  .btn.btn-secondary.dropdown-toggle.drop-productos {
     display: none;
   }
 
@@ -351,6 +380,16 @@ nav {
     margin-bottom: 1rem;
   }
 
+  .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
 }
 
 /* Teléfonos medianos a grandes */
@@ -361,11 +400,11 @@ nav {
     text-align: center;
   }
 
-  .link-inicio{
+  .link-inicio {
     display: none;
   }
 
-  .btn.btn-secondary.dropdown-toggle.drop-productos{
+  .btn.btn-secondary.dropdown-toggle.drop-productos {
     display: none;
   }
 
@@ -390,6 +429,16 @@ nav {
   .footer .row > div {
     margin-bottom: 1rem;
   }
+
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 /* Tabletas pequeñas */
@@ -400,11 +449,11 @@ nav {
     text-align: center;
   }
 
-  .link-inicio{
+  .link-inicio {
     display: none;
   }
 
-  .btn.btn-secondary.dropdown-toggle.drop-productos{
+  .btn.btn-secondary.dropdown-toggle.drop-productos {
     display: none;
   }
 
@@ -424,37 +473,42 @@ nav {
     max-width: 50%;
     text-align: left;
   }
+
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
 }
 
 /* Tabletas grandes a computadoras pequeñas */
 @media (max-width: 1000px){
 
-  .link-inicio{
+  .link-inicio {
     font-size: 14px;
     font-weight: bold;
     margin-left: 15px;
     color: #212529;
   }
 
-  .benja-container{
+  .benja-container {
     display: none;
   }
 
-  .logo{
+  .logo {
     height: 70px;
     text-align: center;
   }
 
-  .btn.btn-secondary.dropdown-toggle.drop-productos{
+  .btn.btn-secondary.dropdown-toggle.drop-productos {
     font-size: 13px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
   }
 
-  .imagen-perfil{
+  .imagen-perfil {
     height: 35px;
   }
 
-  .carrito{
+  .carrito {
     height: 40px;
     width: 40px;
   }

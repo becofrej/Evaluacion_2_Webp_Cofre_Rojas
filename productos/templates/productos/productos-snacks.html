@@ -2,7 +2,7 @@
 
 <!-- Imagen de encabezado -->
 <div class="imagen-productos">
-  <img src="{% static 'productos/img/productos/banner-productos-snack.jpg' %}" alt="" />
+  <img src="{% static 'productos/img/productos/banner-productos-snack.jpg' %}" alt="" class="img-fluid imagen-productos-img"/>
 </div>
 
 <!-- Breadcrumb -->
@@ -19,7 +19,7 @@
 <div class="container-snacks">
   <div class="row">
     {% for x in productos_snacks %}
-    <div class="col-md-3 mb-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
       <div class="card david-custom-products" data-id="{{ x.id }}" data-name="{{ x.nombre }}" data-price="{{ x.precio }}">
         {% if x.imagen %}
         <img
