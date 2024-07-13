@@ -240,6 +240,7 @@ nav {
 .david-custom-card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   /*sombreado*/
+  margin-bottom: 15px;
 }
 
 /* Imagenes de las Tarjetas */
@@ -339,6 +340,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.fondo-offcanvas-header{
+  background: linear-gradient(50deg, #1afdfd, #fb9e4c, #fffafa);
+}
+
+.fondo-offcanvas-body{
+  background-image: url('/static/productos/img/background/blue-snow.png');
 }
 
 /*Media querys*/
