@@ -47,7 +47,7 @@
           </div>
           <div class="dropdown me-2">
             <img src="{% static 'productos/img/perfil.png' %}" alt="Icono" height="41" class="dropdown-toggle imagen-perfil" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
               {% if user.is_authenticated %}
                 <li><a class="dropdown-item" href="#">Hola, {{ user.username }}</a></li>
                 {% if perms.productos.add_producto %}
