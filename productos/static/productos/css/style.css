@@ -539,3 +539,74 @@ nav {
     text-align: left;
   }
 }
+
+/* Estilos adicionales para el footer */
+footer .btn {
+  border-radius: 50px;
+  padding: 0.5rem 2rem;
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin-bottom: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 1rem;
+}
+
+footer ul li a {
+  color: #ffffff;
+}
+
+footer ul li a:hover {
+  color: #bbbbbb;
+}
+
+footer .list-unstyled.d-flex {
+  justify-content: center;
+}
+
+footer .list-unstyled.d-flex li {
+  margin: 0 10px;
+}
+
+/* Estilos para pantallas pequeñas y medianas */
+@media (max-width: 768px) {
+  footer .container p {
+      text-align: center;
+  }
+
+  footer .btn {
+      display: block;
+      margin: 0 auto 1.5rem;
+  }
+
+  footer .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  footer .row > div {
+      width: 100%;
+      text-align: center;
+  }
+
+  footer .row .col-md-4,
+  footer .row .col-lg-3 {
+      margin-bottom: 1.5rem;
+  }
+}
