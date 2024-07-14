@@ -222,6 +222,10 @@ nav {
   margin: 5px;
 }
 
+.david-custom-carrousel{
+  border-bottom: 0.5px solid black;
+}
+
 
 /* Difuminado Carousel */
 
@@ -349,6 +353,12 @@ nav {
 .fondo-offcanvas-body{
   background-image: url('/static/productos/img/background/blue-snow.png');
 }
+
+#cart-count {
+  font-size: 0.75rem;
+  padding: 0.25em 0.5em;
+}
+
 
 /*Media querys*/
 

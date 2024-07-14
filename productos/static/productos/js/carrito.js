@@ -2,6 +2,16 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 console.log("Contenido del carrito al cargar:", cart);
 
+// Función para actualizar el contador del carrito en el ícono del header
+function updateCartCount() {
+    const cartCountElement = document.getElementById('cart-count');
+    if (cartCountElement) {
+        const cartCount = cart.length;
+        cartCountElement.textContent = cartCount;
+        cartCountElement.style.display = cartCount > 0 ? 'block' : 'none';
+    }
+}
+
 // Función para mostrar productos en el carrito en el offcanvas
 function renderCart() {
     const cartList = document.getElementById('cart-list');
@@ -12,6 +22,7 @@ function renderCart() {
         renderCartItems(cartList);
         updateCartTotal(cartTotalElements);
     }
+    updateCartCount();
 }
 
 // Función para mostrar productos en la página del carrito de compras
@@ -25,6 +36,7 @@ function renderCartPage() {
         renderCartPageItems(cartItemsContainer, cartDetailsList);
         updateCartTotal(cartTotalElements);
     }
+    updateCartCount();
 }
 
 // Función para renderizar los productos en el carrito

@@ -72,7 +72,12 @@
             </ul>
           </div>
           <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <img class="carrito" src="{% static 'productos/img/carrito.png' %}" alt="Carrito">
+            <div class="position-relative">
+              <img class="carrito" src="{% static 'productos/img/carrito.png' %}" alt="Carrito">
+              <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+              </span>
+            </div>
           </a>
         </div>
       </div>
