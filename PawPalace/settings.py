@@ -78,17 +78,7 @@ env = environ.Env()
 environ.Env.read_env()
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('DB_NAME'),
-        'USER': env('DB_USER'),
-        'PASSWORD': env('DB_PASSWORD'),
-        'HOST': env('DB_HOST'),
-        'PORT': env('DB_PORT'),
-        'OPTIONS': {
-            'sslmode': 'require',
-        },
-    }
+    'default': env.db(),  # Usa DATABASE_URL para la configuración de la base de datos
 }
 
 AUTH_PASSWORD_VALIDATORS = [
