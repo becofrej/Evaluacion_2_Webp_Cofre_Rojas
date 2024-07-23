@@ -2,6 +2,7 @@
 from pathlib import Path
 import dj_database_url
 import os
+import environ
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -71,14 +72,22 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'PawPalace.wsgi.application'
 
+# Inicializa el entorno de variables
+env = environ.Env()
+# Lee el archivo .env
+environ.Env.read_env()
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pawpalacebd',
-        'USER': 'pawpalacebd_user',
-        'PASSWORD': 'PD11OhwxZtxB869o9J9tByT1OeCnM4fA',
-        'HOST': 'dpg-cq28h43v2p9s73eohsdg-a.oregon-postgres.render.com',  # Parte del host sin el prefijo "postgresql://"
-        'PORT': '5432',
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': env('DB_HOST'),
+        'PORT': env('DB_PORT'),
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
 
